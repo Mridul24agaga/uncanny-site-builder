@@ -549,11 +549,23 @@ const MidlandOdessa = () => {
       </section>
 
       {/* Best House Guests Section */}
-      <section className="py-8 bg-slate-100">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#169AFF] font-inter tracking-wider">
-            WE'RE THE BEST HOUSE GUESTS EVER
-          </h2>
+      <section className="py-16 md:py-20 bg-gradient-to-r from-slate-50 to-slate-100 relative overflow-hidden">
+        {/* Background decoration */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-10 left-10 w-40 h-40 bg-[#169AFF] rounded-full blur-3xl"></div>
+          <div className="absolute bottom-10 right-10 w-32 h-32 bg-[#169AFF] rounded-full blur-2xl"></div>
+        </div>
+        
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-[#169AFF] font-inter tracking-wider mb-6 leading-tight">
+              WE'RE THE BEST HOUSE GUESTS EVER
+            </h2>
+            <div className="w-32 h-1 bg-[#169AFF] mx-auto rounded-full mb-6"></div>
+            <p className="text-lg md:text-xl text-slate-600 font-medium">
+              We treat your home with the same care and respect we'd show our own family
+            </p>
+          </div>
         </div>
       </section>
 
