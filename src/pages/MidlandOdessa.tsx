@@ -104,96 +104,6 @@ const MidlandOdessa = () => {
         </div>
       </section>
 
-      {/* Proudly Serving Section */}
-      <section className="py-16 bg-slate-900 relative overflow-hidden">
-        <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 font-playfair">
-            PROUDLY SERVING MIDLAND-ODESSA, TX
-          </h2>
-          
-          <Card className="max-w-4xl mx-auto bg-white/10 border-white/20 backdrop-blur-sm">
-            <CardContent className="p-8 md:p-12">
-              <div className="grid md:grid-cols-2 gap-8 items-center">
-                <div className="relative rounded-2xl overflow-hidden">
-                  <img 
-                    src="/src/assets/roofing-background.jpg" 
-                    alt="Beautiful home interior" 
-                    className="w-full h-64 md:h-80 object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                  
-                  {/* Logo overlay */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="bg-white/95 rounded-full p-6 shadow-2xl">
-                      <img 
-                        src="/lovable-uploads/b808aa46-b91e-4f5b-8573-6e27bb488e2e.png" 
-                        alt="Happy Home Roofing" 
-                        className="h-16 w-auto"
-                      />
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="text-white space-y-6">
-                  <h3 className="text-2xl font-bold font-playfair">Your Trusted Local Roofing Partner</h3>
-                  <p className="text-lg leading-relaxed text-white/90">
-                    For over 15 years, Happy Home Roofing has been the go-to choice for homeowners and businesses in Midland, Odessa, and throughout the Permian Basin. We combine expertise with exceptional service to deliver roofing solutions that protect and enhance your property.
-                  </p>
-                  <div className="flex flex-col sm:flex-row gap-4 text-sm">
-                    <div className="flex items-center">
-                      <MapPin className="h-4 w-4 mr-2 text-[#169AFF]" />
-                      <span>Serving 50+ Mile Radius</span>
-                    </div>
-                    <div className="flex items-center">
-                      <Check className="h-4 w-4 mr-2 text-green-400" />
-                      <span>1000+ Happy Customers</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-        
-        {/* Background decoration */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-10 w-32 h-32 bg-white/20 rounded-full blur-xl"></div>
-          <div className="absolute bottom-10 right-10 w-48 h-48 bg-[#169AFF]/30 rounded-full blur-xl"></div>
-        </div>
-      </section>
-
-      {/* Our Process Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-slate-50 to-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 font-playfair">
-              OUR PROCESS
-            </h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              From initial consultation to final walkthrough, we make roofing simple and stress-free
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-            {processSteps.map((step, index) => (
-              <Card key={index} className="bg-white border-2 hover:border-[#169AFF]/30 transition-colors duration-300 shadow-lg hover:shadow-xl">
-                <CardContent className="p-8 text-center h-full flex flex-col">
-                  <div className="text-5xl font-bold text-[#169AFF] mb-4 font-playfair">
-                    {step.number}
-                  </div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-4 font-semibold">
-                    {step.title}
-                  </h3>
-                  <p className="text-slate-600 leading-relaxed flex-grow">
-                    {step.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Main Estimate Form Section */}
       <section id="estimate-form" className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
@@ -352,6 +262,96 @@ const MidlandOdessa = () => {
               </div>
             </CardContent>
           </Card>
+        </div>
+      </section>
+
+      {/* Proudly Serving Section */}
+      <section className="py-16 bg-slate-900 relative overflow-hidden">
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 font-playfair">
+            PROUDLY SERVING MIDLAND-ODESSA, TX
+          </h2>
+          
+          <Card className="max-w-4xl mx-auto bg-white/10 border-white/20 backdrop-blur-sm">
+            <CardContent className="p-8 md:p-12">
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="relative rounded-2xl overflow-hidden">
+                  <img 
+                    src="/src/assets/roofing-background.jpg" 
+                    alt="Beautiful home interior" 
+                    className="w-full h-64 md:h-80 object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                  
+                  {/* Logo overlay */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="bg-white/95 rounded-full p-6 shadow-2xl">
+                      <img 
+                        src="/lovable-uploads/b808aa46-b91e-4f5b-8573-6e27bb488e2e.png" 
+                        alt="Happy Home Roofing" 
+                        className="h-16 w-auto"
+                      />
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="text-white space-y-6">
+                  <h3 className="text-2xl font-bold font-playfair">Your Trusted Local Roofing Partner</h3>
+                  <p className="text-lg leading-relaxed text-white/90">
+                    For over 15 years, Happy Home Roofing has been the go-to choice for homeowners and businesses in Midland, Odessa, and throughout the Permian Basin. We combine expertise with exceptional service to deliver roofing solutions that protect and enhance your property.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4 text-sm">
+                    <div className="flex items-center">
+                      <MapPin className="h-4 w-4 mr-2 text-[#169AFF]" />
+                      <span>Serving 50+ Mile Radius</span>
+                    </div>
+                    <div className="flex items-center">
+                      <Check className="h-4 w-4 mr-2 text-green-400" />
+                      <span>1000+ Happy Customers</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+        
+        {/* Background decoration */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 left-10 w-32 h-32 bg-white/20 rounded-full blur-xl"></div>
+          <div className="absolute bottom-10 right-10 w-48 h-48 bg-[#169AFF]/30 rounded-full blur-xl"></div>
+        </div>
+      </section>
+
+      {/* Our Process Section */}
+      <section className="py-16 md:py-24 bg-gradient-to-b from-slate-50 to-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 font-playfair">
+              OUR PROCESS
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              From initial consultation to final walkthrough, we make roofing simple and stress-free
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+            {processSteps.map((step, index) => (
+              <Card key={index} className="bg-white border-2 hover:border-[#169AFF]/30 transition-colors duration-300 shadow-lg hover:shadow-xl">
+                <CardContent className="p-8 text-center h-full flex flex-col">
+                  <div className="text-5xl font-bold text-[#169AFF] mb-4 font-playfair">
+                    {step.number}
+                  </div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-4 font-semibold">
+                    {step.title}
+                  </h3>
+                  <p className="text-slate-600 leading-relaxed flex-grow">
+                    {step.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </section>
 
