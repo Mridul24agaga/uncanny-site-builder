@@ -130,7 +130,7 @@ const MidlandOdessa = () => {
                   </div>
 
                   <div className="mt-12 p-6 bg-white/10 rounded-2xl backdrop-blur-sm">
-                    <h3 className="text-xl font-bold mb-4">Why Choose Happy Home Roofing?</h3>
+                    <h3 className="text-xl font-bold mb-4 font-playfair">Why Choose Happy Home Roofing?</h3>
                     <ul className="space-y-2 text-sm text-white/90">
                       <li className="flex items-center"><Check className="h-4 w-4 mr-2" /> 10 Year Warranty</li>
                       <li className="flex items-center"><Check className="h-4 w-4 mr-2" /> Licensed & Insured</li>
@@ -343,7 +343,7 @@ const MidlandOdessa = () => {
                   <div className="text-5xl font-bold text-[#169AFF] mb-4 font-playfair">
                     {step.number}
                   </div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-4 font-semibold">
+                  <h3 className="text-xl font-bold text-slate-900 mb-4 font-playfair">
                     {step.title}
                   </h3>
                   <p className="text-slate-600 leading-relaxed flex-grow">
