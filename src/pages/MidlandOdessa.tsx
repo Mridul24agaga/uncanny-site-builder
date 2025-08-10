@@ -265,6 +265,198 @@ const MidlandOdessa = () => {
         </div>
       </section>
 
+      {/* Customer Reviews & Projects Section */}
+      <section className="py-16 md:py-24 bg-slate-900">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-playfair">
+              What Our Customers Say
+            </h2>
+            <p className="text-xl text-white/80">
+              Real reviews from satisfied homeowners in Midland-Odessa
+            </p>
+          </div>
+
+          {/* Reviews Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            {/* Review 1 */}
+            <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="flex text-yellow-400 mr-3">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                      </svg>
+                    ))}
+                  </div>
+                  <span className="text-white font-semibold">Jackson R.</span>
+                </div>
+                <p className="text-white/90 text-sm leading-relaxed">
+                  "I couldn't be happier with the roof repair service I received! The team was prompt, professional, and thorough. My roof looks amazing, and I feel confident it will withstand the unpredictable West Texas weather. Highly recommended!"
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Review 2 */}
+            <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="flex text-yellow-400 mr-3">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                      </svg>
+                    ))}
+                  </div>
+                  <span className="text-white font-semibold">Maria T.</span>
+                </div>
+                <p className="text-white/90 text-sm leading-relaxed">
+                  "From the first call to project completion, their customer service was top-notch. They walked me through the entire process and answered all my questions. It's rare to find such courteous and knowledgeable roofing experts."
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Review 3 */}
+            <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="flex text-yellow-400 mr-3">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                      </svg>
+                    ))}
+                  </div>
+                  <span className="text-white font-semibold">Chris L.</span>
+                </div>
+                <p className="text-white/90 text-sm leading-relaxed">
+                  "These folks take pride in their work! The quality of materials and attention to detail were impressive. My new roof looks fantastic and was completed on time without any issues. Great experience!"
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Review 4 */}
+            <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="flex text-yellow-400 mr-3">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                      </svg>
+                    ))}
+                  </div>
+                  <span className="text-white font-semibold">Robert K.</span>
+                </div>
+                <p className="text-white/90 text-sm leading-relaxed">
+                  "Outstanding workmanship and customer service! They replaced my entire roof after storm damage and the results exceeded my expectations. The crew was respectful, clean, and finished ahead of schedule."
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Review 5 */}
+            <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="flex text-yellow-400 mr-3">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                      </svg>
+                    ))}
+                  </div>
+                  <span className="text-white font-semibold">Sarah D.</span>
+                </div>
+                <p className="text-white/90 text-sm leading-relaxed">
+                  "Happy Home Roofing transformed my commercial property with a new roof installation. Their team was professional, efficient, and delivered exceptional quality. I highly recommend them for any roofing needs."
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Review 6 */}
+            <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="flex text-yellow-400 mr-3">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                      </svg>
+                    ))}
+                  </div>
+                  <span className="text-white font-semibold">Bethany M.</span>
+                </div>
+                <p className="text-white/90 text-sm leading-relaxed">
+                  "In a world where it's hard to find good contractors, this company stands out. They provided a fair estimate, kept us updated throughout the project, and delivered excellent results. I wouldn't hesitate to call them again."
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Project Gallery */}
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-bold text-white mb-4 font-playfair">
+              Recent Projects
+            </h3>
+            <p className="text-white/80">
+              See the quality craftsmanship we deliver to Midland-Odessa homes
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <div className="relative rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+              <img 
+                src="/src/assets/project-1.jpg" 
+                alt="Roofing project 1" 
+                className="w-full h-32 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            </div>
+            <div className="relative rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+              <img 
+                src="/src/assets/project-2.jpg" 
+                alt="Roofing project 2" 
+                className="w-full h-32 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            </div>
+            <div className="relative rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+              <img 
+                src="/src/assets/project-3.jpg" 
+                alt="Roofing project 3" 
+                className="w-full h-32 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            </div>
+            <div className="relative rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+              <img 
+                src="/src/assets/project-4.jpg" 
+                alt="Roofing project 4" 
+                className="w-full h-32 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            </div>
+            <div className="relative rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+              <img 
+                src="/src/assets/about-roofer.jpg" 
+                alt="Professional roofer" 
+                className="w-full h-32 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            </div>
+            <div className="relative rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+              <img 
+                src="/src/assets/roofing-background.jpg" 
+                alt="Roofing work" 
+                className="w-full h-32 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Proudly Serving Section */}
       <section className="py-16 bg-slate-900 relative overflow-hidden">
         <div className="container mx-auto px-4 text-center relative z-10">
