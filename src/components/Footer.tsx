@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <footer>
       {/* Blue Top Bar */}
-      <div className="bg-primary py-6">
+      <div className="py-6" style={{ background: 'linear-gradient(to right, hsl(var(--primary)) 50%, #1E2124 50%)' }}>
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center space-x-3">
