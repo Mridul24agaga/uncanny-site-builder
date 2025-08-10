@@ -17,13 +17,13 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    /* Roofing Company Blue Theme */
-    --primary: 207 90% 54%;
+    /* Custom Button Color */
+    --primary: 218 100% 55%;
     --primary-foreground: 0 0% 100%;
     
-    --roofing-blue: 207 90% 54%;
-    --roofing-blue-dark: 207 90% 45%;
-    --roofing-blue-light: 207 90% 65%;
+    --roofing-blue: 218 100% 55%;
+    --roofing-blue-dark: 218 100% 45%;
+    --roofing-blue-light: 218 100% 65%;
     
     --success-green: 122 39% 49%;
     --hero-overlay: 0 0% 0% / 0.6;

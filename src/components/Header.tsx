@@ -21,17 +21,17 @@ const Header = () => {
             <img 
               src={logo} 
               alt="Happy Home Roofing" 
-              className="h-12 w-auto"
+              className="h-10 md:h-12 w-auto"
             />
           </div>
 
-          {/* Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          {/* Navigation - Hidden on mobile, shown on larger screens */}
+          <nav className="hidden xl:flex items-center space-x-6">
             {navItems.map((item, index) => (
               <a
                 key={index}
                 href="#"
-                className="text-foreground hover:text-primary transition-colors font-medium"
+                className="text-foreground hover:text-primary transition-colors font-medium text-sm"
               >
                 {item}
               </a>
@@ -41,9 +41,10 @@ const Header = () => {
           {/* Phone Button */}
           <Button 
             variant="default" 
-            className="bg-primary hover:bg-roofing-blue-dark text-primary-foreground font-semibold"
+            className="bg-primary hover:bg-roofing-blue-dark text-primary-foreground font-semibold text-sm md:text-base px-3 md:px-4 py-2 md:py-3"
           >
-            +1 432-999-4694
+            <span className="hidden sm:inline">+1 432-999-4694</span>
+            <span className="sm:hidden">Call Now</span>
           </Button>
         </div>
       </div>
