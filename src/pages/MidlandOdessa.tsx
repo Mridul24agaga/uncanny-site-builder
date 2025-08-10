@@ -324,33 +324,73 @@ const MidlandOdessa = () => {
       </section>
 
       {/* Our Process Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-slate-50 to-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 font-playfair">
-              OUR PROCESS
-            </h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+      <section className="py-20 md:py-32 bg-gradient-to-b from-slate-50 via-white to-slate-100 relative overflow-hidden">
+        {/* Background decorative elements */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-20 left-10 w-72 h-72 bg-[#169AFF] rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-slate-600 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-20">
+            <div className="inline-block">
+              <span className="text-sm font-semibold text-[#169AFF] uppercase tracking-widest mb-4 block">How We Work</span>
+              <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-6 font-playfair leading-tight">
+                OUR PROCESS
+              </h2>
+            </div>
+            <p className="text-xl md:text-2xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
               From initial consultation to final walkthrough, we make roofing simple and stress-free
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-            {processSteps.map((step, index) => (
-              <Card key={index} className="bg-white border-2 hover:border-[#169AFF]/30 transition-colors duration-300 shadow-lg hover:shadow-xl">
-                <CardContent className="p-8 text-center h-full flex flex-col">
-                  <div className="text-5xl font-bold text-[#169AFF] mb-4 font-playfair">
-                    {step.number}
+          <div className="relative">
+            {/* Connection line */}
+            <div className="hidden lg:block absolute top-16 left-1/2 transform -translate-x-1/2 w-full max-w-5xl h-0.5 bg-gradient-to-r from-transparent via-[#169AFF]/30 to-transparent"></div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+              {processSteps.map((step, index) => (
+                <div key={index} className="relative group">
+                  {/* Progress indicator */}
+                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 lg:block hidden">
+                    <div className="w-8 h-8 bg-white border-4 border-[#169AFF] rounded-full shadow-lg group-hover:scale-110 transition-transform duration-300"></div>
                   </div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-4 font-semibold">
-                    {step.title}
-                  </h3>
-                  <p className="text-slate-600 leading-relaxed flex-grow">
-                    {step.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
+                  
+                  <Card className="bg-white/80 backdrop-blur-sm border-2 border-slate-200/50 hover:border-[#169AFF]/50 transition-all duration-500 shadow-xl hover:shadow-2xl group-hover:-translate-y-2 h-full">
+                    <CardContent className="p-8 text-center h-full flex flex-col relative overflow-hidden">
+                      {/* Gradient overlay on hover */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-[#169AFF]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      
+                      <div className="relative z-10">
+                        <div className="text-6xl md:text-7xl font-bold text-[#169AFF] mb-6 font-playfair group-hover:scale-110 transition-transform duration-300">
+                          {step.number}
+                        </div>
+                        <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-6 font-playfair group-hover:text-[#169AFF] transition-colors duration-300">
+                          {step.title}
+                        </h3>
+                        <p className="text-slate-600 leading-relaxed flex-grow text-base">
+                          {step.description}
+                        </p>
+                        
+                        {/* Decorative element */}
+                        <div className="mt-6 w-12 h-1 bg-gradient-to-r from-[#169AFF] to-[#169AFF]/50 mx-auto rounded-full group-hover:w-16 transition-all duration-300"></div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              ))}
+            </div>
+          </div>
+          
+          {/* Call to action */}
+          <div className="text-center mt-16">
+            <Button 
+              size="lg"
+              className="bg-[#169AFF] hover:bg-[#0080e6] text-white px-12 py-4 text-lg font-semibold rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300"
+              onClick={() => document.getElementById('estimate-form')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Start Your Project Today
+            </Button>
           </div>
         </div>
       </section>
