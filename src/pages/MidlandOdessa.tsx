@@ -81,7 +81,7 @@ const MidlandOdessa = () => {
       {/* Hero Section */}
       <section className="py-16 md:py-20 bg-gradient-to-br from-slate-50 to-white">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-6 font-playfair leading-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-6 font-poppins leading-tight">
             ROOFING IS COMPLEX,<br />
             YOUR EXPERIENCE WON'T BE
           </h1>
@@ -112,7 +112,7 @@ const MidlandOdessa = () => {
               <div className="grid lg:grid-cols-2 gap-0">
                 {/* Left Side - Services */}
                 <div className="p-8 lg:p-12 text-white">
-                  <h2 className="text-3xl md:text-4xl font-bold mb-6 font-playfair">
+                  <h2 className="text-3xl md:text-4xl font-bold mb-6 font-poppins">
                     READY TO START<br />
                     YOUR PROJECT?
                   </h2>
@@ -130,7 +130,7 @@ const MidlandOdessa = () => {
                   </div>
 
                   <div className="mt-12 p-6 bg-white/10 rounded-2xl backdrop-blur-sm">
-                    <h3 className="text-xl font-bold mb-4 font-playfair">Why Choose Happy Home Roofing?</h3>
+                    <h3 className="text-xl font-bold mb-4 font-poppins">Why Choose Happy Home Roofing?</h3>
                     <ul className="space-y-2 text-sm text-white/90">
                       <li className="flex items-center"><Check className="h-4 w-4 mr-2" /> 10 Year Warranty</li>
                       <li className="flex items-center"><Check className="h-4 w-4 mr-2" /> Licensed & Insured</li>
@@ -143,7 +143,7 @@ const MidlandOdessa = () => {
                 {/* Right Side - Form */}
                 <div className="bg-white p-8 lg:p-12">
                   <div className="text-center mb-8">
-                    <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-2 font-playfair">
+                    <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-2 font-poppins">
                       ESTIMATES IN 24 HOURS<br />
                       OR LESS
                     </h3>
@@ -269,7 +269,7 @@ const MidlandOdessa = () => {
       {/* Proudly Serving Section */}
       <section className="py-16 bg-slate-900 relative overflow-hidden">
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 font-playfair">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 font-poppins">
             PROUDLY SERVING MIDLAND-ODESSA, TX
           </h2>
           
@@ -297,7 +297,7 @@ const MidlandOdessa = () => {
                 </div>
                 
                 <div className="text-white space-y-6 text-left">
-                  <h3 className="text-2xl font-bold font-playfair">Your Trusted Local Roofing Partner</h3>
+                  <h3 className="text-2xl font-bold font-poppins">Your Trusted Local Roofing Partner</h3>
                   <p className="text-lg leading-relaxed text-white/90">
                     For over 15 years, Happy Home Roofing has been the go-to choice for homeowners and businesses in Midland, Odessa, and throughout the Permian Basin. We combine expertise with exceptional service to deliver roofing solutions that protect and enhance your property.
                   </p>
@@ -328,7 +328,7 @@ const MidlandOdessa = () => {
       <section className="py-16 md:py-24 bg-gradient-to-b from-slate-50 to-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 font-playfair">
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 font-poppins">
               OUR PROCESS
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
@@ -340,10 +340,10 @@ const MidlandOdessa = () => {
             {processSteps.map((step, index) => (
               <Card key={index} className="bg-white border-2 hover:border-[#169AFF]/30 transition-colors duration-300 shadow-lg hover:shadow-xl">
                 <CardContent className="p-8 text-center h-full flex flex-col">
-                  <div className="text-5xl font-bold text-[#169AFF] mb-4 font-playfair">
+                  <div className="text-5xl font-bold text-[#169AFF] mb-4 font-poppins">
                     {step.number}
                   </div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-4 font-playfair">
+                  <h3 className="text-xl font-bold text-slate-900 mb-4 font-poppins">
                     {step.title}
                   </h3>
                   <p className="text-slate-600 leading-relaxed flex-grow">
@@ -360,7 +360,7 @@ const MidlandOdessa = () => {
       <section className="py-16 md:py-24 bg-slate-900">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-playfair">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-poppins">
               What Our Customers Say
             </h2>
             <p className="text-xl text-white/80">
@@ -487,7 +487,7 @@ const MidlandOdessa = () => {
 
           {/* Project Gallery */}
           <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold text-white mb-4 font-playfair">
+            <h3 className="text-2xl font-bold text-white mb-4 font-poppins">
               Recent Projects
             </h3>
             <p className="text-white/80">
@@ -575,7 +575,7 @@ const MidlandOdessa = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Side - Content */}
             <div className="text-slate-900">
-              <h2 className="text-3xl md:text-4xl font-bold mb-8 font-playfair text-slate-900">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 font-poppins text-slate-900">
                 OUR WARRANTY
               </h2>
               
@@ -649,7 +649,7 @@ const MidlandOdessa = () => {
       {/* Contact Information Section */}
       <section className="py-16 bg-slate-900 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 font-playfair">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 font-poppins">
             Ready to Get Started?
           </h2>
           <p className="text-xl text-white/80 mb-8">
