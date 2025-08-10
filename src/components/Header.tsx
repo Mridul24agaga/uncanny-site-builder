@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/happy-home-roofing-logo.png";
 
 const Header = () => {
   const navItems = [
@@ -19,7 +18,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src={logo} 
+              src="/lovable-uploads/b808aa46-b91e-4f5b-8573-6e27bb488e2e.png" 
               alt="Happy Home Roofing" 
               className="h-10 md:h-12 w-auto"
             />

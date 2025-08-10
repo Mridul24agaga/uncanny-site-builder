@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, MessageCircle } from "lucide-react";
-import logo from "@/assets/happy-home-roofing-logo.png";
 
 const Footer = () => {
   const quickLinks = [
@@ -84,17 +83,11 @@ const Footer = () => {
             {/* Logo */}
             <div className="flex justify-center md:justify-end items-start">
               <div className="text-center">
-                <div className="text-primary text-6xl font-bold">
-                  <svg width="200" height="120" viewBox="0 0 200 120" className="text-primary">
-                    <text x="10" y="40" className="fill-primary text-2xl font-bold">Happy</text>
-                    <text x="10" y="65" className="fill-primary text-2xl font-bold">Home</text>
-                    <text x="10" y="90" className="fill-primary text-2xl font-bold">Roofing</text>
-                    <rect x="160" y="10" width="30" height="30" className="fill-primary" rx="4"/>
-                    <circle cx="170" cy="30" r="3" className="fill-white"/>
-                    <circle cx="180" cy="30" r="3" className="fill-white"/>
-                    <path d="M165 35 Q175 40 185 35" className="stroke-white fill-none stroke-2"/>
-                  </svg>
-                </div>
+                <img 
+                  src="/lovable-uploads/b808aa46-b91e-4f5b-8573-6e27bb488e2e.png" 
+                  alt="Happy Home Roofing" 
+                  className="h-20 w-auto"
+                />
               </div>
             </div>
           </div>
