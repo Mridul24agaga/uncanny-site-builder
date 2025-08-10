@@ -82,12 +82,12 @@ const Footer = () => {
             </div>
 
             {/* Logo */}
-            <div className="flex justify-center md:justify-end items-start">
+            <div className="flex justify-center md:justify-start items-start">
               <div className="text-center">
                 <img 
                   src="/lovable-uploads/b808aa46-b91e-4f5b-8573-6e27bb488e2e.png" 
                   alt="Happy Home Roofing" 
-                  className="h-32 md:h-40 w-auto"
+                  className="h-40 md:h-48 lg:h-56 w-auto"
                 />
               </div>
             </div>
