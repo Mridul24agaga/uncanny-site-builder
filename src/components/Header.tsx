@@ -20,7 +20,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/b808aa46-b91e-4f5b-8573-6e27bb488e2e.png" 
               alt="Happy Home Roofing" 
-              className="h-10 md:h-12 w-auto"
+              className="h-16 md:h-20 lg:h-24 w-auto"
             />
           </div>
 

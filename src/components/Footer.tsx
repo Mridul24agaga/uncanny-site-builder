@@ -86,7 +86,7 @@ const Footer = () => {
                 <img 
                   src="/lovable-uploads/b808aa46-b91e-4f5b-8573-6e27bb488e2e.png" 
                   alt="Happy Home Roofing" 
-                  className="h-20 w-auto"
+                  className="h-32 md:h-40 w-auto"
                 />
               </div>
             </div>
