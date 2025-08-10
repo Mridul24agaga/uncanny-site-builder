@@ -6,8 +6,52 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Phone, Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const MidlandOdessa = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [message, setMessage] = useState({ text: '', type: '' });
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    // Hide previous messages
+    setMessage({ text: '', type: '' });
+    setIsSubmitting(true);
+
+    const formData = new FormData(event.currentTarget);
+    const webhookUrl = 'https://services.leadconnectorhq.com/hooks/tZhtNR2ksn4OupjirHIK/webhook-trigger/228adbef-5d2b-421f-a386-40530ec80c2d';
+
+    try {
+      const response = await fetch(webhookUrl, {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (response.ok) {
+        setMessage({
+          text: 'Your estimate request has been sent successfully!',
+          type: 'success'
+        });
+        // Reset form
+        (event.target as HTMLFormElement).reset();
+      } else {
+        const errorText = await response.text();
+        setMessage({
+          text: `Submission failed: ${response.status} ${response.statusText}. ${errorText.substring(0, 100)}...`,
+          type: 'error'
+        });
+      }
+    } catch (error) {
+      setMessage({
+        text: 'An error occurred. Please try again later.',
+        type: 'error'
+      });
+      console.error('Fetch error:', error);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   const roofingServices = [
     "Free Roof Inspection",
     "Roof Installation", 
@@ -149,7 +193,7 @@ const MidlandOdessa = () => {
                     </h3>
                   </div>
 
-                  <form className="space-y-6">
+                  <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
                         <Label htmlFor="firstName" className="text-slate-700 text-sm mb-2 block font-medium">
@@ -157,8 +201,10 @@ const MidlandOdessa = () => {
                         </Label>
                         <Input
                           id="firstName"
+                          name="firstName"
                           placeholder="Enter your first name"
                           className="border-b-2 border-t-0 border-x-0 border-slate-300 rounded-none bg-transparent px-0 focus:border-[#169AFF] transition-colors"
+                          required
                         />
                       </div>
                       <div>
@@ -167,8 +213,10 @@ const MidlandOdessa = () => {
                         </Label>
                         <Input
                           id="lastName"
+                          name="lastName"
                           placeholder="Enter your last name"
                           className="border-b-2 border-t-0 border-x-0 border-slate-300 rounded-none bg-transparent px-0 focus:border-[#169AFF] transition-colors"
+                          required
                         />
                       </div>
                     </div>
@@ -180,8 +228,10 @@ const MidlandOdessa = () => {
                         </Label>
                         <Input
                           id="phone"
+                          name="phone"
                           placeholder="(432) 000-0000"
                           className="border-b-2 border-t-0 border-x-0 border-slate-300 rounded-none bg-transparent px-0 focus:border-[#169AFF] transition-colors"
+                          required
                         />
                       </div>
                       <div>
@@ -190,9 +240,11 @@ const MidlandOdessa = () => {
                         </Label>
                         <Input
                           id="email"
+                          name="email"
                           type="email"
                           placeholder="your@email.com"
                           className="border-b-2 border-t-0 border-x-0 border-slate-300 rounded-none bg-transparent px-0 focus:border-[#169AFF] transition-colors"
+                          required
                         />
                       </div>
                     </div>
@@ -203,16 +255,29 @@ const MidlandOdessa = () => {
                       </Label>
                       <Textarea
                         id="notes"
+                        name="notes"
                         placeholder="Any additional notes or questions..."
                         className="border-b-2 border-t-0 border-x-0 border-slate-300 rounded-none bg-transparent px-0 focus:border-[#169AFF] min-h-[80px] resize-none transition-colors"
                       />
                     </div>
 
+                    {/* Success/Error Message */}
+                    {message.text && (
+                      <div className={`p-3 rounded-md text-sm ${
+                        message.type === 'success' 
+                          ? 'bg-green-100 text-green-800 border border-green-200' 
+                          : 'bg-red-100 text-red-800 border border-red-200'
+                      }`}>
+                        {message.text}
+                      </div>
+                    )}
+
                     <Button 
                       type="submit"
-                      className="w-full bg-[#169AFF] hover:bg-[#0080e6] text-white font-semibold py-4 text-lg rounded-xl mt-8 transition-colors"
+                      disabled={isSubmitting}
+                      className="w-full bg-[#169AFF] hover:bg-[#0080e6] text-white font-semibold py-4 text-lg rounded-xl mt-8 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                     >
-                      Get My Free Estimate
+                      {isSubmitting ? 'Sending...' : 'Get My Free Estimate'}
                     </Button>
 
                     <p className="text-xs text-slate-500 mt-4 leading-relaxed text-center">

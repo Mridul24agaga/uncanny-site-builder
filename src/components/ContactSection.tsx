@@ -5,8 +5,53 @@ import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { MapPin, Phone } from "lucide-react";
+import { useState } from "react";
 
 const ContactSection = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [message, setMessage] = useState({ text: '', type: '' });
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    // Hide previous messages
+    setMessage({ text: '', type: '' });
+    setIsSubmitting(true);
+
+    const formData = new FormData(event.currentTarget);
+    const webhookUrl = 'https://services.leadconnectorhq.com/hooks/tZhtNR2ksn4OupjirHIK/webhook-trigger/228adbef-5d2b-421f-a386-40530ec80c2d';
+
+    try {
+      const response = await fetch(webhookUrl, {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (response.ok) {
+        setMessage({
+          text: 'Your message has been sent successfully!',
+          type: 'success'
+        });
+        // Reset form
+        (event.target as HTMLFormElement).reset();
+      } else {
+        const errorText = await response.text();
+        setMessage({
+          text: `Submission failed: ${response.status} ${response.statusText}. ${errorText.substring(0, 100)}...`,
+          type: 'error'
+        });
+      }
+    } catch (error) {
+      setMessage({
+        text: 'An error occurred. Please try again later.',
+        type: 'error'
+      });
+      console.error('Fetch error:', error);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section id="contact" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 flex justify-center">
@@ -23,15 +68,17 @@ const ContactSection = () => {
             </CardHeader>
             <CardContent>
 
-            <form className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <Label htmlFor="fullName" className="text-foreground font-medium mb-2 block">
                   Full Name
                 </Label>
                 <Input
                   id="fullName"
+                  name="fullName"
                   placeholder="Full Name"
                   className="w-full"
+                  required
                 />
               </div>
 
@@ -41,13 +88,15 @@ const ContactSection = () => {
                 </Label>
                 <Input
                   id="phone"
+                  name="phone"
                   placeholder="Phone"
                   className="w-full"
+                  required
                 />
               </div>
 
               <div className="flex items-start space-x-3">
-                <Checkbox id="terms" className="mt-1" />
+                <Checkbox id="terms" name="terms" className="mt-1" required />
                 <Label htmlFor="terms" className="text-sm text-muted-foreground leading-relaxed">
                   I agree to terms & conditions provided by Happy Home Roofers. By providing my phone number, I agree to receive text messages from the business.
                 </Label>
@@ -59,6 +108,7 @@ const ContactSection = () => {
                 </Label>
                 <Textarea
                   id="notes"
+                  name="notes"
                   placeholder="Add any additional notes or details here..."
                   className="w-full min-h-[100px]"
                 />
@@ -70,17 +120,31 @@ const ContactSection = () => {
                 </Label>
                 <Input
                   id="email"
+                  name="email"
                   placeholder="Email"
                   type="email"
                   className="w-full"
+                  required
                 />
               </div>
 
+              {/* Success/Error Message */}
+              {message.text && (
+                <div className={`p-3 rounded-md text-sm ${
+                  message.type === 'success' 
+                    ? 'bg-green-100 text-green-800 border border-green-200' 
+                    : 'bg-red-100 text-red-800 border border-red-200'
+                }`}>
+                  {message.text}
+                </div>
+              )}
+
               <Button 
                 type="submit" 
-                className="w-full bg-primary hover:bg-roofing-blue-dark text-primary-foreground font-semibold py-3 text-lg"
+                disabled={isSubmitting}
+                className="w-full bg-primary hover:bg-roofing-blue-dark text-primary-foreground font-semibold py-3 text-lg disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Send Message
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </Button>
             </form>
             </CardContent>
