@@ -57,7 +57,7 @@ const WhyChooseUsSection = () => {
             return (
               <div 
                 key={index}
-                className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow text-center"
+                className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow text-center"
               >
                 <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <IconComponent className="h-8 w-8 text-primary" />
