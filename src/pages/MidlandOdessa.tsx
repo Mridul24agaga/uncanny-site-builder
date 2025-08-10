@@ -456,52 +456,28 @@ const MidlandOdessa = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="relative rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
               <img 
-                src="/src/assets/project-1.jpg" 
-                alt="Roofing project 1" 
-                className="w-full h-32 object-cover"
+                src="/lovable-uploads/5b873240-e804-4e92-bbe7-e4085fd54467.png" 
+                alt="Residential roofing project in progress" 
+                className="w-full h-64 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
             </div>
             <div className="relative rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
               <img 
-                src="/src/assets/project-2.jpg" 
-                alt="Roofing project 2" 
-                className="w-full h-32 object-cover"
+                src="/lovable-uploads/20e15359-2823-4915-9bb9-072d4a573428.png" 
+                alt="Quality shingle installation detail" 
+                className="w-full h-64 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
             </div>
             <div className="relative rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
               <img 
-                src="/src/assets/project-3.jpg" 
-                alt="Roofing project 3" 
-                className="w-full h-32 object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-            </div>
-            <div className="relative rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
-              <img 
-                src="/src/assets/project-4.jpg" 
-                alt="Roofing project 4" 
-                className="w-full h-32 object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-            </div>
-            <div className="relative rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
-              <img 
-                src="/src/assets/about-roofer.jpg" 
-                alt="Professional roofer" 
-                className="w-full h-32 object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-            </div>
-            <div className="relative rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
-              <img 
-                src="/src/assets/roofing-background.jpg" 
-                alt="Roofing work" 
-                className="w-full h-32 object-cover"
+                src="/lovable-uploads/2bf2fb87-9b64-430f-9dba-449a1a25544e.png" 
+                alt="Professional roofing craftsmanship" 
+                className="w-full h-64 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
             </div>
