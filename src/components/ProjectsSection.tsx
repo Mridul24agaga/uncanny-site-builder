@@ -1,8 +1,4 @@
 import { useState } from "react";
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg"; 
-import project3 from "@/assets/project-3.jpg";
-import project4 from "@/assets/project-4.jpg";
 
 const ProjectsSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -10,31 +6,25 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      image: project1,
+      image: "/lovable-uploads/5b873240-e804-4e92-bbe7-e4085fd54467.png",
       title: "Residential Roof Replacement",
       location: "Midland, TX"
     },
     {
       id: 2,
-      image: project2,
-      title: "Elegant Home Roofing",
+      image: "/lovable-uploads/20e15359-2823-4915-9bb9-072d4a573428.png",
+      title: "Quality Shingle Installation",
       location: "Odessa, TX"
     },
     {
       id: 3,
-      image: project3,
-      title: "Modern Brick Home Roof",
-      location: "Big Spring, TX"
-    },
-    {
-      id: 4,
-      image: project4,
-      title: "Traditional Wood Home",
+      image: "/lovable-uploads/2bf2fb87-9b64-430f-9dba-449a1a25544e.png",
+      title: "Professional Roofing Craftsmanship",
       location: "Midland, TX"
     }
   ];
 
-  const totalSlides = Math.ceil(projects.length / 4);
+  const totalSlides = Math.ceil(projects.length / 3);
 
   return (
     <section className="py-16 md:py-24 bg-gray-50">
@@ -49,7 +39,7 @@ const ProjectsSection = () => {
         </div>
 
         {/* Projects Grid - 4 in a row */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           {projects.map((project, index) => (
             <div 
               key={project.id}
