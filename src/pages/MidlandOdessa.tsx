@@ -295,12 +295,12 @@ const MidlandOdessa = () => {
                   </div>
                 </div>
                 
-                <div className="text-white space-y-6">
+                <div className="text-white space-y-6 text-left">
                   <h3 className="text-2xl font-bold font-playfair">Your Trusted Local Roofing Partner</h3>
                   <p className="text-lg leading-relaxed text-white/90">
                     For over 15 years, Happy Home Roofing has been the go-to choice for homeowners and businesses in Midland, Odessa, and throughout the Permian Basin. We combine expertise with exceptional service to deliver roofing solutions that protect and enhance your property.
                   </p>
-                  <div className="flex flex-col sm:flex-row gap-4 text-sm">
+                  <div className="flex gap-4 text-sm">
                     <div className="flex items-center">
                       <MapPin className="h-4 w-4 mr-2 text-[#169AFF]" />
                       <span>Serving 50+ Mile Radius</span>
