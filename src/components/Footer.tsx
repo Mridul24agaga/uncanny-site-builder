@@ -40,7 +40,7 @@ const Footer = () => {
       </div>
 
       {/* Main Footer */}
-      <div className="bg-gray-800 text-white py-16">
+      <div className="bg-[#1E2124] text-white py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {/* Contact Information */}
@@ -49,7 +49,7 @@ const Footer = () => {
                 <MapPin className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-white font-medium">214 W Texas ave,</p>
-                  <p className="text-gray-300">Midland, Tx 79701</p>
+                  <p className="text-gray-400">Midland, Tx 79701</p>
                 </div>
               </div>
               
@@ -102,7 +102,7 @@ const Footer = () => {
       </div>
 
       {/* Copyright */}
-      <div className="bg-gray-900 py-4">
+      <div className="bg-[#1E2124] py-4">
         <div className="container mx-auto px-4">
           <p className="text-center text-gray-500 text-sm">
             © 2025 Powered By Happy Home Roofing . All Rights Reserved.
