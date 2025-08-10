@@ -38,12 +38,12 @@ const ContactForm = () => {
         </div>
 
         <div>
-          <Label htmlFor="address" className="text-muted-foreground text-sm">
-            Address For Scheduling
+          <Label htmlFor="notes" className="text-muted-foreground text-sm">
+            Notes
           </Label>
           <Textarea
-            id="address"
-            placeholder=""
+            id="notes"
+            placeholder="Add any additional notes or details here..."
             className="mt-2 min-h-[60px] md:min-h-[80px]"
           />
         </div>
