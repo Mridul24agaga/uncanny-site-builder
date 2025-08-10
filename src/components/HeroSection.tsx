@@ -22,43 +22,43 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-hero-overlay"></div>
       
       <div className="relative z-10 container mx-auto px-4 py-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Hero Content */}
-          <div className="text-white space-y-8">
+          <div className="text-white space-y-6 pt-8">
             <div>
               <p className="text-lg mb-4 opacity-90">
                 Top Rated Permian Basin Roofing Company
               </p>
-              <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
+              <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6">
                 We Build Roofs<br />
                 To Last
               </h1>
             </div>
             
-            <p className="text-lg opacity-90 leading-relaxed max-w-lg">
+            <p className="text-lg opacity-90 leading-relaxed max-w-lg mb-8">
               With over 100 years of combined experience, we've been the go-to expert for quality roofing in Midland, Odessa, Big Spring, TX and surrounding areas. Catering to both residential and commercial properties.
             </p>
 
             <Button 
-              className="bg-primary hover:bg-roofing-blue-dark text-primary-foreground font-semibold px-8 py-4 text-lg"
+              className="bg-primary hover:bg-roofing-blue-dark text-primary-foreground font-semibold px-8 py-4 text-lg mb-12"
             >
               <Phone className="mr-2 h-5 w-5" />
               Schedule Free Inspection!
             </Button>
 
             {/* Features List */}
-            <div className="space-y-4 pt-6">
+            <div className="space-y-4">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-center space-x-3">
-                  <Check className="h-5 w-5 text-success-green flex-shrink-0" />
-                  <span className="text-white">{feature}</span>
+                  <Check className="h-6 w-6 text-success-green flex-shrink-0" />
+                  <span className="text-white text-lg">{feature}</span>
                 </div>
               ))}
             </div>
           </div>
 
           {/* Contact Form */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-end pt-8">
             <ContactForm />
           </div>
         </div>
