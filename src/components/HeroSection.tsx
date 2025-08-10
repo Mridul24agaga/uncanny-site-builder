@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import { Check } from "lucide-react";
 import ContactForm from "./ContactForm";
-import heroBackground from "@/assets/roofing-background.jpg";
 
 const HeroSection = () => {
   const features = [
@@ -16,7 +15,7 @@ const HeroSection = () => {
     <section 
       className="relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat"
       style={{ 
-        backgroundImage: `url(${heroBackground})`,
+        backgroundImage: `url(/lovable-uploads/8ee16cd7-0fa7-471d-bed9-4470d670809a.png)`,
       }}
     >
       {/* Dark overlay */}
