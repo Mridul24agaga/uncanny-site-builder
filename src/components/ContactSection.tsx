@@ -3,25 +3,27 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { MapPin, Phone } from "lucide-react";
 
 const ContactSection = () => {
   return (
     <section className="py-16 md:py-24 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+      <div className="container mx-auto px-4 flex justify-center">
+        <div className="grid lg:grid-cols-2 gap-8 max-w-4xl w-full">
           {/* Contact Form */}
-          <div>
-            <div className="mb-8">
-              <p className="text-primary font-semibold mb-4 text-sm tracking-wide uppercase">
+          <Card className="w-full">
+            <CardHeader className="pb-6">
+              <p className="text-primary font-semibold mb-2 text-sm tracking-wide uppercase">
                 GET IN TOUCH
               </p>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground">
                 Drop a Message
               </h2>
-            </div>
+            </CardHeader>
+            <CardContent>
 
-            <form className="space-y-6">
+            <form className="space-y-4">
               <div>
                 <Label htmlFor="fullName" className="text-foreground font-medium mb-2 block">
                   Full Name
@@ -81,7 +83,8 @@ const ContactSection = () => {
                 Send Message
               </Button>
             </form>
-          </div>
+            </CardContent>
+          </Card>
 
           {/* Address Information */}
           <div className="lg:ml-12">
