@@ -28,6 +28,13 @@ export default {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
 				},
+				'roofing-blue': {
+					DEFAULT: 'hsl(var(--roofing-blue))',
+					dark: 'hsl(var(--roofing-blue-dark))',
+					light: 'hsl(var(--roofing-blue-light))'
+				},
+				'success-green': 'hsl(var(--success-green))',
+				'hero-overlay': 'hsl(var(--hero-overlay))',
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))'
