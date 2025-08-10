@@ -26,7 +26,7 @@ All colors MUST be HSL.
     --roofing-blue-light: 207 90% 65%;
     
     --success-green: 122 39% 49%;
-    --hero-overlay: 222 47% 11% / 0.85;
+    --hero-overlay: 0 0% 0% / 0.6;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
