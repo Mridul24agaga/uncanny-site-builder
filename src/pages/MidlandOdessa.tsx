@@ -266,60 +266,100 @@ const MidlandOdessa = () => {
       </section>
 
       {/* Proudly Serving Section */}
-      <section className="py-16 bg-slate-900 relative overflow-hidden">
+      <section className="py-20 bg-slate-900 relative overflow-hidden">
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 font-playfair">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-16 font-playfair animate-fade-in">
             PROUDLY SERVING MIDLAND-ODESSA, TX
           </h2>
           
-          <Card className="max-w-4xl mx-auto bg-white/10 border-white/20 backdrop-blur-sm">
-            <CardContent className="p-8 md:p-12">
-              <div className="grid md:grid-cols-2 gap-8 items-center">
-                <div className="relative rounded-2xl overflow-hidden">
-                  <img 
-                    src="/src/assets/roofing-background.jpg" 
-                    alt="Beautiful home interior" 
-                    className="w-full h-64 md:h-80 object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                  
-                  {/* Logo overlay */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="bg-white/95 rounded-full p-6 shadow-2xl">
-                      <img 
-                        src="/lovable-uploads/b808aa46-b91e-4f5b-8573-6e27bb488e2e.png" 
-                        alt="Happy Home Roofing" 
-                        className="h-16 w-auto"
-                      />
+          <Card className="max-w-5xl mx-auto bg-gradient-to-br from-white/10 to-white/5 border-white/20 backdrop-blur-md shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-[1.02] animate-scale-in">
+            <CardContent className="p-8 md:p-16 lg:p-20">
+              <div className="grid md:grid-cols-2 gap-12 items-center">
+                <div className="relative group">
+                  <div className="relative rounded-3xl overflow-hidden shadow-2xl transform transition-all duration-500 group-hover:scale-105">
+                    <img 
+                      src="/src/assets/roofing-background.jpg" 
+                      alt="Beautiful home interior" 
+                      className="w-full h-72 md:h-96 object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+                    
+                    {/* Animated Logo overlay */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="bg-white/95 rounded-full p-8 shadow-2xl transform transition-all duration-500 hover:scale-110 hover:rotate-6 hover:shadow-3xl">
+                        <img 
+                          src="/lovable-uploads/b808aa46-b91e-4f5b-8573-6e27bb488e2e.png" 
+                          alt="Happy Home Roofing" 
+                          className="h-20 w-auto"
+                        />
+                      </div>
                     </div>
                   </div>
+                  
+                  {/* Floating decoration elements */}
+                  <div className="absolute -top-6 -right-6 w-24 h-24 bg-[#169AFF]/20 rounded-full blur-xl animate-pulse"></div>
+                  <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-white/10 rounded-full blur-xl animate-pulse" style={{ animationDelay: '1s' }}></div>
                 </div>
                 
-                <div className="text-white space-y-6">
-                  <h3 className="text-2xl font-bold font-playfair">Your Trusted Local Roofing Partner</h3>
-                  <p className="text-lg leading-relaxed text-white/90">
-                    For over 15 years, Happy Home Roofing has been the go-to choice for homeowners and businesses in Midland, Odessa, and throughout the Permian Basin. We combine expertise with exceptional service to deliver roofing solutions that protect and enhance your property.
+                <div className="text-white space-y-8 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+                  <h3 className="text-3xl md:text-4xl font-bold font-playfair leading-tight">
+                    Your Trusted Local 
+                    <span className="text-[#169AFF] relative">
+                      Roofing Partner
+                      <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-[#169AFF] to-transparent rounded-full"></div>
+                    </span>
+                  </h3>
+                  
+                  <p className="text-xl leading-relaxed text-white/90">
+                    For over <span className="font-bold text-[#169AFF]">15 years</span>, Happy Home Roofing has been the go-to choice for homeowners and businesses in Midland, Odessa, and throughout the Permian Basin. We combine expertise with exceptional service to deliver roofing solutions that protect and enhance your property.
                   </p>
-                  <div className="flex flex-col sm:flex-row gap-4 text-sm">
-                    <div className="flex items-center">
-                      <MapPin className="h-4 w-4 mr-2 text-[#169AFF]" />
-                      <span>Serving 50+ Mile Radius</span>
+                  
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
+                    <div className="flex items-center p-4 bg-white/5 rounded-2xl backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                      <div className="w-12 h-12 bg-[#169AFF]/20 rounded-full flex items-center justify-center mr-4">
+                        <MapPin className="h-6 w-6 text-[#169AFF]" />
+                      </div>
+                      <div>
+                        <p className="text-sm text-white/60 font-medium">Coverage Area</p>
+                        <p className="font-bold text-lg">50+ Mile Radius</p>
+                      </div>
                     </div>
-                    <div className="flex items-center">
-                      <Check className="h-4 w-4 mr-2 text-green-400" />
-                      <span>1000+ Happy Customers</span>
+                    
+                    <div className="flex items-center p-4 bg-white/5 rounded-2xl backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                      <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center mr-4">
+                        <Check className="h-6 w-6 text-green-400" />
+                      </div>
+                      <div>
+                        <p className="text-sm text-white/60 font-medium">Satisfied Clients</p>
+                        <p className="font-bold text-lg">1000+ Customers</p>
+                      </div>
                     </div>
                   </div>
+                  
+                  <Button 
+                    className="bg-[#169AFF] hover:bg-[#0080e6] text-white px-8 py-4 text-lg font-semibold rounded-full mt-6 transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                    onClick={() => document.getElementById('estimate-form')?.scrollIntoView({ behavior: 'smooth' })}
+                  >
+                    Get Your Free Estimate
+                  </Button>
                 </div>
               </div>
             </CardContent>
           </Card>
         </div>
         
-        {/* Background decoration */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-10 w-32 h-32 bg-white/20 rounded-full blur-xl"></div>
-          <div className="absolute bottom-10 right-10 w-48 h-48 bg-[#169AFF]/30 rounded-full blur-xl"></div>
+        {/* Enhanced background decoration */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-20 left-20 w-40 h-40 bg-[#169AFF]/30 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-20 w-60 h-60 bg-white/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute top-1/2 left-1/4 w-32 h-32 bg-[#169AFF]/20 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '4s' }}></div>
+        </div>
+        
+        {/* Geometric patterns */}
+        <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
+          <div className="absolute top-32 right-32 w-2 h-2 bg-[#169AFF] rounded-full animate-ping"></div>
+          <div className="absolute bottom-40 left-40 w-3 h-3 bg-white rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute top-1/3 left-1/3 w-1 h-1 bg-[#169AFF] rounded-full animate-ping" style={{ animationDelay: '3s' }}></div>
         </div>
       </section>
 
