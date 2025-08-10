@@ -558,16 +558,16 @@ const MidlandOdessa = () => {
       </section>
 
       {/* Our Warranty Section */}
-      <section className="py-16 md:py-24 bg-slate-800">
+      <section className="py-16 md:py-24" style={{ backgroundColor: '#FBFBFB' }}>
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Side - Content */}
-            <div className="text-white">
-              <h2 className="text-3xl md:text-4xl font-bold mb-8 font-playfair text-white">
+            <div className="text-slate-900">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 font-playfair text-slate-900">
                 OUR WARRANTY
               </h2>
               
-              <div className="space-y-6 text-white/90 leading-relaxed">
+              <div className="space-y-6 text-slate-600 leading-relaxed">
                 <p>
                   All our work comes with a 10-Year Warranty, giving you long-term peace of mind 
                   that your investment is protected. If you experience peeling, bubbling, cracking, 
