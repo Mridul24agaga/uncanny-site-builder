@@ -41,6 +41,7 @@ const HeroSection = () => {
 
             <Button 
               className="bg-primary hover:bg-roofing-blue-dark text-primary-foreground font-semibold px-6 md:px-8 py-3 md:py-4 text-base md:text-lg mb-8 md:mb-12 w-full sm:w-auto"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <Phone className="mr-2 h-4 w-4 md:h-5 md:w-5" />
               Schedule Free Inspection!

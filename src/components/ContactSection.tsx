@@ -8,7 +8,7 @@ import { MapPin, Phone } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section className="py-16 md:py-24 bg-background">
+    <section id="contact" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 flex justify-center">
         <div className="grid lg:grid-cols-2 gap-8 max-w-4xl w-full">
           {/* Contact Form */}

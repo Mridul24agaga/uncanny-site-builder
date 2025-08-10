@@ -35,6 +35,7 @@ const AboutSection = () => {
             <div className="mt-6">
               <Button 
                 className="bg-primary hover:bg-roofing-blue-dark text-primary-foreground font-semibold px-8 py-3 text-lg w-full sm:w-auto"
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Book My Free Roof Inspection
               </Button>

@@ -24,6 +24,7 @@ const Footer = () => {
               <Button 
                 variant="outline" 
                 className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary font-medium px-6 py-2 rounded-full"
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Contact us Now
               </Button>

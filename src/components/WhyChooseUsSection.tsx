@@ -77,6 +77,7 @@ const WhyChooseUsSection = () => {
         <div className="text-center">
           <Button 
             className="bg-primary hover:bg-roofing-blue-dark text-primary-foreground font-semibold px-8 py-3 text-lg"
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Book My Free Roof Inspection
           </Button>

@@ -41,6 +41,7 @@ const Header = () => {
           <Button 
             variant="default" 
             className="bg-primary hover:bg-roofing-blue-dark text-primary-foreground font-semibold text-sm md:text-base px-3 md:px-4 py-2 md:py-3"
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
           >
             <span className="hidden sm:inline">+1 432-999-4694</span>
             <span className="sm:hidden">Call Now</span>

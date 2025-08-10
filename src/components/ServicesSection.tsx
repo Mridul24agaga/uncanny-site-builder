@@ -58,7 +58,10 @@ const ServicesSection = () => {
                   </p>
                 </div>
                 <div>
-                  <button className="text-primary font-semibold text-sm hover:text-roofing-blue-dark transition-colors flex items-center justify-center mx-auto group">
+                  <button 
+                    className="text-primary font-semibold text-sm hover:text-roofing-blue-dark transition-colors flex items-center justify-center mx-auto group"
+                    onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                  >
                     READ MORE
                     <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </button>
@@ -72,6 +75,7 @@ const ServicesSection = () => {
         <div className="text-center">
           <Button 
             className="bg-primary hover:bg-roofing-blue-dark text-primary-foreground font-semibold px-8 py-3 text-lg"
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Book My Free Roof Inspection
           </Button>
