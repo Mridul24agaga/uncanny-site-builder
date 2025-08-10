@@ -198,51 +198,12 @@ const MidlandOdessa = () => {
                     </div>
 
                     <div>
-                      <Label htmlFor="location" className="text-slate-700 text-sm mb-2 block font-medium">
-                        Property Address
-                      </Label>
-                      <Input
-                        id="location"
-                        placeholder="123 Main Street"
-                        className="border-b-2 border-t-0 border-x-0 border-slate-300 rounded-none bg-transparent px-0 focus:border-[#169AFF] transition-colors"
-                      />
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div>
-                        <Label htmlFor="city" className="text-slate-700 text-sm mb-2 block font-medium">
-                          City
-                        </Label>
-                        <Input
-                          id="city"
-                          placeholder="Midland"
-                          className="border-b-2 border-t-0 border-x-0 border-slate-300 rounded-none bg-transparent px-0 focus:border-[#169AFF] transition-colors"
-                        />
-                      </div>
-                      <div>
-                        <Label htmlFor="state" className="text-slate-700 text-sm mb-2 block font-medium">
-                          State
-                        </Label>
-                        <Select>
-                          <SelectTrigger className="border-b-2 border-t-0 border-x-0 border-slate-300 rounded-none bg-transparent px-0 focus:border-[#169AFF]">
-                            <SelectValue placeholder="Texas" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="TX">Texas</SelectItem>
-                            <SelectItem value="OK">Oklahoma</SelectItem>
-                            <SelectItem value="NM">New Mexico</SelectItem>
-                          </SelectContent>
-                        </Select>
-                      </div>
-                    </div>
-
-                    <div>
-                      <Label htmlFor="services" className="text-slate-700 text-sm mb-2 block font-medium">
-                        What roofing services are you interested in? *
+                      <Label htmlFor="notes" className="text-slate-700 text-sm mb-2 block font-medium">
+                        Notes (Optional)
                       </Label>
                       <Textarea
-                        id="services"
-                        placeholder="Describe your roofing needs..."
+                        id="notes"
+                        placeholder="Any additional notes or questions..."
                         className="border-b-2 border-t-0 border-x-0 border-slate-300 rounded-none bg-transparent px-0 focus:border-[#169AFF] min-h-[80px] resize-none transition-colors"
                       />
                     </div>
