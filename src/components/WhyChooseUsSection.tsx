@@ -36,18 +36,7 @@ const WhyChooseUsSection = () => {
   ];
 
   return (
-    <section 
-      className="py-16 md:py-24 relative"
-      style={{
-        background: `repeating-linear-gradient(
-          45deg,
-          #f8fafc,
-          #f8fafc 10px,
-          #f1f5f9 10px,
-          #f1f5f9 20px
-        )`
-      }}
-    >
+    <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <p className="text-primary font-semibold mb-4 text-sm tracking-wide uppercase">
