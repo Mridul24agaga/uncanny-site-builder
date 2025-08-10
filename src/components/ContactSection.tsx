@@ -54,12 +54,12 @@ const ContactSection = () => {
               </div>
 
               <div>
-                <Label htmlFor="address" className="text-foreground font-medium mb-2 block">
-                  Address For Scheduling
+                <Label htmlFor="notes" className="text-foreground font-medium mb-2 block">
+                  Notes
                 </Label>
                 <Textarea
-                  id="address"
-                  placeholder=""
+                  id="notes"
+                  placeholder="Add any additional notes or details here..."
                   className="w-full min-h-[100px]"
                 />
               </div>
