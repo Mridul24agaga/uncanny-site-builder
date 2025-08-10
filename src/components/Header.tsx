@@ -1,14 +1,15 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const navItems = [
-    "Home",
-    "About Us", 
-    "Services",
-    "Why choose Us",
-    "Projects",
-    "Testimonial",
-    "Blogs"
+    { name: "Home", path: "/" },
+    { name: "About Us", path: "/#about" }, 
+    { name: "Services", path: "/#services" },
+    { name: "Why choose Us", path: "/#why-choose" },
+    { name: "Projects", path: "/#projects" },
+    { name: "Testimonial", path: "/#testimonials" },
+    { name: "Midland Odessa", path: "/midland-odessa" }
   ];
 
   return (
@@ -16,24 +17,24 @@ const Header = () => {
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img 
               src="/lovable-uploads/b808aa46-b91e-4f5b-8573-6e27bb488e2e.png" 
               alt="Happy Home Roofing" 
               className="h-16 md:h-20 lg:h-24 w-auto"
             />
-          </div>
+          </Link>
 
           {/* Navigation - Hidden on mobile, shown on larger screens */}
           <nav className="hidden xl:flex items-center space-x-6">
             {navItems.map((item, index) => (
-              <a
+              <Link
                 key={index}
-                href="#"
+                to={item.path}
                 className="text-foreground hover:text-primary transition-colors font-medium text-sm"
               >
-                {item}
-              </a>
+                {item.name}
+              </Link>
             ))}
           </nav>
 
