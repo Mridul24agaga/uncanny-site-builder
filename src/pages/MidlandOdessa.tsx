@@ -224,10 +224,10 @@ const MidlandOdessa = () => {
                         <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
                       </svg>)}
                   </div>
-                  <span className="text-white font-semibold">Jackson R.</span>
+                  <span className="text-white font-semibold">Louie 510</span>
                 </div>
                 <p className="text-white/90 text-sm leading-relaxed">
-                  "I couldn't be happier with the roof repair service I received! The team was prompt, professional, and thorough. My roof looks amazing, and I feel confident it will withstand the unpredictable West Texas weather. Highly recommended!"
+                  "Great work, good communication, and overall a great team!"
                 </p>
               </CardContent>
             </Card>
@@ -241,10 +241,10 @@ const MidlandOdessa = () => {
                         <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
                       </svg>)}
                   </div>
-                  <span className="text-white font-semibold">Maria T.</span>
+                  <span className="text-white font-semibold">David Hernandez</span>
                 </div>
                 <p className="text-white/90 text-sm leading-relaxed">
-                  "From the first call to project completion, their customer service was top-notch. They walked me through the entire process and answered all my questions. It's rare to find such courteous and knowledgeable roofing experts."
+                  "Extremely experienced and knowledgeable roofing company, highly recommended!"
                 </p>
               </CardContent>
             </Card>
@@ -258,10 +258,10 @@ const MidlandOdessa = () => {
                         <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
                       </svg>)}
                   </div>
-                  <span className="text-white font-semibold">Chris L.</span>
+                  <span className="text-white font-semibold">Ivan Alvarado</span>
                 </div>
                 <p className="text-white/90 text-sm leading-relaxed">
-                  "These folks take pride in their work! The quality of materials and attention to detail were impressive. My new roof looks fantastic and was completed on time without any issues. Great experience!"
+                  "I love my new roof, Martin Compos and his team did a beautiful job. You can see the difference in my new roof, thank you so much to Happy Home Roof. I would recommend them 100% 🙏"
                 </p>
               </CardContent>
             </Card>
@@ -275,10 +275,10 @@ const MidlandOdessa = () => {
                         <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
                       </svg>)}
                   </div>
-                  <span className="text-white font-semibold">Robert K.</span>
+                  <span className="text-white font-semibold">Juan Cabrera</span>
                 </div>
                 <p className="text-white/90 text-sm leading-relaxed">
-                  "Outstanding workmanship and customer service! They replaced my entire roof after storm damage and the results exceeded my expectations. The crew was respectful, clean, and finished ahead of schedule."
+                  "They are reliable and efficient. Recommend them 100%"
                 </p>
               </CardContent>
             </Card>
@@ -292,10 +292,10 @@ const MidlandOdessa = () => {
                         <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
                       </svg>)}
                   </div>
-                  <span className="text-white font-semibold">Sarah D.</span>
+                  <span className="text-white font-semibold">Alicia Dendura</span>
                 </div>
                 <p className="text-white/90 text-sm leading-relaxed">
-                  "Happy Home Roofing transformed my commercial property with a new roof installation. Their team was professional, efficient, and delivered exceptional quality. I highly recommend them for any roofing needs."
+                  "Great service and detailed work! 100% recommended!!!"
                 </p>
               </CardContent>
             </Card>
@@ -309,10 +309,61 @@ const MidlandOdessa = () => {
                         <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
                       </svg>)}
                   </div>
-                  <span className="text-white font-semibold">Bethany M.</span>
+                  <span className="text-white font-semibold">Ivonne Nava</span>
                 </div>
                 <p className="text-white/90 text-sm leading-relaxed">
-                  "In a world where it's hard to find good contractors, this company stands out. They provided a fair estimate, kept us updated throughout the project, and delivered excellent results. I wouldn't hesitate to call them again."
+                  "Highly recommend! Great customer service and love that it's a family business! Reach out to them for your needs."
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Review 7 */}
+            <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="flex text-yellow-400 mr-3">
+                    {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                      </svg>)}
+                  </div>
+                  <span className="text-white font-semibold">Suzzett Rodriguez</span>
+                </div>
+                <p className="text-white/90 text-sm leading-relaxed">
+                  "Diego did a great job on our roof replacement. They had great communication and took care of the entire insurance process."
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Review 8 */}
+            <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="flex text-yellow-400 mr-3">
+                    {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                      </svg>)}
+                  </div>
+                  <span className="text-white font-semibold">Javier</span>
+                </div>
+                <p className="text-white/90 text-sm leading-relaxed">
+                  "Highly recommend - Martin and his crew took care of my roofing. On time, no price surprises and amazing customer service"
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Review 9 */}
+            <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="flex text-yellow-400 mr-3">
+                    {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                      </svg>)}
+                  </div>
+                  <span className="text-white font-semibold">Saúl Fierro</span>
+                </div>
+                <p className="text-white/90 text-sm leading-relaxed">
+                  "They're a great group to work with, extremely informative and answered all my questions"
                 </p>
               </CardContent>
             </Card>
