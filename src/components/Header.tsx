@@ -1,8 +1,13 @@
 import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Menu } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const handleNavClick = (path: string) => {
+    setIsOpen(false); // Close mobile menu when navigating
     if (path.startsWith('/#')) {
       const sectionId = path.substring(2); // Remove the /#
       const element = document.getElementById(sectionId);
@@ -52,6 +57,31 @@ const Header = () => {
               </button>
             ))}
           </nav>
+
+          {/* Mobile Menu */}
+          <div className="xl:hidden">
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon" className="xl:hidden">
+                  <Menu className="h-5 w-5" />
+                  <span className="sr-only">Toggle menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+                <nav className="flex flex-col space-y-6 mt-6">
+                  {navItems.map((item, index) => (
+                    <button
+                      key={index}
+                      onClick={() => handleNavClick(item.path)}
+                      className="text-foreground hover:text-[#169AFF] transition-colors font-medium text-lg cursor-pointer text-left"
+                    >
+                      {item.name}
+                    </button>
+                  ))}
+                </nav>
+              </SheetContent>
+            </Sheet>
+          </div>
 
           {/* Phone Button */}
           <a href="tel:+14329994694">
