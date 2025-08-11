@@ -128,7 +128,7 @@ const ReviewsSection = () => {
           <Button
             variant="outline"
             size="icon"
-            className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-background shadow-lg border-border hover:bg-muted"
+            className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg border-[#169AFF] text-[#169AFF] hover:bg-[#169AFF] hover:text-white"
             onClick={prevSlide}
           >
             <ChevronLeft className="h-4 w-4" />
@@ -137,7 +137,7 @@ const ReviewsSection = () => {
           <Button
             variant="outline"
             size="icon"
-            className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-background shadow-lg border-border hover:bg-muted"
+            className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg border-[#169AFF] text-[#169AFF] hover:bg-[#169AFF] hover:text-white"
             onClick={nextSlide}
           >
             <ChevronRight className="h-4 w-4" />
@@ -205,7 +205,7 @@ const ReviewsSection = () => {
               <button
                 key={index}
                 className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-colors ${
-                  currentSlide === index ? 'bg-primary' : 'bg-gray-300'
+                  currentSlide === index ? 'bg-[#169AFF]' : 'bg-gray-300 hover:bg-gray-400'
                 }`}
                 onClick={() => setCurrentSlide(index)}
               />
