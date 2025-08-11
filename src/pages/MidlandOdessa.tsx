@@ -35,7 +35,9 @@ const MidlandOdessa = () => {
             <div className="flex items-center space-x-4">
               <div className="hidden md:flex items-center text-slate-600">
                 <Phone className="h-4 w-4 mr-2" />
-                <span className="font-medium">(432) 999-4694</span>
+                <a href="tel:+14329994694" className="font-medium hover:text-[#169AFF] transition-colors">
+                  (432) 999-4694
+                </a>
               </div>
               <Button className="bg-[#169AFF] hover:bg-[#0080e6] text-white" onClick={() => document.getElementById('estimate-form')?.scrollIntoView({
               behavior: 'smooth'
@@ -59,9 +61,9 @@ const MidlandOdessa = () => {
             ALL SERVICES COME WITH A 10 YEAR WARRANTY
           </p>
           
-          <div className="text-3xl md:text-4xl font-bold text-[#169AFF] mb-12">
+          <a href="tel:+14329994694" className="text-3xl md:text-4xl font-bold text-[#169AFF] mb-12 block hover:text-[#0080e6] transition-colors">
             (432) 999-4694
-          </div>
+          </a>
 
           <Button size="lg" className="bg-[#169AFF] hover:bg-[#0080e6] text-white px-8 py-4 text-lg font-semibold" onClick={() => document.getElementById('contact-form-section')?.scrollIntoView({
           behavior: 'smooth'
@@ -522,7 +524,9 @@ const MidlandOdessa = () => {
               <Phone className="h-6 w-6 mr-3 text-[#169AFF]" />
               <div>
                 <p className="text-sm text-white/60">Call us at</p>
-                <p className="text-2xl font-bold">(432) 999-4694</p>
+                <a href="tel:+14329994694" className="text-2xl font-bold hover:text-gray-200 transition-colors">
+                  (432) 999-4694
+                </a>
               </div>
             </div>
             

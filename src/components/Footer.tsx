@@ -39,9 +39,9 @@ const Footer = () => {
             <div className="flex items-center text-white">
               <Phone className="h-5 w-5 text-green-400 mr-3" />
               <span className="text-sm font-medium mr-2">CALL US AT</span>
-              <span className="text-xl font-bold">
-                (432) 999 4694
-              </span>
+              <a href="tel:+14329994694" className="text-xl font-bold hover:text-gray-200 transition-colors">
+                (432) 999-4694
+              </a>
             </div>
           </div>
         </div>
@@ -63,7 +63,9 @@ const Footer = () => {
               
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-[#169AFF] flex-shrink-0" />
-                <p className="text-[#169AFF] font-medium text-lg">(432) 999 4694</p>
+                <a href="tel:+14329994694" className="text-[#169AFF] font-medium text-lg hover:text-[#0080e6] transition-colors">
+                  (432) 999-4694
+                </a>
               </div>
 
               <div>
