@@ -28,8 +28,7 @@ const Header = () => {
     { name: "Services", path: "/#services" },
     { name: "Why choose Us", path: "/#why-choose" },
     { name: "Projects", path: "/#projects" },
-    { name: "Testimonial", path: "/#testimonials" },
-    { name: "Midland Odessa", path: "/midland-odessa" }
+    { name: "Testimonial", path: "/#testimonials" }
   ];
 
   return (
