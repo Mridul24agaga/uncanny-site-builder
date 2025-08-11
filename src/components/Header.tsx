@@ -2,6 +2,21 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  const handleNavClick = (path: string) => {
+    if (path.startsWith('/#')) {
+      const sectionId = path.substring(2); // Remove the /#
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else if (path === '/midland-odessa') {
+      window.location.href = path;
+    } else {
+      // For home, scroll to top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   const navItems = [
     { name: "Home", path: "/" },
     { name: "About Us", path: "/#about" }, 
@@ -28,13 +43,13 @@ const Header = () => {
           {/* Navigation - Hidden on mobile, shown on larger screens */}
           <nav className="hidden xl:flex items-center space-x-6">
             {navItems.map((item, index) => (
-              <Link
+              <button
                 key={index}
-                to={item.path}
-                className="text-foreground hover:text-[#169AFF] transition-colors font-medium text-sm"
+                onClick={() => handleNavClick(item.path)}
+                className="text-foreground hover:text-[#169AFF] transition-colors font-medium text-sm cursor-pointer"
               >
                 {item.name}
-              </Link>
+              </button>
             ))}
           </nav>
 

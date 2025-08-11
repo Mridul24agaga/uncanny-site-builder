@@ -3,14 +3,27 @@ import { MapPin, Phone, MessageCircle } from "lucide-react";
 
 const Footer = () => {
   const quickLinks = [
-    "Home",
-    "About US", 
-    "Services",
-    "Why Choose Us",
-    "Projects",
-    "Testimonials",
-    "Contact Us"
+    { name: "Home", path: "/" },
+    { name: "About US", path: "/#about" }, 
+    { name: "Services", path: "/#services" },
+    { name: "Why Choose Us", path: "/#why-choose" },
+    { name: "Projects", path: "/#projects" },
+    { name: "Testimonials", path: "/#testimonials" },
+    { name: "Contact Us", path: "/#contact" }
   ];
+
+  const handleQuickLinkClick = (path: string) => {
+    if (path.startsWith('/#')) {
+      const sectionId = path.substring(2); // Remove the /#
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // For home, scroll to top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
 
   return (
     <footer>
@@ -80,12 +93,12 @@ const Footer = () => {
               <ul className="space-y-3">
                 {quickLinks.map((link, index) => (
                   <li key={index}>
-                    <a 
-                      href="#" 
-                      className="text-gray-400 hover:text-white transition-colors block"
+                    <button 
+                      onClick={() => handleQuickLinkClick(link.path)}
+                      className="text-gray-400 hover:text-white transition-colors block cursor-pointer text-left"
                     >
-                      {link}
-                    </a>
+                      {link.name}
+                    </button>
                   </li>
                 ))}
               </ul>

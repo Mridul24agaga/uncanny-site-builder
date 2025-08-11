@@ -10,7 +10,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-background">
+    <section id="about" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Image Side */}

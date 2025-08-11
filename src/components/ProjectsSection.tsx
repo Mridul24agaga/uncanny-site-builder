@@ -27,7 +27,7 @@ const ProjectsSection = () => {
   const totalSlides = Math.ceil(projects.length / 3);
 
   return (
-    <section className="py-16 md:py-24 bg-gray-50">
+    <section id="projects" className="py-16 md:py-24 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <p className="text-[#169AFF] font-semibold mb-4 text-sm tracking-wide uppercase">
