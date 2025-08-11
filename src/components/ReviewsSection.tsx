@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 const ReviewsSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [itemsPerSlide, setItemsPerSlide] = useState(3);
 
   const reviews = [
     {
@@ -71,36 +72,38 @@ const ReviewsSection = () => {
     }
   ];
 
-  const itemsPerSlide = {
-    mobile: 1,
-    tablet: 2,
-    desktop: 3
-  };
+  // Handle responsive items per slide
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setItemsPerSlide(1);
+      } else if (window.innerWidth < 1024) {
+        setItemsPerSlide(2);
+      } else {
+        setItemsPerSlide(3);
+      }
+    };
 
-  // Get responsive items per slide based on screen size
-  const getItemsPerSlide = () => {
-    if (typeof window !== 'undefined') {
-      if (window.innerWidth < 768) return itemsPerSlide.mobile;
-      if (window.innerWidth < 1024) return itemsPerSlide.tablet;
-    }
-    return itemsPerSlide.desktop;
-  };
+    handleResize(); // Set initial value
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   // Auto-scroll functionality
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % Math.ceil(reviews.length / getItemsPerSlide()));
+      setCurrentSlide((prev) => (prev + 1) % Math.ceil(reviews.length / itemsPerSlide));
     }, 4000); // Auto-scroll every 4 seconds
 
     return () => clearInterval(interval);
-  }, [reviews.length]);
+  }, [reviews.length, itemsPerSlide]);
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % Math.ceil(reviews.length / getItemsPerSlide()));
+    setCurrentSlide((prev) => (prev + 1) % Math.ceil(reviews.length / itemsPerSlide));
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + Math.ceil(reviews.length / getItemsPerSlide())) % Math.ceil(reviews.length / getItemsPerSlide()));
+    setCurrentSlide((prev) => (prev - 1 + Math.ceil(reviews.length / itemsPerSlide)) % Math.ceil(reviews.length / itemsPerSlide));
   };
 
   const StarRating = ({ rating }: { rating: number }) => {
@@ -149,17 +152,17 @@ const ReviewsSection = () => {
               className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
-              {Array.from({ length: Math.ceil(reviews.length / getItemsPerSlide()) }).map((_, slideIndex) => (
+              {Array.from({ length: Math.ceil(reviews.length / itemsPerSlide) }).map((_, slideIndex) => (
                 <div 
                   key={slideIndex}
                   className="w-full flex-shrink-0"
                 >
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                     {reviews
-                      .slice(slideIndex * getItemsPerSlide(), (slideIndex + 1) * getItemsPerSlide())
+                      .slice(slideIndex * itemsPerSlide, (slideIndex + 1) * itemsPerSlide)
                       .map((review, index) => (
                         <div 
-                          key={slideIndex * getItemsPerSlide() + index}
+                          key={slideIndex * itemsPerSlide + index}
                           className="bg-card border border-border rounded-lg p-4 md:p-6 shadow-sm hover:shadow-md transition-shadow animate-fade-in"
                         >
                           <div className="flex items-start justify-between mb-4">
@@ -201,7 +204,7 @@ const ReviewsSection = () => {
 
           {/* Slide Indicators */}
           <div className="flex justify-center mt-6 md:mt-8 space-x-2">
-            {Array.from({ length: Math.ceil(reviews.length / getItemsPerSlide()) }).map((_, index) => (
+            {Array.from({ length: Math.ceil(reviews.length / itemsPerSlide) }).map((_, index) => (
               <button
                 key={index}
                 className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-colors ${
