@@ -446,69 +446,6 @@ const MidlandOdessa = () => {
         </div>
       </section>
 
-      {/* Our Warranty Section */}
-      <section className="py-16 md:py-24" style={{
-      backgroundColor: '#FBFBFB'
-    }}>
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Side - Content */}
-            <div className="text-slate-900">
-              <h2 className="text-3xl md:text-4xl font-bold mb-8 font-poppins text-slate-900">
-                OUR WARRANTY
-              </h2>
-              
-              <div className="space-y-6 text-slate-600 leading-relaxed">
-                <p>
-                  All our work comes with a 10-Year Warranty, giving you long-term peace of mind 
-                  that your investment is protected. If you experience peeling, bubbling, cracking, 
-                  or splitting due to improper preparation or application on our part, we'll come 
-                  back and make it right — at no extra cost to you.
-                </p>
-                
-                <p>
-                  We don't cut corners. Every job is completed with care, precision, and high-quality 
-                  materials to ensure it lasts. But in the rare case something does go wrong, you're 
-                  covered. This isn't just lip service — it's a real commitment to quality and your 
-                  satisfaction.
-                </p>
-                
-                <p>
-                  We believe great service doesn't end when the job is done. That's why our warranty 
-                  is fully transferable — if you sell your home, the new owners are covered too. 
-                  It's just one more reason to choose Happy Home Roofing: we stand by our work, 
-                  and we stand by you.
-                </p>
-              </div>
-            </div>
-
-            {/* Right Side - Project Photos Grid */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="space-y-4">
-                <div className="relative rounded-lg overflow-hidden">
-                  <img src="/src/assets/project-1.jpg" alt="Professional roofing work in progress" className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                </div>
-                <div className="relative rounded-lg overflow-hidden">
-                  <img src="/src/assets/project-3.jpg" alt="Quality roofing materials" className="w-full h-32 object-cover hover:scale-105 transition-transform duration-300" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <div className="relative rounded-lg overflow-hidden">
-                  <img src="/src/assets/project-2.jpg" alt="Expert roofing installation" className="w-full h-32 object-cover hover:scale-105 transition-transform duration-300" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                </div>
-                <div className="relative rounded-lg overflow-hidden">
-                  <img src="/src/assets/about-roofer.jpg" alt="Professional roofing consultation" className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Contact Information Section */}
       <section className="py-16 bg-slate-900 text-white">
         <div className="container mx-auto px-4 text-center">
