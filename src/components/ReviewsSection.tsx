@@ -74,24 +74,33 @@ const ReviewsSection = () => {
   const itemsPerSlide = {
     mobile: 1,
     tablet: 2,
-    desktop: 4
+    desktop: 3
+  };
+
+  // Get responsive items per slide based on screen size
+  const getItemsPerSlide = () => {
+    if (typeof window !== 'undefined') {
+      if (window.innerWidth < 768) return itemsPerSlide.mobile;
+      if (window.innerWidth < 1024) return itemsPerSlide.tablet;
+    }
+    return itemsPerSlide.desktop;
   };
 
   // Auto-scroll functionality
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % Math.ceil(reviews.length / itemsPerSlide.desktop));
+      setCurrentSlide((prev) => (prev + 1) % Math.ceil(reviews.length / getItemsPerSlide()));
     }, 4000); // Auto-scroll every 4 seconds
 
     return () => clearInterval(interval);
   }, [reviews.length]);
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % Math.ceil(reviews.length / itemsPerSlide.desktop));
+    setCurrentSlide((prev) => (prev + 1) % Math.ceil(reviews.length / getItemsPerSlide()));
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + Math.ceil(reviews.length / itemsPerSlide.desktop)) % Math.ceil(reviews.length / itemsPerSlide.desktop));
+    setCurrentSlide((prev) => (prev - 1 + Math.ceil(reviews.length / getItemsPerSlide())) % Math.ceil(reviews.length / getItemsPerSlide()));
   };
 
   const StarRating = ({ rating }: { rating: number }) => {
@@ -135,39 +144,39 @@ const ReviewsSection = () => {
           </Button>
 
           {/* Reviews Carousel */}
-          <div className="mx-8 md:mx-12 overflow-hidden">
+          <div className="mx-4 md:mx-8 lg:mx-12 overflow-hidden">
             <div 
               className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
-              {Array.from({ length: Math.ceil(reviews.length / itemsPerSlide.desktop) }).map((_, slideIndex) => (
+              {Array.from({ length: Math.ceil(reviews.length / getItemsPerSlide()) }).map((_, slideIndex) => (
                 <div 
                   key={slideIndex}
                   className="w-full flex-shrink-0"
                 >
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                     {reviews
-                      .slice(slideIndex * itemsPerSlide.desktop, (slideIndex + 1) * itemsPerSlide.desktop)
+                      .slice(slideIndex * getItemsPerSlide(), (slideIndex + 1) * getItemsPerSlide())
                       .map((review, index) => (
                         <div 
-                          key={slideIndex * itemsPerSlide.desktop + index}
-                          className="bg-card border border-border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow"
+                          key={slideIndex * getItemsPerSlide() + index}
+                          className="bg-card border border-border rounded-lg p-4 md:p-6 shadow-sm hover:shadow-md transition-shadow animate-fade-in"
                         >
                           <div className="flex items-start justify-between mb-4">
                             <div className="flex items-center space-x-3">
-                              <div className="w-10 h-10 rounded-full overflow-hidden">
+                              <div className="w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
                                 <img 
                                   src={review.profilePic} 
                                   alt={review.name}
                                   className="w-full h-full object-cover"
                                 />
                               </div>
-                              <div>
-                                <h3 className="font-semibold text-foreground">{review.name}</h3>
+                              <div className="min-w-0 flex-1">
+                                <h3 className="font-semibold text-foreground text-sm md:text-base truncate">{review.name}</h3>
                                 <p className="text-xs text-muted-foreground">{review.timeAgo}</p>
                               </div>
                             </div>
-                            <div className="w-6 h-6">
+                            <div className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0">
                               <svg viewBox="0 0 24 24" className="w-full h-full">
                                 <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
                                 <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
@@ -179,7 +188,7 @@ const ReviewsSection = () => {
                           
                           <StarRating rating={review.rating} />
                           
-                          <p className="text-sm text-muted-foreground mt-4 leading-relaxed">
+                          <p className="text-xs md:text-sm text-muted-foreground mt-3 md:mt-4 leading-relaxed">
                             {review.text}
                           </p>
                         </div>
@@ -191,11 +200,11 @@ const ReviewsSection = () => {
           </div>
 
           {/* Slide Indicators */}
-          <div className="flex justify-center mt-8 space-x-2">
-            {Array.from({ length: Math.ceil(reviews.length / itemsPerSlide.desktop) }).map((_, index) => (
+          <div className="flex justify-center mt-6 md:mt-8 space-x-2">
+            {Array.from({ length: Math.ceil(reviews.length / getItemsPerSlide()) }).map((_, index) => (
               <button
                 key={index}
-                className={`w-3 h-3 rounded-full transition-colors ${
+                className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-colors ${
                   currentSlide === index ? 'bg-primary' : 'bg-gray-300'
                 }`}
                 onClick={() => setCurrentSlide(index)}
