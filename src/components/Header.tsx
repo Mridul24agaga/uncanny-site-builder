@@ -83,16 +83,17 @@ const Header = () => {
             </Sheet>
           </div>
 
-          {/* Phone Button */}
-          <a href="tel:+14329994694">
-            <Button 
-              variant="default" 
-              className="bg-[#169AFF] hover:bg-[#0080e6] text-white font-semibold text-sm md:text-base px-3 md:px-4 py-2 md:py-3"
-            >
-              <span className="hidden sm:inline">+1 432-999-4694</span>
-              <span className="sm:hidden">Call Now</span>
-            </Button>
-          </a>
+          {/* Phone Button - Hidden on mobile, visible on larger screens */}
+          <div className="hidden xl:block">
+            <a href="tel:+14329994694">
+              <Button 
+                variant="default" 
+                className="bg-[#169AFF] hover:bg-[#0080e6] text-white font-semibold text-sm md:text-base px-3 md:px-4 py-2 md:py-3"
+              >
+                +1 432-999-4694
+              </Button>
+            </a>
+          </div>
         </div>
       </div>
     </header>
