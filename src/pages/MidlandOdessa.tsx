@@ -79,7 +79,7 @@ const MidlandOdessa = () => {
       {/* Main Estimate Form Section */}
       <section id="estimate-form" className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
-          <Card className="max-w-6xl mx-auto border-0" style={{
+          <Card className="max-w-6xl mx-auto shadow-2xl border-0" style={{
           backgroundColor: '#169AFF'
         }}>
             <CardContent className="p-0">
