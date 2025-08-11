@@ -51,7 +51,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-background p-6 md:p-8 rounded-lg shadow-lg max-w-md w-full mx-4 lg:mx-0">
+    <div className="bg-background p-6 md:p-8 rounded-lg max-w-md w-full mx-4 lg:mx-0">
       <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
         <div>
           <Label htmlFor="fullName" className="text-muted-foreground text-sm">
