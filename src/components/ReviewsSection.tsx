@@ -1,58 +1,73 @@
 import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
-import reviewer1 from "@/assets/reviewer-1.jpg";
-import reviewer2 from "@/assets/reviewer-2.jpg";
-import reviewer3 from "@/assets/reviewer-3.jpg";
-import reviewer4 from "@/assets/reviewer-4.jpg";
-import reviewer5 from "@/assets/reviewer-5.jpg";
-import reviewer6 from "@/assets/reviewer-6.jpg";
 
 const ReviewsSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const reviews = [
     {
-      name: "Jackson R",
-      profilePic: reviewer1,
-      timeAgo: "5 Days Ago",
+      name: "Louie 510",
+      profilePic: "/lovable-uploads/736dcf78-ee19-4a87-8ff4-e898a256bc19.png",
+      timeAgo: "11 hours ago",
       rating: 5,
-      text: "I couldn't be happier with the roof repair service I received! The team was prompt, professional, and thorough. My roof looks amazing, and I feel confident it will withstand the unpredictable West Texas weather. Highly recommended!"
+      text: "Great work, good communication, and overall a great team!"
     },
     {
-      name: "Maria T.", 
-      profilePic: reviewer2,
-      timeAgo: "7 Days Ago",
+      name: "David Hernandez", 
+      profilePic: "/lovable-uploads/eea2af0b-a141-4e5e-9226-a2b75c47548f.png",
+      timeAgo: "11 hours ago",
       rating: 5,
-      text: "From the first call to project completion, their customer service was top-notch. They walked me through the entire process and answered all my questions. It's rare to find such courteous and knowledgeable roofing experts."
+      text: "Extremely experienced and knowledgeable roofing company, highly recommended!"
     },
     {
-      name: "Chris L.",
-      profilePic: reviewer3,
-      timeAgo: "10 Days Ago",
+      name: "Ivan Alvarado",
+      profilePic: "/lovable-uploads/9429e377-0e4e-4448-a027-cd5bbf0c38af.png",
+      timeAgo: "13 hours ago",
       rating: 5,
-      text: "These folks take pride in their work! The quality of materials and attention to detail were impressive. My new roof looks fantastic and was completed on time without any issues. Great experience!"
+      text: "I love my new roof, Martin Compos and his team did a beautiful job. You can see the difference in my new roof, thank you so much to Happy Home Roof. I would recommend them 100% 🙏"
     },
     {
-      name: "Bethany M",
-      profilePic: reviewer4,
-      timeAgo: "3 Days Ago", 
+      name: "Juan Cabrera",
+      profilePic: "/lovable-uploads/dd707ca4-ce08-4267-9042-30298c8e1667.png",
+      timeAgo: "14 hours ago", 
       rating: 5,
-      text: "In a world where it's hard to find good contractors, this company stands out. They provided a fair estimate, kept us updated throughout the project, and delivered excellent results. I wouldn't hesitate to call them again."
+      text: "They are reliable and efficient. Recommend them 100%"
     },
     {
-      name: "Robert K",
-      profilePic: reviewer5,
-      timeAgo: "12 Days Ago",
+      name: "Alicia Dendura",
+      profilePic: "/lovable-uploads/9de20225-a3d4-4530-b184-93e82ea0f7b1.png",
+      timeAgo: "14 hours ago",
       rating: 5,
-      text: "Outstanding workmanship and customer service! They replaced my entire roof after storm damage and the results exceeded my expectations. The crew was respectful, clean, and finished ahead of schedule."
+      text: "Great service and detailed work! 100% recommended!!!"
     },
     {
-      name: "Sarah D",
-      profilePic: reviewer6,
-      timeAgo: "6 Days Ago",
+      name: "Ivonne Nava",
+      profilePic: "/lovable-uploads/341d79ee-8691-4acc-af3a-6bec6a276f42.png",
+      timeAgo: "14 hours ago",
       rating: 5,
-      text: "Happy Home Roofing transformed my commercial property with a new roof installation. Their team was professional, efficient, and delivered exceptional quality. I highly recommend them for any roofing needs."
+      text: "Highly recommend! Great customer service and love that it's a family business! Reach out to them for your needs."
+    },
+    {
+      name: "Suzzett Rodriguez",
+      profilePic: "/lovable-uploads/220bf27d-a4c0-47f4-9313-e11b32f78998.png",
+      timeAgo: "14 hours ago",
+      rating: 5,
+      text: "Diego did a great job on our roof replacement. They had great communication and took care of the entire insurance process."
+    },
+    {
+      name: "Javier",
+      profilePic: "/lovable-uploads/bfff6401-79a3-457d-8a27-c02a5770e745.png",
+      timeAgo: "14 hours ago",
+      rating: 5,
+      text: "Highly recommend - Martin and his crew took care of my roofing. On time, no price surprises and amazing customer service"
+    },
+    {
+      name: "Saúl Fierro",
+      profilePic: "/lovable-uploads/81729a25-9c7c-42c2-b076-e0719d0f7886.png",
+      timeAgo: "14 hours ago",
+      rating: 5,
+      text: "They're a great group to work with, extremely informative and answered all my questions"
     }
   ];
 
