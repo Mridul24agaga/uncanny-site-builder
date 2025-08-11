@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <footer>
       {/* Blue Top Bar */}
-      <div className="py-6 relative border-b border-white/10" style={{ background: 'linear-gradient(to right, hsl(var(--primary)) 50%, #1E2124 50%)' }}>
+      <div className="py-6 relative border-b border-white/10" style={{ background: 'linear-gradient(to right, #169AFF 50%, #1E2124 50%)' }}>
         <div className="absolute left-1/2 top-0 bottom-0 w-px bg-white/20 transform -translate-x-px"></div>
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
@@ -23,7 +23,7 @@ const Footer = () => {
               <MessageCircle className="h-6 w-6 text-white" />
               <Button 
                 variant="outline" 
-                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary font-medium px-6 py-2 rounded-full"
+                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#169AFF] font-medium px-6 py-2 rounded-full"
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Contact us Now
@@ -55,13 +55,13 @@ const Footer = () => {
               </div>
               
               <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-primary flex-shrink-0" />
-                <p className="text-primary font-medium text-lg">(432) 999 4694</p>
+                <Phone className="h-5 w-5 text-[#169AFF] flex-shrink-0" />
+                <p className="text-[#169AFF] font-medium text-lg">(432) 999 4694</p>
               </div>
 
               <div>
                 <span className="text-white font-medium">Instagram: </span>
-                <span className="text-primary font-medium">Happy Home Roofing</span>
+                <span className="text-[#169AFF] font-medium">Happy Home Roofing</span>
               </div>
             </div>
 

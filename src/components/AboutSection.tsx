@@ -23,7 +23,7 @@ const AboutSection = () => {
               />
               
               {/* Experience Badge */}
-              <div className="absolute bottom-6 left-6 bg-primary text-primary-foreground rounded-lg p-6 text-center shadow-lg max-w-[200px]">
+              <div className="absolute bottom-6 left-6 bg-[#169AFF] text-white rounded-lg p-6 text-center shadow-lg max-w-[200px]">
                 <div className="text-3xl md:text-4xl font-bold mb-2">15+</div>
                 <div className="text-sm font-medium leading-tight">
                   Years of experience in this field
@@ -34,7 +34,7 @@ const AboutSection = () => {
             {/* CTA Button */}
             <div className="mt-6">
               <Button 
-                className="bg-primary hover:bg-roofing-blue-dark text-primary-foreground font-semibold px-8 py-3 text-lg w-full sm:w-auto"
+                className="bg-[#169AFF] hover:bg-[#0080e6] text-white font-semibold px-8 py-3 text-lg w-full sm:w-auto"
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Book My Free Roof Inspection
@@ -45,7 +45,7 @@ const AboutSection = () => {
           {/* Content Side */}
           <div className="space-y-8">
             <div>
-              <p className="text-primary font-semibold mb-4 text-sm tracking-wide uppercase">
+              <p className="text-[#169AFF] font-semibold mb-4 text-sm tracking-wide uppercase">
                 ABOUT US
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
@@ -64,8 +64,8 @@ const AboutSection = () => {
             {/* Service Types */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <Home className="h-6 w-6 text-primary" />
+                <div className="w-12 h-12 bg-[#169AFF]/10 rounded-lg flex items-center justify-center">
+                  <Home className="h-6 w-6 text-[#169AFF]" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground">Residential</h3>
@@ -74,8 +74,8 @@ const AboutSection = () => {
               </div>
               
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <Building2 className="h-6 w-6 text-primary" />
+                <div className="w-12 h-12 bg-[#169AFF]/10 rounded-lg flex items-center justify-center">
+                  <Building2 className="h-6 w-6 text-[#169AFF]" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground">Commercial</h3>
@@ -88,7 +88,7 @@ const AboutSection = () => {
             <div className="space-y-4">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-start space-x-3">
-                  <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-6 h-6 bg-[#169AFF] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Check className="h-4 w-4 text-white" />
                   </div>
                   <span className="text-muted-foreground leading-relaxed">{feature}</span>

@@ -29,7 +29,7 @@ const ServicesSection = () => {
     <section className="py-16 md:py-24 bg-slate-800">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <p className="text-primary font-semibold mb-4 text-sm tracking-wide uppercase">
+          <p className="text-[#169AFF] font-semibold mb-4 text-sm tracking-wide uppercase">
             OUR SERVICES
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
@@ -47,8 +47,8 @@ const ServicesSection = () => {
                 className="bg-white rounded-lg p-8 text-center hover:shadow-lg transition-shadow min-h-[300px] flex flex-col justify-between"
               >
                 <div>
-                  <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-6">
-                    <IconComponent className="h-8 w-8 text-primary" />
+                  <div className="w-16 h-16 bg-[#169AFF]/10 rounded-lg flex items-center justify-center mx-auto mb-6">
+                    <IconComponent className="h-8 w-8 text-[#169AFF]" />
                   </div>
                   <h3 className="text-xl font-semibold text-slate-800 mb-4">
                     {service.title}
@@ -59,7 +59,7 @@ const ServicesSection = () => {
                 </div>
                 <div>
                   <button 
-                    className="text-primary font-semibold text-sm hover:text-roofing-blue-dark transition-colors flex items-center justify-center mx-auto group"
+                    className="text-[#169AFF] font-semibold text-sm hover:text-[#0080e6] transition-colors flex items-center justify-center mx-auto group"
                     onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                   >
                     READ MORE
@@ -74,7 +74,7 @@ const ServicesSection = () => {
         {/* CTA Button */}
         <div className="text-center">
           <Button 
-            className="bg-primary hover:bg-roofing-blue-dark text-primary-foreground font-semibold px-8 py-3 text-lg"
+            className="bg-[#169AFF] hover:bg-[#0080e6] text-white font-semibold px-8 py-3 text-lg"
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Book My Free Roof Inspection

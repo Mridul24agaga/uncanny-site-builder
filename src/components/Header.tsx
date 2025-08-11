@@ -31,7 +31,7 @@ const Header = () => {
               <Link
                 key={index}
                 to={item.path}
-                className="text-foreground hover:text-primary transition-colors font-medium text-sm"
+                className="text-foreground hover:text-[#169AFF] transition-colors font-medium text-sm"
               >
                 {item.name}
               </Link>
@@ -41,7 +41,7 @@ const Header = () => {
           {/* Phone Button */}
           <Button 
             variant="default" 
-            className="bg-primary hover:bg-roofing-blue-dark text-primary-foreground font-semibold text-sm md:text-base px-3 md:px-4 py-2 md:py-3"
+            className="bg-[#169AFF] hover:bg-[#0080e6] text-white font-semibold text-sm md:text-base px-3 md:px-4 py-2 md:py-3"
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
           >
             <span className="hidden sm:inline">+1 432-999-4694</span>

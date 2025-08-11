@@ -126,7 +126,7 @@ const ContactForm = () => {
         <Button 
           type="submit" 
           disabled={isSubmitting}
-          className="w-full bg-primary hover:bg-roofing-blue-dark text-primary-foreground font-semibold py-3 text-sm md:text-base disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full bg-[#169AFF] hover:bg-[#0080e6] text-white font-semibold py-3 text-sm md:text-base disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {isSubmitting ? 'Sending...' : 'Schedule Free Inspection'}
         </Button>

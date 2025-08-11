@@ -59,7 +59,7 @@ const ContactSection = () => {
           {/* Contact Form */}
           <Card className="w-full">
             <CardHeader className="pb-6">
-              <p className="text-primary font-semibold mb-2 text-sm tracking-wide uppercase">
+              <p className="text-[#169AFF] font-semibold mb-2 text-sm tracking-wide uppercase">
                 GET IN TOUCH
               </p>
               <h2 className="text-2xl md:text-3xl font-bold text-foreground">
@@ -142,7 +142,7 @@ const ContactSection = () => {
               <Button 
                 type="submit" 
                 disabled={isSubmitting}
-                className="w-full bg-primary hover:bg-roofing-blue-dark text-primary-foreground font-semibold py-3 text-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-[#169AFF] hover:bg-[#0080e6] text-white font-semibold py-3 text-lg disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? 'Sending...' : 'Send Message'}
               </Button>
@@ -159,8 +159,8 @@ const ContactSection = () => {
 
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <MapPin className="h-5 w-5 text-primary" />
+                  <div className="w-10 h-10 bg-[#169AFF]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <MapPin className="h-5 w-5 text-[#169AFF]" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Address:</h4>
@@ -169,8 +169,8 @@ const ContactSection = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Phone className="h-5 w-5 text-primary" />
+                  <div className="w-10 h-10 bg-[#169AFF]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Phone className="h-5 w-5 text-[#169AFF]" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Phone:</h4>

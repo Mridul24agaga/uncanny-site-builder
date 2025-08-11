@@ -39,7 +39,7 @@ const WhyChooseUsSection = () => {
     <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <p className="text-primary font-semibold mb-4 text-sm tracking-wide uppercase">
+          <p className="text-[#169AFF] font-semibold mb-4 text-sm tracking-wide uppercase">
             WHY CHOOSE US
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -59,8 +59,8 @@ const WhyChooseUsSection = () => {
                 key={index}
                 className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow text-center"
               >
-                <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <IconComponent className="h-8 w-8 text-primary" />
+                <div className="w-16 h-16 bg-[#169AFF]/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <IconComponent className="h-8 w-8 text-[#169AFF]" />
                 </div>
                 <h3 className="text-lg font-semibold text-foreground mb-3">
                   {reason.title}
@@ -76,7 +76,7 @@ const WhyChooseUsSection = () => {
         {/* CTA Button */}
         <div className="text-center">
           <Button 
-            className="bg-primary hover:bg-roofing-blue-dark text-primary-foreground font-semibold px-8 py-3 text-lg"
+            className="bg-[#169AFF] hover:bg-[#0080e6] text-white font-semibold px-8 py-3 text-lg"
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Book My Free Roof Inspection
