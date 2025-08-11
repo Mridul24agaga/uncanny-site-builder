@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Check, Phone, Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import ContactForm from "@/components/ContactForm";
 
 const MidlandOdessa = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -141,10 +142,28 @@ const MidlandOdessa = () => {
           <Button 
             size="lg"
             className="bg-[#169AFF] hover:bg-[#0080e6] text-white px-8 py-4 text-lg font-semibold"
-            onClick={() => document.getElementById('estimate-form')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => document.getElementById('contact-form-section')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Schedule Free Inspection
           </Button>
+        </div>
+      </section>
+
+      {/* Contact Form Section */}
+      <section id="contact-form-section" className="py-16 md:py-20 bg-slate-100">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 font-poppins">
+              Schedule Your Free Inspection
+            </h2>
+            <p className="text-xl text-slate-600">
+              Get started with a no-obligation roof inspection
+            </p>
+          </div>
+          
+          <div className="flex justify-center">
+            <ContactForm />
+          </div>
         </div>
       </section>
 
