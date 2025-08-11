@@ -83,7 +83,7 @@ const MidlandOdessa = () => {
           backgroundColor: '#169AFF'
         }}>
             <CardContent className="p-0">
-              <div className="grid lg:grid-cols-2 gap-0">
+              <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-0">
                 {/* Left Side - Services */}
                 <div className="p-8 lg:p-12 text-white">
                   <h2 className="text-3xl md:text-4xl font-bold mb-6 font-poppins">
