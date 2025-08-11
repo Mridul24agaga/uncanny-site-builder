@@ -8,27 +8,28 @@ import { Check, Phone, Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import ContactForm from "@/components/ContactForm";
-
 const MidlandOdessa = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [message, setMessage] = useState({ text: '', type: '' });
-
+  const [message, setMessage] = useState({
+    text: '',
+    type: ''
+  });
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     // Hide previous messages
-    setMessage({ text: '', type: '' });
+    setMessage({
+      text: '',
+      type: ''
+    });
     setIsSubmitting(true);
-
     const formData = new FormData(event.currentTarget);
     const webhookUrl = 'https://services.leadconnectorhq.com/hooks/tZhtNR2ksn4OupjirHIK/webhook-trigger/228adbef-5d2b-421f-a386-40530ec80c2d';
-
     try {
       const response = await fetch(webhookUrl, {
         method: 'POST',
-        body: formData,
+        body: formData
       });
-
       if (response.ok) {
         setMessage({
           text: 'Your estimate request has been sent successfully!',
@@ -53,58 +54,31 @@ const MidlandOdessa = () => {
       setIsSubmitting(false);
     }
   };
-  const roofingServices = [
-    "Free Roof Inspection",
-    "Roof Installation", 
-    "Roof Damage Repair",
-    "Storm Restoration",
-    "Gutter Installation",
-    "Gutter Repair",
-    "Shingle Replacement",
-    "Metal Roofing",
-    "Tile Roofing",
-    "Flat Roof Repair",
-    "Roof Maintenance",
-    "Emergency Repairs",
-    "Commercial Roofing",
-    "Residential Roofing"
-  ];
-
-  const processSteps = [
-    {
-      number: "01",
-      title: "FREE ESTIMATE",
-      description: "We start with a fast, no-obligation estimate. One of our friendly experts will assess your roof, answer questions, and give you a clear, honest quote — no hidden fees, ever."
-    },
-    {
-      number: "02",
-      title: "MATERIAL CONSULTATION",
-      description: "Not sure which material or style to choose? We'll help you find the perfect roofing solution that fits your home, budget, and goals. Our team can match existing materials or recommend fresh new looks to elevate your property."
-    },
-    {
-      number: "03",
-      title: "WORK BEGINS",
-      description: "Once you're ready, our crew gets to work. We show up on time, treat your home like our own, and follow our proven prep and installation process to ensure beautiful, lasting results."
-    },
-    {
-      number: "04",
-      title: "FINAL WALKTHROUGH",
-      description: "Before we leave, our experts conduct a final walk through with you to ensure your 100% satisfaction. We don't leave until you love the work — and we clean up like we were never there."
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-white font-inter">
+  const roofingServices = ["Free Roof Inspection", "Roof Installation", "Roof Damage Repair", "Storm Restoration", "Gutter Installation", "Gutter Repair", "Shingle Replacement", "Metal Roofing", "Tile Roofing", "Flat Roof Repair", "Roof Maintenance", "Emergency Repairs", "Commercial Roofing", "Residential Roofing"];
+  const processSteps = [{
+    number: "01",
+    title: "FREE ESTIMATE",
+    description: "We start with a fast, no-obligation estimate. One of our friendly experts will assess your roof, answer questions, and give you a clear, honest quote — no hidden fees, ever."
+  }, {
+    number: "02",
+    title: "MATERIAL CONSULTATION",
+    description: "Not sure which material or style to choose? We'll help you find the perfect roofing solution that fits your home, budget, and goals. Our team can match existing materials or recommend fresh new looks to elevate your property."
+  }, {
+    number: "03",
+    title: "WORK BEGINS",
+    description: "Once you're ready, our crew gets to work. We show up on time, treat your home like our own, and follow our proven prep and installation process to ensure beautiful, lasting results."
+  }, {
+    number: "04",
+    title: "FINAL WALKTHROUGH",
+    description: "Before we leave, our experts conduct a final walk through with you to ensure your 100% satisfaction. We don't leave until you love the work — and we clean up like we were never there."
+  }];
+  return <div className="min-h-screen bg-white font-inter">
       {/* Header with Navigation */}
       <header className="bg-white border-b shadow-sm">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center">
-              <img 
-                src="/lovable-uploads/b808aa46-b91e-4f5b-8573-6e27bb488e2e.png" 
-                alt="Happy Home Roofing" 
-                className="h-12 md:h-16 w-auto"
-              />
+              <img src="/lovable-uploads/b808aa46-b91e-4f5b-8573-6e27bb488e2e.png" alt="Happy Home Roofing" className="h-12 md:h-16 w-auto" />
             </Link>
             
             <div className="flex items-center space-x-4">
@@ -112,10 +86,9 @@ const MidlandOdessa = () => {
                 <Phone className="h-4 w-4 mr-2" />
                 <span className="font-medium">(432) 999-4694</span>
               </div>
-              <Button 
-                className="bg-[#169AFF] hover:bg-[#0080e6] text-white"
-                onClick={() => document.getElementById('estimate-form')?.scrollIntoView({ behavior: 'smooth' })}
-              >
+              <Button className="bg-[#169AFF] hover:bg-[#0080e6] text-white" onClick={() => document.getElementById('estimate-form')?.scrollIntoView({
+              behavior: 'smooth'
+            })}>
                 Get Estimate
               </Button>
             </div>
@@ -139,38 +112,23 @@ const MidlandOdessa = () => {
             (432) 999-4694
           </div>
 
-          <Button 
-            size="lg"
-            className="bg-[#169AFF] hover:bg-[#0080e6] text-white px-8 py-4 text-lg font-semibold"
-            onClick={() => document.getElementById('contact-form-section')?.scrollIntoView({ behavior: 'smooth' })}
-          >
+          <Button size="lg" className="bg-[#169AFF] hover:bg-[#0080e6] text-white px-8 py-4 text-lg font-semibold" onClick={() => document.getElementById('contact-form-section')?.scrollIntoView({
+          behavior: 'smooth'
+        })}>
             Schedule Free Inspection
           </Button>
         </div>
       </section>
 
       {/* Contact Form Section */}
-      <section id="contact-form-section" className="py-16 md:py-20 bg-slate-100">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 font-poppins">
-              Schedule Your Free Inspection
-            </h2>
-            <p className="text-xl text-slate-600">
-              Get started with a no-obligation roof inspection
-            </p>
-          </div>
-          
-          <div className="flex justify-center">
-            <ContactForm />
-          </div>
-        </div>
-      </section>
+      
 
       {/* Main Estimate Form Section */}
       <section id="estimate-form" className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
-          <Card className="max-w-6xl mx-auto shadow-2xl border-0" style={{ backgroundColor: '#169AFF' }}>
+          <Card className="max-w-6xl mx-auto shadow-2xl border-0" style={{
+          backgroundColor: '#169AFF'
+        }}>
             <CardContent className="p-0">
               <div className="grid lg:grid-cols-2 gap-0">
                 {/* Left Side - Services */}
@@ -184,12 +142,10 @@ const MidlandOdessa = () => {
                   </p>
                   
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    {roofingServices.map((service, index) => (
-                      <div key={index} className="flex items-center space-x-3">
+                    {roofingServices.map((service, index) => <div key={index} className="flex items-center space-x-3">
                         <div className="w-2 h-2 bg-white rounded-full flex-shrink-0"></div>
                         <span className="text-white/95 text-sm">{service}</span>
-                      </div>
-                    ))}
+                      </div>)}
                   </div>
 
                   <div className="mt-12 p-6 bg-white/10 rounded-2xl backdrop-blur-sm">
@@ -218,25 +174,13 @@ const MidlandOdessa = () => {
                         <Label htmlFor="firstName" className="text-slate-700 text-sm mb-2 block font-medium">
                           First Name *
                         </Label>
-                        <Input
-                          id="firstName"
-                          name="firstName"
-                          placeholder="Enter your first name"
-                          className="border-b-2 border-t-0 border-x-0 border-slate-300 rounded-none bg-transparent px-0 focus:border-[#169AFF] transition-colors"
-                          required
-                        />
+                        <Input id="firstName" name="firstName" placeholder="Enter your first name" className="border-b-2 border-t-0 border-x-0 border-slate-300 rounded-none bg-transparent px-0 focus:border-[#169AFF] transition-colors" required />
                       </div>
                       <div>
                         <Label htmlFor="lastName" className="text-slate-700 text-sm mb-2 block font-medium">
                           Last Name *
                         </Label>
-                        <Input
-                          id="lastName"
-                          name="lastName"
-                          placeholder="Enter your last name"
-                          className="border-b-2 border-t-0 border-x-0 border-slate-300 rounded-none bg-transparent px-0 focus:border-[#169AFF] transition-colors"
-                          required
-                        />
+                        <Input id="lastName" name="lastName" placeholder="Enter your last name" className="border-b-2 border-t-0 border-x-0 border-slate-300 rounded-none bg-transparent px-0 focus:border-[#169AFF] transition-colors" required />
                       </div>
                     </div>
 
@@ -245,26 +189,13 @@ const MidlandOdessa = () => {
                         <Label htmlFor="phone" className="text-slate-700 text-sm mb-2 block font-medium">
                           Phone *
                         </Label>
-                        <Input
-                          id="phone"
-                          name="phone"
-                          placeholder="(432) 000-0000"
-                          className="border-b-2 border-t-0 border-x-0 border-slate-300 rounded-none bg-transparent px-0 focus:border-[#169AFF] transition-colors"
-                          required
-                        />
+                        <Input id="phone" name="phone" placeholder="(432) 000-0000" className="border-b-2 border-t-0 border-x-0 border-slate-300 rounded-none bg-transparent px-0 focus:border-[#169AFF] transition-colors" required />
                       </div>
                       <div>
                         <Label htmlFor="email" className="text-slate-700 text-sm mb-2 block font-medium">
                           Email *
                         </Label>
-                        <Input
-                          id="email"
-                          name="email"
-                          type="email"
-                          placeholder="your@email.com"
-                          className="border-b-2 border-t-0 border-x-0 border-slate-300 rounded-none bg-transparent px-0 focus:border-[#169AFF] transition-colors"
-                          required
-                        />
+                        <Input id="email" name="email" type="email" placeholder="your@email.com" className="border-b-2 border-t-0 border-x-0 border-slate-300 rounded-none bg-transparent px-0 focus:border-[#169AFF] transition-colors" required />
                       </div>
                     </div>
 
@@ -272,30 +203,15 @@ const MidlandOdessa = () => {
                       <Label htmlFor="notes" className="text-slate-700 text-sm mb-2 block font-medium">
                         Notes (Optional)
                       </Label>
-                      <Textarea
-                        id="notes"
-                        name="notes"
-                        placeholder="Any additional notes or questions..."
-                        className="border-b-2 border-t-0 border-x-0 border-slate-300 rounded-none bg-transparent px-0 focus:border-[#169AFF] min-h-[80px] resize-none transition-colors"
-                      />
+                      <Textarea id="notes" name="notes" placeholder="Any additional notes or questions..." className="border-b-2 border-t-0 border-x-0 border-slate-300 rounded-none bg-transparent px-0 focus:border-[#169AFF] min-h-[80px] resize-none transition-colors" />
                     </div>
 
                     {/* Success/Error Message */}
-                    {message.text && (
-                      <div className={`p-3 rounded-md text-sm ${
-                        message.type === 'success' 
-                          ? 'bg-green-100 text-green-800 border border-green-200' 
-                          : 'bg-red-100 text-red-800 border border-red-200'
-                      }`}>
+                    {message.text && <div className={`p-3 rounded-md text-sm ${message.type === 'success' ? 'bg-green-100 text-green-800 border border-green-200' : 'bg-red-100 text-red-800 border border-red-200'}`}>
                         {message.text}
-                      </div>
-                    )}
+                      </div>}
 
-                    <Button 
-                      type="submit"
-                      disabled={isSubmitting}
-                      className="w-full bg-[#169AFF] hover:bg-[#0080e6] text-white font-semibold py-4 text-lg rounded-xl mt-8 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-                    >
+                    <Button type="submit" disabled={isSubmitting} className="w-full bg-[#169AFF] hover:bg-[#0080e6] text-white font-semibold py-4 text-lg rounded-xl mt-8 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
                       {isSubmitting ? 'Sending...' : 'Get My Free Estimate'}
                     </Button>
 
@@ -322,21 +238,13 @@ const MidlandOdessa = () => {
             <CardContent className="p-8 md:p-12">
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div className="relative rounded-2xl overflow-hidden">
-                  <img 
-                    src="/src/assets/roofing-background.jpg" 
-                    alt="Beautiful home interior" 
-                    className="w-full h-64 md:h-80 object-cover"
-                  />
+                  <img src="/src/assets/roofing-background.jpg" alt="Beautiful home interior" className="w-full h-64 md:h-80 object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                   
                   {/* Logo overlay */}
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="bg-white/95 rounded-full p-6 shadow-2xl">
-                      <img 
-                        src="/lovable-uploads/b808aa46-b91e-4f5b-8573-6e27bb488e2e.png" 
-                        alt="Happy Home Roofing" 
-                        className="h-16 w-auto"
-                      />
+                      <img src="/lovable-uploads/b808aa46-b91e-4f5b-8573-6e27bb488e2e.png" alt="Happy Home Roofing" className="h-16 w-auto" />
                     </div>
                   </div>
                 </div>
@@ -382,8 +290,7 @@ const MidlandOdessa = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-            {processSteps.map((step, index) => (
-              <Card key={index} className="bg-white border-2 hover:border-[#169AFF]/30 transition-colors duration-300 shadow-lg hover:shadow-xl">
+            {processSteps.map((step, index) => <Card key={index} className="bg-white border-2 hover:border-[#169AFF]/30 transition-colors duration-300 shadow-lg hover:shadow-xl">
                 <CardContent className="p-8 text-center h-full flex flex-col">
                   <div className="text-5xl font-bold text-[#169AFF] mb-4 font-poppins">
                     {step.number}
@@ -395,8 +302,7 @@ const MidlandOdessa = () => {
                     {step.description}
                   </p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -420,11 +326,9 @@ const MidlandOdessa = () => {
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <div className="flex text-yellow-400 mr-3">
-                    {[...Array(5)].map((_, i) => (
-                      <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
-                      </svg>
-                    ))}
+                    {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                      </svg>)}
                   </div>
                   <span className="text-white font-semibold">Jackson R.</span>
                 </div>
@@ -439,11 +343,9 @@ const MidlandOdessa = () => {
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <div className="flex text-yellow-400 mr-3">
-                    {[...Array(5)].map((_, i) => (
-                      <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
-                      </svg>
-                    ))}
+                    {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                      </svg>)}
                   </div>
                   <span className="text-white font-semibold">Maria T.</span>
                 </div>
@@ -458,11 +360,9 @@ const MidlandOdessa = () => {
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <div className="flex text-yellow-400 mr-3">
-                    {[...Array(5)].map((_, i) => (
-                      <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
-                      </svg>
-                    ))}
+                    {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                      </svg>)}
                   </div>
                   <span className="text-white font-semibold">Chris L.</span>
                 </div>
@@ -477,11 +377,9 @@ const MidlandOdessa = () => {
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <div className="flex text-yellow-400 mr-3">
-                    {[...Array(5)].map((_, i) => (
-                      <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
-                      </svg>
-                    ))}
+                    {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                      </svg>)}
                   </div>
                   <span className="text-white font-semibold">Robert K.</span>
                 </div>
@@ -496,11 +394,9 @@ const MidlandOdessa = () => {
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <div className="flex text-yellow-400 mr-3">
-                    {[...Array(5)].map((_, i) => (
-                      <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
-                      </svg>
-                    ))}
+                    {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                      </svg>)}
                   </div>
                   <span className="text-white font-semibold">Sarah D.</span>
                 </div>
@@ -515,11 +411,9 @@ const MidlandOdessa = () => {
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <div className="flex text-yellow-400 mr-3">
-                    {[...Array(5)].map((_, i) => (
-                      <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
-                      </svg>
-                    ))}
+                    {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                      </svg>)}
                   </div>
                   <span className="text-white font-semibold">Bethany M.</span>
                 </div>
@@ -542,27 +436,15 @@ const MidlandOdessa = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="relative rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
-              <img 
-                src="/lovable-uploads/5b873240-e804-4e92-bbe7-e4085fd54467.png" 
-                alt="Residential roofing project in progress" 
-                className="w-full h-64 object-cover"
-              />
+              <img src="/lovable-uploads/5b873240-e804-4e92-bbe7-e4085fd54467.png" alt="Residential roofing project in progress" className="w-full h-64 object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
             </div>
             <div className="relative rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
-              <img 
-                src="/lovable-uploads/20e15359-2823-4915-9bb9-072d4a573428.png" 
-                alt="Quality shingle installation detail" 
-                className="w-full h-64 object-cover"
-              />
+              <img src="/lovable-uploads/20e15359-2823-4915-9bb9-072d4a573428.png" alt="Quality shingle installation detail" className="w-full h-64 object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
             </div>
             <div className="relative rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
-              <img 
-                src="/lovable-uploads/2bf2fb87-9b64-430f-9dba-449a1a25544e.png" 
-                alt="Professional roofing craftsmanship" 
-                className="w-full h-64 object-cover"
-              />
+              <img src="/lovable-uploads/2bf2fb87-9b64-430f-9dba-449a1a25544e.png" alt="Professional roofing craftsmanship" className="w-full h-64 object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
             </div>
           </div>
@@ -591,7 +473,9 @@ const MidlandOdessa = () => {
       </section>
 
       {/* Our Warranty Section */}
-      <section className="py-16 md:py-24" style={{ backgroundColor: '#FBFBFB' }}>
+      <section className="py-16 md:py-24" style={{
+      backgroundColor: '#FBFBFB'
+    }}>
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Side - Content */}
@@ -628,37 +512,21 @@ const MidlandOdessa = () => {
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <div className="relative rounded-lg overflow-hidden">
-                  <img 
-                    src="/src/assets/project-1.jpg" 
-                    alt="Professional roofing work in progress" 
-                    className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                  />
+                  <img src="/src/assets/project-1.jpg" alt="Professional roofing work in progress" className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 </div>
                 <div className="relative rounded-lg overflow-hidden">
-                  <img 
-                    src="/src/assets/project-3.jpg" 
-                    alt="Quality roofing materials" 
-                    className="w-full h-32 object-cover hover:scale-105 transition-transform duration-300"
-                  />
+                  <img src="/src/assets/project-3.jpg" alt="Quality roofing materials" className="w-full h-32 object-cover hover:scale-105 transition-transform duration-300" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 </div>
               </div>
               <div className="space-y-4">
                 <div className="relative rounded-lg overflow-hidden">
-                  <img 
-                    src="/src/assets/project-2.jpg" 
-                    alt="Expert roofing installation" 
-                    className="w-full h-32 object-cover hover:scale-105 transition-transform duration-300"
-                  />
+                  <img src="/src/assets/project-2.jpg" alt="Expert roofing installation" className="w-full h-32 object-cover hover:scale-105 transition-transform duration-300" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 </div>
                 <div className="relative rounded-lg overflow-hidden">
-                  <img 
-                    src="/src/assets/about-roofer.jpg" 
-                    alt="Professional roofing consultation" 
-                    className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                  />
+                  <img src="/src/assets/about-roofer.jpg" alt="Professional roofing consultation" className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 </div>
               </div>
@@ -700,8 +568,6 @@ const MidlandOdessa = () => {
           </Link>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default MidlandOdessa;
