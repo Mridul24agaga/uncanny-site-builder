@@ -219,12 +219,15 @@ const MidlandOdessa = () => {
             <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <div className="flex text-yellow-400 mr-3">
-                    {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                      </svg>)}
+                  <img src="/lovable-uploads/736dcf78-ee19-4a87-8ff4-e898a256bc19.png" alt="Louie 510" className="w-10 h-10 rounded-full mr-3 object-cover" />
+                  <div className="flex-1">
+                    <div className="flex text-yellow-400 mb-1">
+                      {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                          <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                        </svg>)}
+                    </div>
+                    <span className="text-white font-semibold">Louie 510</span>
                   </div>
-                  <span className="text-white font-semibold">Louie 510</span>
                 </div>
                 <p className="text-white/90 text-sm leading-relaxed">
                   "Great work, good communication, and overall a great team!"
@@ -236,12 +239,15 @@ const MidlandOdessa = () => {
             <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <div className="flex text-yellow-400 mr-3">
-                    {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                      </svg>)}
+                  <img src="/lovable-uploads/eea2af0b-a141-4e5e-9226-a2b75c47548f.png" alt="David Hernandez" className="w-10 h-10 rounded-full mr-3 object-cover" />
+                  <div className="flex-1">
+                    <div className="flex text-yellow-400 mb-1">
+                      {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                          <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                        </svg>)}
+                    </div>
+                    <span className="text-white font-semibold">David Hernandez</span>
                   </div>
-                  <span className="text-white font-semibold">David Hernandez</span>
                 </div>
                 <p className="text-white/90 text-sm leading-relaxed">
                   "Extremely experienced and knowledgeable roofing company, highly recommended!"
@@ -253,12 +259,15 @@ const MidlandOdessa = () => {
             <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <div className="flex text-yellow-400 mr-3">
-                    {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                      </svg>)}
+                  <img src="/lovable-uploads/9429e377-0e4e-4448-a027-cd5bbf0c38af.png" alt="Ivan Alvarado" className="w-10 h-10 rounded-full mr-3 object-cover" />
+                  <div className="flex-1">
+                    <div className="flex text-yellow-400 mb-1">
+                      {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                          <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                        </svg>)}
+                    </div>
+                    <span className="text-white font-semibold">Ivan Alvarado</span>
                   </div>
-                  <span className="text-white font-semibold">Ivan Alvarado</span>
                 </div>
                 <p className="text-white/90 text-sm leading-relaxed">
                   "I love my new roof, Martin Compos and his team did a beautiful job. You can see the difference in my new roof, thank you so much to Happy Home Roof. I would recommend them 100% 🙏"
@@ -270,12 +279,15 @@ const MidlandOdessa = () => {
             <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <div className="flex text-yellow-400 mr-3">
-                    {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                      </svg>)}
+                  <img src="/lovable-uploads/dd707ca4-ce08-4267-9042-30298c8e1667.png" alt="Juan Cabrera" className="w-10 h-10 rounded-full mr-3 object-cover" />
+                  <div className="flex-1">
+                    <div className="flex text-yellow-400 mb-1">
+                      {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                          <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                        </svg>)}
+                    </div>
+                    <span className="text-white font-semibold">Juan Cabrera</span>
                   </div>
-                  <span className="text-white font-semibold">Juan Cabrera</span>
                 </div>
                 <p className="text-white/90 text-sm leading-relaxed">
                   "They are reliable and efficient. Recommend them 100%"
@@ -287,12 +299,15 @@ const MidlandOdessa = () => {
             <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <div className="flex text-yellow-400 mr-3">
-                    {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                      </svg>)}
+                  <img src="/lovable-uploads/9de20225-a3d4-4530-b184-93e82ea0f7b1.png" alt="Alicia Dendura" className="w-10 h-10 rounded-full mr-3 object-cover" />
+                  <div className="flex-1">
+                    <div className="flex text-yellow-400 mb-1">
+                      {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                          <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                        </svg>)}
+                    </div>
+                    <span className="text-white font-semibold">Alicia Dendura</span>
                   </div>
-                  <span className="text-white font-semibold">Alicia Dendura</span>
                 </div>
                 <p className="text-white/90 text-sm leading-relaxed">
                   "Great service and detailed work! 100% recommended!!!"
@@ -304,12 +319,15 @@ const MidlandOdessa = () => {
             <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <div className="flex text-yellow-400 mr-3">
-                    {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                      </svg>)}
+                  <img src="/lovable-uploads/341d79ee-8691-4acc-af3a-6bec6a276f42.png" alt="Ivonne Nava" className="w-10 h-10 rounded-full mr-3 object-cover" />
+                  <div className="flex-1">
+                    <div className="flex text-yellow-400 mb-1">
+                      {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                          <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                        </svg>)}
+                    </div>
+                    <span className="text-white font-semibold">Ivonne Nava</span>
                   </div>
-                  <span className="text-white font-semibold">Ivonne Nava</span>
                 </div>
                 <p className="text-white/90 text-sm leading-relaxed">
                   "Highly recommend! Great customer service and love that it's a family business! Reach out to them for your needs."
@@ -321,12 +339,15 @@ const MidlandOdessa = () => {
             <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <div className="flex text-yellow-400 mr-3">
-                    {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                      </svg>)}
+                  <img src="/lovable-uploads/220bf27d-a4c0-47f4-9313-e11b32f78998.png" alt="Suzzett Rodriguez" className="w-10 h-10 rounded-full mr-3 object-cover" />
+                  <div className="flex-1">
+                    <div className="flex text-yellow-400 mb-1">
+                      {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                          <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                        </svg>)}
+                    </div>
+                    <span className="text-white font-semibold">Suzzett Rodriguez</span>
                   </div>
-                  <span className="text-white font-semibold">Suzzett Rodriguez</span>
                 </div>
                 <p className="text-white/90 text-sm leading-relaxed">
                   "Diego did a great job on our roof replacement. They had great communication and took care of the entire insurance process."
@@ -338,12 +359,15 @@ const MidlandOdessa = () => {
             <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <div className="flex text-yellow-400 mr-3">
-                    {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                      </svg>)}
+                  <img src="/lovable-uploads/bfff6401-79a3-457d-8a27-c02a5770e745.png" alt="Javier" className="w-10 h-10 rounded-full mr-3 object-cover" />
+                  <div className="flex-1">
+                    <div className="flex text-yellow-400 mb-1">
+                      {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                          <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                        </svg>)}
+                    </div>
+                    <span className="text-white font-semibold">Javier</span>
                   </div>
-                  <span className="text-white font-semibold">Javier</span>
                 </div>
                 <p className="text-white/90 text-sm leading-relaxed">
                   "Highly recommend - Martin and his crew took care of my roofing. On time, no price surprises and amazing customer service"
@@ -355,12 +379,15 @@ const MidlandOdessa = () => {
             <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <div className="flex text-yellow-400 mr-3">
-                    {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                      </svg>)}
+                  <img src="/lovable-uploads/81729a25-9c7c-42c2-b076-e0719d0f7886.png" alt="Saúl Fierro" className="w-10 h-10 rounded-full mr-3 object-cover" />
+                  <div className="flex-1">
+                    <div className="flex text-yellow-400 mb-1">
+                      {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                          <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                        </svg>)}
+                    </div>
+                    <span className="text-white font-semibold">Saúl Fierro</span>
                   </div>
-                  <span className="text-white font-semibold">Saúl Fierro</span>
                 </div>
                 <p className="text-white/90 text-sm leading-relaxed">
                   "They're a great group to work with, extremely informative and answered all my questions"
