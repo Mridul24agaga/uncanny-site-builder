@@ -124,11 +124,11 @@ const ReviewsSection = () => {
         </h2>
         
         <div className="relative">
-          {/* Navigation Arrows */}
+          {/* Navigation Arrows - Hidden on mobile, visible on tablet and up */}
           <Button
             variant="outline"
             size="icon"
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-background shadow-lg border-border hover:bg-muted"
+            className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-background shadow-lg border-border hover:bg-muted"
             onClick={prevSlide}
           >
             <ChevronLeft className="h-4 w-4" />
@@ -137,14 +137,14 @@ const ReviewsSection = () => {
           <Button
             variant="outline"
             size="icon"
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-background shadow-lg border-border hover:bg-muted"
+            className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-background shadow-lg border-border hover:bg-muted"
             onClick={nextSlide}
           >
             <ChevronRight className="h-4 w-4" />
           </Button>
 
           {/* Reviews Carousel */}
-          <div className="mx-4 md:mx-8 lg:mx-12 overflow-hidden">
+          <div className="mx-2 md:mx-12 overflow-hidden">
             <div 
               className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
