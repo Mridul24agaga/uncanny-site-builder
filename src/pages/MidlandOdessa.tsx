@@ -166,7 +166,7 @@ const MidlandOdessa = () => {
             <CardContent className="p-8 md:p-12">
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div className="relative rounded-2xl overflow-hidden">
-                  <img src="/src/assets/roofing-background.jpg" alt="Beautiful home interior" className="w-full h-64 md:h-80 object-cover" />
+                  <img src="/lovable-uploads/8ee16cd7-0fa7-471d-bed9-4470d670809a.png" alt="Beautiful home interior" className="w-full h-64 md:h-80 object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                   
                   {/* Logo overlay */}
