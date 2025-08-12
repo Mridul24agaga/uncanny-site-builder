@@ -17,7 +17,7 @@ const AboutSection = () => {
           <div className="relative">
             <div className="relative rounded-lg overflow-hidden">
               <img 
-                src="/lovable-uploads/ab2cbd3a-2df4-4a86-b124-72181d444541.png" 
+                src={aboutRoofer} 
                 alt="Professional roofer working" 
                 className="w-full h-[500px] md:h-[600px] object-cover"
               />
