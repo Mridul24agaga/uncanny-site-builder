@@ -96,22 +96,28 @@ const MidlandOdessa = () => {
               <div className="p-6 lg:p-8 bg-[#169AFF] rounded-2xl">
                 <h3 className="text-2xl lg:text-3xl font-bold mb-6 font-poppins text-white">Why Choose Happy Home Roofing?</h3>
                 <div className="space-y-4 text-white">
-                  <div>
+                  <div className="flex items-center">
+                    <Check className="h-5 w-5 mr-3 flex-shrink-0" />
                     <h4 className="font-semibold text-lg">Professional Trained Workers</h4>
                   </div>
-                  <div>
+                  <div className="flex items-center">
+                    <Check className="h-5 w-5 mr-3 flex-shrink-0" />
                     <h4 className="font-semibold text-lg">Local & Family Owned</h4>
                   </div>
-                  <div>
+                  <div className="flex items-center">
+                    <Check className="h-5 w-5 mr-3 flex-shrink-0" />
                     <h4 className="font-semibold text-lg">Quality Materials</h4>
                   </div>
-                  <div>
+                  <div className="flex items-center">
+                    <Check className="h-5 w-5 mr-3 flex-shrink-0" />
                     <h4 className="font-semibold text-lg">Free Roof Inspection</h4>
                   </div>
-                  <div>
+                  <div className="flex items-center">
+                    <Check className="h-5 w-5 mr-3 flex-shrink-0" />
                     <h4 className="font-semibold text-lg">Insured & Bonded</h4>
                   </div>
-                  <div>
+                  <div className="flex items-center">
+                    <Check className="h-5 w-5 mr-3 flex-shrink-0" />
                     <h4 className="font-semibold text-lg">Over 100 Years of Combined Experience</h4>
                   </div>
                 </div>
