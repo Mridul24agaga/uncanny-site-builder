@@ -95,11 +95,32 @@ const MidlandOdessa = () => {
             <div className="order-2 lg:order-1">
               <div className="p-6 lg:p-8 bg-[#169AFF] rounded-2xl">
                 <h3 className="text-2xl lg:text-3xl font-bold mb-6 font-poppins text-white">Why Choose Happy Home Roofing?</h3>
-                <ul className="space-y-4 text-lg text-white/90">
-                  <li className="flex items-center"><Check className="h-5 w-5 mr-3 flex-shrink-0" /> Licensed & Insured</li>
-                  <li className="flex items-center"><Check className="h-5 w-5 mr-3 flex-shrink-0" /> Free Estimates</li>
-                  <li className="flex items-center"><Check className="h-5 w-5 mr-3 flex-shrink-0" /> Local Experts</li>
-                </ul>
+                <div className="space-y-6 text-white">
+                  <div>
+                    <h4 className="font-semibold text-lg mb-2">Professional Trained Workers</h4>
+                    <p className="text-white/90 text-sm">Our team consists of certified and experienced roofing professionals.</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-lg mb-2">Local & Family Owned</h4>
+                    <p className="text-white/90 text-sm">Proudly serving the Permian Basin as a trusted local family business.</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-lg mb-2">Quality Materials</h4>
+                    <p className="text-white/90 text-sm">We use only the highest quality roofing materials for lasting results.</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-lg mb-2">Free Roof Inspection</h4>
+                    <p className="text-white/90 text-sm">Comprehensive roof assessment at no cost to identify potential issues.</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-lg mb-2">Insured & Bonded</h4>
+                    <p className="text-white/90 text-sm">Fully licensed, insured, and bonded for your peace of mind.</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-lg mb-2">Over 100 Years of Combined Experience</h4>
+                    <p className="text-white/90 text-sm">Decades of expertise ensuring quality workmanship and service.</p>
+                  </div>
+                </div>
               </div>
             </div>
 
