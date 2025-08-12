@@ -62,21 +62,23 @@ const MidlandOdessa = () => {
       </header>
 
       {/* Sticky Call-to-Action Bar */}
-      <div className={`fixed top-0 left-0 right-0 bg-[#169AFF] text-white py-3 px-4 shadow-lg z-50 transform transition-transform duration-300 ${
+      <div className={`fixed top-0 left-0 right-0 bg-[#169AFF] text-white py-2 md:py-3 px-2 md:px-4 shadow-lg z-50 transform transition-transform duration-300 ${
         showStickyBar ? 'translate-y-0' : '-translate-y-full'
       }`}>
         <div className="container mx-auto flex items-center justify-between">
-          <div className="flex items-center">
-            <Phone className="h-4 w-4 mr-2" />
-            <span className="font-semibold text-sm md:text-base">
-              CALL NOW TO BOOK YOUR FREE INSPECTION IN 24 HOURS OR LESS!
+          <div className="flex items-center flex-1 mr-2">
+            <Phone className="h-3 w-3 md:h-4 md:w-4 mr-1 md:mr-2 flex-shrink-0" />
+            <span className="font-semibold text-xs md:text-base">
+              <span className="hidden sm:inline">CALL NOW TO BOOK YOUR FREE INSPECTION IN 24 HOURS OR LESS!</span>
+              <span className="sm:hidden">FREE INSPECTION IN 24 HOURS!</span>
             </span>
           </div>
           <a 
             href="tel:+14329994694" 
-            className="bg-white text-[#169AFF] px-4 py-2 rounded-lg font-bold text-sm hover:bg-gray-100 transition-colors"
+            className="bg-white text-[#169AFF] px-2 md:px-4 py-1 md:py-2 rounded-lg font-bold text-xs md:text-sm hover:bg-gray-100 transition-colors flex-shrink-0"
           >
-            (432) 999-4694
+            <span className="hidden sm:inline">(432) 999-4694</span>
+            <span className="sm:hidden">CALL NOW</span>
           </a>
         </div>
       </div>
