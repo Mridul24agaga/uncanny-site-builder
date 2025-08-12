@@ -90,23 +90,31 @@ const MidlandOdessa = () => {
       {/* Main Estimate Form Section */}
       <section id="estimate-form" className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
-          <Card className="max-w-md mx-auto shadow-2xl border-0">
-            <CardContent className="p-8 lg:p-12 flex flex-col items-center justify-center">
-              <h3 className="text-2xl font-bold text-slate-900 mb-6 text-center font-poppins">
-                FREE INSPECTION IN 24 HOURS OR LESS
-              </h3>
-              <ContactForm />
-              
-              <div className="mt-8 p-6 bg-[#169AFF] rounded-2xl w-full">
-                <h3 className="text-xl font-bold mb-4 font-poppins text-white">Why Choose Happy Home Roofing?</h3>
-                <ul className="space-y-2 text-sm text-white/90">
-                  <li className="flex items-center"><Check className="h-4 w-4 mr-2" /> Licensed & Insured</li>
-                  <li className="flex items-center"><Check className="h-4 w-4 mr-2" /> Free Estimates</li>
-                  <li className="flex items-center"><Check className="h-4 w-4 mr-2" /> Local Experts</li>
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start max-w-5xl mx-auto">
+            {/* Why Choose Us - Left Side on Desktop */}
+            <div className="order-2 lg:order-1">
+              <div className="p-6 lg:p-8 bg-[#169AFF] rounded-2xl">
+                <h3 className="text-2xl lg:text-3xl font-bold mb-6 font-poppins text-white">Why Choose Happy Home Roofing?</h3>
+                <ul className="space-y-4 text-lg text-white/90">
+                  <li className="flex items-center"><Check className="h-5 w-5 mr-3 flex-shrink-0" /> Licensed & Insured</li>
+                  <li className="flex items-center"><Check className="h-5 w-5 mr-3 flex-shrink-0" /> Free Estimates</li>
+                  <li className="flex items-center"><Check className="h-5 w-5 mr-3 flex-shrink-0" /> Local Experts</li>
                 </ul>
               </div>
-            </CardContent>
-          </Card>
+            </div>
+
+            {/* Form - Right Side on Desktop */}
+            <div className="order-1 lg:order-2">
+              <Card className="shadow-2xl border-0">
+                <CardContent className="p-8 lg:p-12">
+                  <h3 className="text-2xl font-bold text-slate-900 mb-6 text-center font-poppins">
+                    FREE INSPECTION IN 24 HOURS OR LESS
+                  </h3>
+                  <ContactForm />
+                </CardContent>
+              </Card>
+            </div>
+          </div>
         </div>
       </section>
 
