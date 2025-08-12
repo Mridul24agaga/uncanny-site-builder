@@ -176,7 +176,6 @@ const ReviewsSection = () => {
                               </div>
                               <div className="min-w-0 flex-1">
                                 <h3 className="font-semibold text-foreground text-sm md:text-base truncate">{review.name}</h3>
-                                <p className="text-xs text-muted-foreground">{review.timeAgo}</p>
                               </div>
                             </div>
                             <div className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0">
