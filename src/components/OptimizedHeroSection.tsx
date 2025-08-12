@@ -44,8 +44,8 @@ const OptimizedHeroSection = () => {
           <div className="text-white space-y-4 md:space-y-6 pt-0 md:pt-2">
             <div>
               <img 
-                src="/lovable-uploads/8d05e9b0-8ac2-49be-b9bd-c91527c8d0eb.png" 
-                alt="Happy Home - Texas Trusted Home Source" 
+                src="/lovable-uploads/12e5a293-1d12-4f3a-93e6-d7c74c65a5ec.png" 
+                alt="Happy Home Roofing & Construction - Permian Trusted Roofer" 
                 className="h-32 md:h-40 mb-4 md:mb-6"
               />
               <p className="text-sm md:text-lg mb-2 md:mb-4 opacity-90">
