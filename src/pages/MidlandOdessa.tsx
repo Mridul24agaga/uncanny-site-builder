@@ -41,7 +41,7 @@ const MidlandOdessa = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center">
-              <img src="/lovable-uploads/b808aa46-b91e-4f5b-8573-6e27bb488e2e.png" alt="Happy Home Roofing" className="h-12 md:h-16 w-auto" />
+              <img src="/lovable-uploads/b808aa46-b91e-4f5b-8573-6e27bb488e2e.png" alt="Happy Home Roofing" className="h-16 md:h-20 w-auto" />
             </Link>
             
             <div className="flex items-center space-x-4">
