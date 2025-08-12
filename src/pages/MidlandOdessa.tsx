@@ -90,47 +90,12 @@ const MidlandOdessa = () => {
       {/* Main Estimate Form Section */}
       <section id="estimate-form" className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
-          <Card className="max-w-6xl mx-auto shadow-2xl border-0" style={{
-          backgroundColor: '#169AFF'
-        }}>
-            <CardContent className="p-0">
-              <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-0">
-                {/* Left Side - Services */}
-                <div className="p-8 lg:p-12 text-white">
-                  <h2 className="text-3xl md:text-4xl font-bold mb-6 font-poppins">
-                    READY TO START<br />
-                    YOUR PROJECT?
-                  </h2>
-                  <p className="text-lg mb-8 text-white/90">
-                    Let's make your roofing vision a reality.
-                  </p>
-                  
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    {roofingServices.map((service, index) => <div key={index} className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-white rounded-full flex-shrink-0"></div>
-                        <span className="text-white/95 text-sm">{service}</span>
-                      </div>)}
-                  </div>
-
-                  <div className="mt-12 p-6 bg-white/10 rounded-2xl backdrop-blur-sm">
-                    <h3 className="text-xl font-bold mb-4 font-poppins">Why Choose Happy Home Roofing?</h3>
-                    <ul className="space-y-2 text-sm text-white/90">
-                      
-                      <li className="flex items-center"><Check className="h-4 w-4 mr-2" /> Licensed & Insured</li>
-                      <li className="flex items-center"><Check className="h-4 w-4 mr-2" /> Free Estimates</li>
-                      <li className="flex items-center"><Check className="h-4 w-4 mr-2" /> Local Experts</li>
-                    </ul>
-                  </div>
-                </div>
-
-                {/* Right Side - Form */}
-                <div className="bg-white p-8 lg:p-12 flex flex-col items-center justify-center">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-6 text-center font-poppins">
-                    FREE INSPECTION IN 24 HOURS OR LESS
-                  </h3>
-                  <ContactForm />
-                </div>
-              </div>
+          <Card className="max-w-md mx-auto shadow-2xl border-0">
+            <CardContent className="p-8 lg:p-12 flex flex-col items-center justify-center">
+              <h3 className="text-2xl font-bold text-slate-900 mb-6 text-center font-poppins">
+                FREE INSPECTION IN 24 HOURS OR LESS
+              </h3>
+              <ContactForm />
             </CardContent>
           </Card>
         </div>
