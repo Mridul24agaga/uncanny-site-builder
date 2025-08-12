@@ -55,7 +55,7 @@ const ContactForm = () => {
       <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
         <div>
           <Label htmlFor="fullName" className="text-muted-foreground text-sm">
-            Full Name
+            Name *
           </Label>
           <Input
             id="fullName"
@@ -79,16 +79,35 @@ const ContactForm = () => {
           />
         </div>
 
-        <div className="flex items-start space-x-2">
-          <Checkbox id="terms" name="terms" className="mt-1 flex-shrink-0" required />
-          <Label htmlFor="terms" className="text-xs md:text-sm text-muted-foreground leading-relaxed">
-            I agree to terms & conditions provided by Happy Home Roofers. By providing my phone number, I agree to receive text messages from the business.
+        <div>
+          <Label htmlFor="address" className="text-muted-foreground text-sm">
+            Address *
           </Label>
+          <Input
+            id="address"
+            name="address"
+            placeholder="Property Address"
+            className="mt-2"
+            required
+          />
+        </div>
+
+        <div>
+          <Label htmlFor="email" className="text-muted-foreground text-sm">
+            Email (Optional)
+          </Label>
+          <Input
+            id="email"
+            name="email"
+            placeholder="Email"
+            type="email"
+            className="mt-2"
+          />
         </div>
 
         <div>
           <Label htmlFor="notes" className="text-muted-foreground text-sm">
-            Notes
+            Additional Notes
           </Label>
           <Textarea
             id="notes"
@@ -98,18 +117,11 @@ const ContactForm = () => {
           />
         </div>
 
-        <div>
-          <Label htmlFor="email" className="text-muted-foreground text-sm">
-            Email *
+        <div className="flex items-start space-x-2">
+          <Checkbox id="terms" name="terms" className="mt-1 flex-shrink-0" required />
+          <Label htmlFor="terms" className="text-xs md:text-sm text-muted-foreground leading-relaxed">
+            I agree to terms & conditions provided by Happy Home Roofers. By providing my phone number, I agree to receive text messages from the business.
           </Label>
-          <Input
-            id="email"
-            name="email"
-            placeholder="Email"
-            type="email"
-            className="mt-2"
-            required
-          />
         </div>
 
         {/* Success/Error Message */}
