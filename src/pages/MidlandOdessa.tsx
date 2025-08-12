@@ -53,7 +53,7 @@ const MidlandOdessa = () => {
       <section className="py-16 md:py-20 bg-gradient-to-br from-slate-50 to-white">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-6 font-poppins leading-tight">
-            The next generation of roofing, the happy home experience
+            THE NEXT GENERATION OF ROOFING, THE HAPPY HOME EXPERIENCE
           </h1>
           
           <p className="text-xl md:text-2xl text-slate-600 mb-8 font-medium">
