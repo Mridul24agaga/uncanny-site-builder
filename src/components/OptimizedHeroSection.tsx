@@ -41,7 +41,7 @@ const OptimizedHeroSection = () => {
       <div className="relative z-10 container mx-auto px-4 py-12 md:py-20">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start">
           {/* Hero Content */}
-          <div className="text-white space-y-4 md:space-y-6 pt-2 md:pt-4">
+          <div className="text-white space-y-4 md:space-y-6 pt-0 md:pt-2">
             <div>
               <img 
                 src="/lovable-uploads/8d05e9b0-8ac2-49be-b9bd-c91527c8d0eb.png" 
