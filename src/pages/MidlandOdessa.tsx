@@ -3,8 +3,20 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Check, Phone, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import ContactForm from "@/components/ContactForm";
+import { useState, useEffect } from "react";
 
 const MidlandOdessa = () => {
+  const [showStickyBar, setShowStickyBar] = useState(false);
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowStickyBar(window.scrollY > 300);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const roofingServices = ["Free Roof Inspection", "Roof Installation", "Roof Damage Repair", "Storm Restoration", "Gutter Installation", "Gutter Repair", "Shingle Replacement", "Metal Roofing", "Tile Roofing", "Flat Roof Repair", "Roof Maintenance", "Emergency Repairs", "Commercial Roofing", "Residential Roofing"];
   const processSteps = [{
     number: "01",
@@ -48,6 +60,26 @@ const MidlandOdessa = () => {
           </div>
         </div>
       </header>
+
+      {/* Sticky Call-to-Action Bar */}
+      <div className={`fixed top-0 left-0 right-0 bg-[#169AFF] text-white py-3 px-4 shadow-lg z-50 transform transition-transform duration-300 ${
+        showStickyBar ? 'translate-y-0' : '-translate-y-full'
+      }`}>
+        <div className="container mx-auto flex items-center justify-between">
+          <div className="flex items-center">
+            <Phone className="h-4 w-4 mr-2" />
+            <span className="font-semibold text-sm md:text-base">
+              CALL NOW TO BOOK YOUR FREE INSPECTION IN 24 HOURS OR LESS!
+            </span>
+          </div>
+          <a 
+            href="tel:+14329994694" 
+            className="bg-white text-[#169AFF] px-4 py-2 rounded-lg font-bold text-sm hover:bg-gray-100 transition-colors"
+          >
+            (432) 999-4694
+          </a>
+        </div>
+      </div>
 
       {/* Hero Section */}
       <section className="py-16 md:py-20 bg-gradient-to-br from-slate-50 to-white">
