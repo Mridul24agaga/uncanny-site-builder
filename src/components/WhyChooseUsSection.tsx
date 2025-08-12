@@ -46,7 +46,7 @@ const WhyChooseUsSection = () => {
             Why Main Reason to Choose Us
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Bring to the table win-win survival strategies to ensure proactive domination at the end of the day
+            Our team consists of certified and experienced roofing professionals. Proudly serving the Permian Basin as a trusted local family business.
           </p>
         </div>
 
