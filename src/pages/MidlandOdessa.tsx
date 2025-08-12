@@ -96,6 +96,15 @@ const MidlandOdessa = () => {
                 FREE INSPECTION IN 24 HOURS OR LESS
               </h3>
               <ContactForm />
+              
+              <div className="mt-8 p-6 bg-[#169AFF] rounded-2xl w-full">
+                <h3 className="text-xl font-bold mb-4 font-poppins text-white">Why Choose Happy Home Roofing?</h3>
+                <ul className="space-y-2 text-sm text-white/90">
+                  <li className="flex items-center"><Check className="h-4 w-4 mr-2" /> Licensed & Insured</li>
+                  <li className="flex items-center"><Check className="h-4 w-4 mr-2" /> Free Estimates</li>
+                  <li className="flex items-center"><Check className="h-4 w-4 mr-2" /> Local Experts</li>
+                </ul>
+              </div>
             </CardContent>
           </Card>
         </div>
