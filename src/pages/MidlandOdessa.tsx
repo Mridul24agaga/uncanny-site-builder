@@ -51,7 +51,7 @@ const MidlandOdessa = () => {
                   (432) 999-4694
                 </a>
               </div>
-              <Button className="bg-[#169AFF] hover:bg-[#0080e6] text-white" onClick={() => document.getElementById('estimate-form')?.scrollIntoView({
+              <Button className="bg-[#169AFF] hover:bg-[#0080e6] text-white text-sm md:text-base px-3 md:px-4 py-2 md:py-3" onClick={() => document.getElementById('estimate-form')?.scrollIntoView({
               behavior: 'smooth'
             })}>
                 Get Estimate
@@ -84,17 +84,17 @@ const MidlandOdessa = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="py-16 md:py-20 bg-gradient-to-br from-slate-50 to-white">
+      <section className="py-12 md:py-16 lg:py-20 bg-gradient-to-br from-slate-50 to-white">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-6 font-poppins leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-6 font-poppins leading-tight">
             THE NEXT GENERATION OF ROOFING, THE HAPPY HOME EXPERIENCE
           </h1>
           
-          <a href="tel:+14329994694" className="text-3xl md:text-4xl font-bold text-[#169AFF] mb-12 block hover:text-[#0080e6] transition-colors">
+          <a href="tel:+14329994694" className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#169AFF] mb-8 md:mb-12 block hover:text-[#0080e6] transition-colors">
             (432) 999-4694
           </a>
 
-          <Button size="lg" className="bg-[#169AFF] hover:bg-[#0080e6] text-white px-8 py-4 text-lg font-semibold" onClick={() => document.getElementById('contact-form-section')?.scrollIntoView({
+          <Button size="lg" className="bg-[#169AFF] hover:bg-[#0080e6] text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold" onClick={() => document.getElementById('estimate-form')?.scrollIntoView({
           behavior: 'smooth'
         })}>
             Schedule Free Inspection
