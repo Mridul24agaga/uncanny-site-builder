@@ -56,10 +56,6 @@ const MidlandOdessa = () => {
             THE NEXT GENERATION OF ROOFING, THE HAPPY HOME EXPERIENCE
           </h1>
           
-          <p className="text-xl md:text-2xl text-slate-600 mb-8 font-medium">
-            ALL SERVICES COME WITH A 10 YEAR WARRANTY
-          </p>
-          
           <a href="tel:+14329994694" className="text-3xl md:text-4xl font-bold text-[#169AFF] mb-12 block hover:text-[#0080e6] transition-colors">
             (432) 999-4694
           </a>
