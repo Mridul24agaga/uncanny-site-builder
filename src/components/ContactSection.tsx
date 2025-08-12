@@ -11,6 +11,23 @@ const ContactSection = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [message, setMessage] = useState({ text: '', type: '' });
 
+  const formatPhoneNumber = (value: string) => {
+    // Remove all non-digits
+    const phoneNumber = value.replace(/\D/g, '');
+    
+    // Limit to 10 digits
+    const limitedPhoneNumber = phoneNumber.substring(0, 10);
+    
+    // Format as (XXX) XXX-XXXX
+    if (limitedPhoneNumber.length >= 6) {
+      return `(${limitedPhoneNumber.substring(0, 3)}) ${limitedPhoneNumber.substring(3, 6)}-${limitedPhoneNumber.substring(6)}`;
+    } else if (limitedPhoneNumber.length >= 3) {
+      return `(${limitedPhoneNumber.substring(0, 3)}) ${limitedPhoneNumber.substring(3)}`;
+    } else {
+      return limitedPhoneNumber;
+    }
+  };
+
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
@@ -91,10 +108,14 @@ const ContactSection = () => {
                   name="phone"
                   type="tel"
                   placeholder="(555) 123-4567"
-                  pattern="[0-9]{10}"
+                  pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}"
                   title="Please enter a valid 10-digit US phone number"
                   className="w-full"
                   required
+                  onChange={(e) => {
+                    const formatted = formatPhoneNumber(e.target.value);
+                    e.target.value = formatted;
+                  }}
                 />
               </div>
 
