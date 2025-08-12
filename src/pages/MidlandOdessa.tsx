@@ -12,16 +12,16 @@ const MidlandOdessa = () => {
     description: "We start with a fast, no-obligation estimate. One of our friendly experts will assess your roof, answer questions, and give you a clear, honest quote — no hidden fees, ever."
   }, {
     number: "02",
+    title: "INSURANCE CONSULTATION",
+    description: "We help you navigate the insurance process from start to finish. Our team works directly with your insurance company to maximize your coverage and minimize your out-of-pocket costs."
+  }, {
+    number: "03",
     title: "MATERIAL CONSULTATION",
     description: "Not sure which material or style to choose? We'll help you find the perfect roofing solution that fits your home, budget, and goals. Our team can match existing materials or recommend fresh new looks to elevate your property."
   }, {
-    number: "03",
+    number: "04",
     title: "WORK BEGINS",
     description: "Once you're ready, our crew gets to work. We show up on time, treat your home like our own, and follow our proven prep and installation process to ensure beautiful, lasting results."
-  }, {
-    number: "04",
-    title: "FINAL WALKTHROUGH",
-    description: "Before we leave, our experts conduct a final walk through with you to ensure your 100% satisfaction. We don't leave until you love the work — and we clean up like we were never there."
   }];
   return <div className="min-h-screen bg-white font-inter">
       {/* Header with Navigation */}
