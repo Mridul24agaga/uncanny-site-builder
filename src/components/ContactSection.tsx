@@ -89,7 +89,10 @@ const ContactSection = () => {
                 <Input
                   id="phone"
                   name="phone"
-                  placeholder="Phone"
+                  type="tel"
+                  placeholder="(555) 123-4567"
+                  pattern="[0-9]{10}"
+                  title="Please enter a valid 10-digit US phone number"
                   className="w-full"
                   required
                 />
