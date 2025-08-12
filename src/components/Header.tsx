@@ -48,6 +48,8 @@ const Header = () => {
               src="/lovable-uploads/b808aa46-b91e-4f5b-8573-6e27bb488e2e.png" 
               alt="Happy Home Roofing" 
               className="h-16 md:h-20 lg:h-24 w-auto"
+              loading="eager"
+              fetchPriority="high"
             />
           </Link>
 

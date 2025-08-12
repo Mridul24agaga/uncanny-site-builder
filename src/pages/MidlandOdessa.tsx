@@ -41,7 +41,7 @@ const MidlandOdessa = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center">
-              <img src="/lovable-uploads/b808aa46-b91e-4f5b-8573-6e27bb488e2e.png" alt="Happy Home Roofing" className="h-16 md:h-20 w-auto" />
+              <img src="/lovable-uploads/b808aa46-b91e-4f5b-8573-6e27bb488e2e.png" alt="Happy Home Roofing" className="h-16 md:h-20 w-auto" loading="eager" fetchPriority="high" />
             </Link>
             
             <div className="flex items-center space-x-4">
@@ -166,13 +166,13 @@ const MidlandOdessa = () => {
             <CardContent className="p-8 md:p-12">
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div className="relative rounded-2xl overflow-hidden">
-                  <img src="/lovable-uploads/8ee16cd7-0fa7-471d-bed9-4470d670809a.png" alt="Beautiful home interior" className="w-full h-64 md:h-80 object-cover" />
+                  <img src="/lovable-uploads/8ee16cd7-0fa7-471d-bed9-4470d670809a.png" alt="Beautiful home interior" className="w-full h-64 md:h-80 object-cover" loading="lazy" decoding="async" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                   
                   {/* Logo overlay */}
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="bg-white/95 rounded-full p-6 shadow-2xl">
-                      <img src="/lovable-uploads/b808aa46-b91e-4f5b-8573-6e27bb488e2e.png" alt="Happy Home Roofing" className="h-16 w-auto" />
+                      <img src="/lovable-uploads/b808aa46-b91e-4f5b-8573-6e27bb488e2e.png" alt="Happy Home Roofing" className="h-16 w-auto" loading="lazy" decoding="async" />
                     </div>
                   </div>
                 </div>
@@ -253,7 +253,7 @@ const MidlandOdessa = () => {
             <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <img src="/lovable-uploads/736dcf78-ee19-4a87-8ff4-e898a256bc19.png" alt="Louie 510" className="w-10 h-10 rounded-full mr-3 object-cover" />
+                  <img src="/lovable-uploads/736dcf78-ee19-4a87-8ff4-e898a256bc19.png" alt="Louie 510" className="w-10 h-10 rounded-full mr-3 object-cover" loading="lazy" decoding="async" />
                   <div className="flex-1">
                     <div className="flex text-yellow-400 mb-1">
                       {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
@@ -273,7 +273,7 @@ const MidlandOdessa = () => {
             <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <img src="/lovable-uploads/eea2af0b-a141-4e5e-9226-a2b75c47548f.png" alt="David Hernandez" className="w-10 h-10 rounded-full mr-3 object-cover" />
+                  <img src="/lovable-uploads/eea2af0b-a141-4e5e-9226-a2b75c47548f.png" alt="David Hernandez" className="w-10 h-10 rounded-full mr-3 object-cover" loading="lazy" decoding="async" />
                   <div className="flex-1">
                     <div className="flex text-yellow-400 mb-1">
                       {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
@@ -293,7 +293,7 @@ const MidlandOdessa = () => {
             <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <img src="/lovable-uploads/9429e377-0e4e-4448-a027-cd5bbf0c38af.png" alt="Ivan Alvarado" className="w-10 h-10 rounded-full mr-3 object-cover" />
+                  <img src="/lovable-uploads/9429e377-0e4e-4448-a027-cd5bbf0c38af.png" alt="Ivan Alvarado" className="w-10 h-10 rounded-full mr-3 object-cover" loading="lazy" decoding="async" />
                   <div className="flex-1">
                     <div className="flex text-yellow-400 mb-1">
                       {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
@@ -313,7 +313,7 @@ const MidlandOdessa = () => {
             <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <img src="/lovable-uploads/dd707ca4-ce08-4267-9042-30298c8e1667.png" alt="Juan Cabrera" className="w-10 h-10 rounded-full mr-3 object-cover" />
+                  <img src="/lovable-uploads/dd707ca4-ce08-4267-9042-30298c8e1667.png" alt="Juan Cabrera" className="w-10 h-10 rounded-full mr-3 object-cover" loading="lazy" decoding="async" />
                   <div className="flex-1">
                     <div className="flex text-yellow-400 mb-1">
                       {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
@@ -333,7 +333,7 @@ const MidlandOdessa = () => {
             <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <img src="/lovable-uploads/9de20225-a3d4-4530-b184-93e82ea0f7b1.png" alt="Alicia Dendura" className="w-10 h-10 rounded-full mr-3 object-cover" />
+                  <img src="/lovable-uploads/9de20225-a3d4-4530-b184-93e82ea0f7b1.png" alt="Alicia Dendura" className="w-10 h-10 rounded-full mr-3 object-cover" loading="lazy" decoding="async" />
                   <div className="flex-1">
                     <div className="flex text-yellow-400 mb-1">
                       {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
@@ -353,7 +353,7 @@ const MidlandOdessa = () => {
             <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <img src="/lovable-uploads/341d79ee-8691-4acc-af3a-6bec6a276f42.png" alt="Ivonne Nava" className="w-10 h-10 rounded-full mr-3 object-cover" />
+                  <img src="/lovable-uploads/341d79ee-8691-4acc-af3a-6bec6a276f42.png" alt="Ivonne Nava" className="w-10 h-10 rounded-full mr-3 object-cover" loading="lazy" decoding="async" />
                   <div className="flex-1">
                     <div className="flex text-yellow-400 mb-1">
                       {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
@@ -373,7 +373,7 @@ const MidlandOdessa = () => {
             <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <img src="/lovable-uploads/220bf27d-a4c0-47f4-9313-e11b32f78998.png" alt="Suzzett Rodriguez" className="w-10 h-10 rounded-full mr-3 object-cover" />
+                  <img src="/lovable-uploads/220bf27d-a4c0-47f4-9313-e11b32f78998.png" alt="Suzzett Rodriguez" className="w-10 h-10 rounded-full mr-3 object-cover" loading="lazy" decoding="async" />
                   <div className="flex-1">
                     <div className="flex text-yellow-400 mb-1">
                       {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
@@ -393,7 +393,7 @@ const MidlandOdessa = () => {
             <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <img src="/lovable-uploads/bfff6401-79a3-457d-8a27-c02a5770e745.png" alt="Javier" className="w-10 h-10 rounded-full mr-3 object-cover" />
+                  <img src="/lovable-uploads/bfff6401-79a3-457d-8a27-c02a5770e745.png" alt="Javier" className="w-10 h-10 rounded-full mr-3 object-cover" loading="lazy" decoding="async" />
                   <div className="flex-1">
                     <div className="flex text-yellow-400 mb-1">
                       {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
@@ -413,7 +413,7 @@ const MidlandOdessa = () => {
             <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <img src="/lovable-uploads/81729a25-9c7c-42c2-b076-e0719d0f7886.png" alt="Saúl Fierro" className="w-10 h-10 rounded-full mr-3 object-cover" />
+                  <img src="/lovable-uploads/81729a25-9c7c-42c2-b076-e0719d0f7886.png" alt="Saúl Fierro" className="w-10 h-10 rounded-full mr-3 object-cover" loading="lazy" decoding="async" />
                   <div className="flex-1">
                     <div className="flex text-yellow-400 mb-1">
                       {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
@@ -442,15 +442,15 @@ const MidlandOdessa = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="relative rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
-              <img src="/lovable-uploads/5b873240-e804-4e92-bbe7-e4085fd54467.png" alt="Residential roofing project in progress" className="w-full h-64 object-cover" />
+              <img src="/lovable-uploads/5b873240-e804-4e92-bbe7-e4085fd54467.png" alt="Residential roofing project in progress" className="w-full h-64 object-cover" loading="lazy" decoding="async" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
             </div>
             <div className="relative rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
-              <img src="/lovable-uploads/20e15359-2823-4915-9bb9-072d4a573428.png" alt="Quality shingle installation detail" className="w-full h-64 object-cover" />
+              <img src="/lovable-uploads/20e15359-2823-4915-9bb9-072d4a573428.png" alt="Quality shingle installation detail" className="w-full h-64 object-cover" loading="lazy" decoding="async" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
             </div>
             <div className="relative rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
-              <img src="/lovable-uploads/2bf2fb87-9b64-430f-9dba-449a1a25544e.png" alt="Professional roofing craftsmanship" className="w-full h-64 object-cover" />
+              <img src="/lovable-uploads/2bf2fb87-9b64-430f-9dba-449a1a25544e.png" alt="Professional roofing craftsmanship" className="w-full h-64 object-cover" loading="lazy" decoding="async" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
             </div>
           </div>

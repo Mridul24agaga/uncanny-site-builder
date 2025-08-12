@@ -205,6 +205,8 @@ const ReviewsSection = () => {
                                   src={review.profilePic} 
                                   alt={review.name}
                                   className="w-full h-full object-cover"
+                                  loading="lazy"
+                                  decoding="async"
                                 />
                               </div>
                               <div className="min-w-0 flex-1">

@@ -6,12 +6,19 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import MidlandOdessa from "./pages/MidlandOdessa";
 import NotFound from "./pages/NotFound";
+import ImagePreloader from "./components/ImagePreloader";
 
 const queryClient = new QueryClient();
+
+// Critical images that should be preloaded for fast loading
+const criticalImages = [
+  '/lovable-uploads/b808aa46-b91e-4f5b-8573-6e27bb488e2e.png', // Logo
+];
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
+      <ImagePreloader images={criticalImages} />
       <Toaster />
       <Sonner />
       <BrowserRouter>

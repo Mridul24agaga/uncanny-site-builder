@@ -20,6 +20,8 @@ const AboutSection = () => {
                 src={aboutRoofer} 
                 alt="Professional roofer working" 
                 className="w-full h-[500px] md:h-[600px] object-cover"
+                loading="lazy"
+                decoding="async"
               />
               
               {/* Experience Badge */}
