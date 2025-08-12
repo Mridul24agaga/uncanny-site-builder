@@ -108,7 +108,10 @@ const MidlandOdessa = () => {
                 </div>
 
                 {/* Right Side - Form */}
-                <div className="bg-white p-8 lg:p-12 flex items-center justify-center">
+                <div className="bg-white p-8 lg:p-12 flex flex-col items-center justify-center">
+                  <h3 className="text-2xl font-bold text-slate-900 mb-6 text-center font-poppins">
+                    FREE INSPECTION IN 24 HOURS OR LESS
+                  </h3>
                   <ContactForm />
                 </div>
               </div>
