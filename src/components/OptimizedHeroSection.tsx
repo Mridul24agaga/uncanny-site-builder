@@ -46,7 +46,7 @@ const OptimizedHeroSection = () => {
               <img 
                 src="/lovable-uploads/12e5a293-1d12-4f3a-93e6-d7c74c65a5ec.png" 
                 alt="Happy Home Roofing & Construction - Permian Trusted Roofer" 
-                className="h-32 md:h-40 mb-4 md:mb-6"
+                className="w-full max-w-lg h-auto mb-4 md:mb-6"
               />
               <p className="text-sm md:text-lg mb-2 md:mb-4 opacity-90">
                 Top Rated Permian Basin Roofing Company
