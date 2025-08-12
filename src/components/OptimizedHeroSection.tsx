@@ -43,6 +43,11 @@ const OptimizedHeroSection = () => {
           {/* Hero Content */}
           <div className="text-white space-y-4 md:space-y-6 pt-4 md:pt-8">
             <div>
+              <img 
+                src="/lovable-uploads/8d05e9b0-8ac2-49be-b9bd-c91527c8d0eb.png" 
+                alt="Happy Home - Texas Trusted Home Source" 
+                className="h-16 md:h-20 mb-4 md:mb-6"
+              />
               <p className="text-sm md:text-lg mb-2 md:mb-4 opacity-90">
                 Top Rated Permian Basin Roofing Company
               </p>
