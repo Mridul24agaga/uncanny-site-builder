@@ -13,6 +13,7 @@ const queryClient = new QueryClient();
 // Critical images that should be preloaded for fast loading
 const criticalImages = [
   '/lovable-uploads/b808aa46-b91e-4f5b-8573-6e27bb488e2e.png', // Logo
+  '/lovable-uploads/8ee16cd7-0fa7-471d-bed9-4470d670809a.png', // Hero background
 ];
 
 const App = () => (

@@ -2,8 +2,12 @@ import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import { Check } from "lucide-react";
 import ContactForm from "./ContactForm";
+import { useState, useEffect } from "react";
 
-const HeroSection = () => {
+const OptimizedHeroSection = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const heroImageUrl = "/lovable-uploads/8ee16cd7-0fa7-471d-bed9-4470d670809a.png";
+
   const features = [
     "Highest Quality Materials",
     "Trustworthy Craftsmanship With Attention-to-Detail",
@@ -11,20 +15,25 @@ const HeroSection = () => {
     "Top Rated Roofer With Over 1,000 5-Star Reviews"
   ];
 
+  useEffect(() => {
+    const img = new Image();
+    img.onload = () => setImageLoaded(true);
+    img.src = heroImageUrl;
+  }, [heroImageUrl]);
+
   return (
     <section 
-      className="relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat bg-gray-900"
+      className={`relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat transition-all duration-500 ${
+        imageLoaded ? 'bg-gray-900' : 'bg-gray-800'
+      }`}
       style={{ 
-        backgroundImage: `url(/lovable-uploads/8ee16cd7-0fa7-471d-bed9-4470d670809a.png)`,
+        backgroundImage: imageLoaded ? `url(${heroImageUrl})` : 'none',
       }}
     >
-      {/* Preload the background image */}
-      <link 
-        rel="preload" 
-        as="image" 
-        href="/lovable-uploads/8ee16cd7-0fa7-471d-bed9-4470d670809a.png"
-        fetchPriority="high"
-      />
+      {/* Progressive loading placeholder */}
+      {!imageLoaded && (
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900 animate-pulse"></div>
+      )}
       
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-hero-overlay"></div>
@@ -76,4 +85,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default OptimizedHeroSection;
