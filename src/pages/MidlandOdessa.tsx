@@ -434,7 +434,7 @@ const MidlandOdessa = () => {
         <div className="container mx-auto px-4 text-center relative z-10">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-[#169AFF] font-inter tracking-wider mb-6 leading-tight">
-              WE'RE THE BEST HOUSE GUESTS EVER
+              WE'RE THE ROOFING EXPERTS YOU CAN TRUST
             </h2>
             <div className="w-32 h-1 bg-[#169AFF] mx-auto rounded-full mb-6"></div>
             <p className="text-lg md:text-xl text-slate-600 font-medium">
