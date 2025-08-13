@@ -10,6 +10,7 @@ import RoofRepairWarnings from "./pages/RoofRepairWarnings";
 import WinterRoofPreparation from "./pages/WinterRoofPreparation";
 import RoofInspectionChecklist from "./pages/RoofInspectionChecklist";
 import MetalVsAsphalt from "./pages/MetalVsAsphalt";
+import Blogs from "./pages/Blogs";
 import NotFound from "./pages/NotFound";
 import ImagePreloader from "./components/ImagePreloader";
 
@@ -31,6 +32,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/midland-odessa" element={<MidlandOdessa />} />
+          <Route path="/blogs" element={<Blogs />} />
           <Route path="/5-most-common-causes-of-roof-storm-damage" element={<RoofStormDamage />} />
           <Route path="/7-warning-signs-your-roof-needs-immediate-repair" element={<RoofRepairWarnings />} />
           <Route path="/how-to-prepare-your-roof-for-winter" element={<WinterRoofPreparation />} />
