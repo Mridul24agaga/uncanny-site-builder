@@ -21,7 +21,7 @@ const Header = () => {
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
-    } else if (path === '/midland-odessa') {
+    } else if (path === '/midland-odessa' || path === '/blogs') {
       window.location.href = path;
     } else {
       // For home, scroll to top
@@ -35,7 +35,8 @@ const Header = () => {
     { name: "Services", path: "/#services" },
     { name: "Why choose Us", path: "/#why-choose" },
     { name: "Projects", path: "/#projects" },
-    { name: "Testimonial", path: "/#testimonials" }
+    { name: "Testimonial", path: "/#testimonials" },
+    { name: "Blogs", path: "/blogs" }
   ];
 
   return (
