@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import roofStormDamageHero from "@/assets/roof-storm-damage-hero.jpg";
 import { Helmet } from "react-helmet";
 
 const RoofStormDamage = () => {
@@ -22,7 +23,7 @@ const RoofStormDamage = () => {
             </h1>
             <div className="w-full h-64 md:h-96 mb-6 rounded-lg overflow-hidden">
               <img 
-                src="/lovable-uploads/8ee16cd7-0fa7-471d-bed9-4470d670809a.png" 
+                src={roofStormDamageHero} 
                 alt="Roof storm damage from severe weather" 
                 className="w-full h-full object-cover"
               />
