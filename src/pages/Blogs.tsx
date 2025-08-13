@@ -43,7 +43,7 @@ const blogPosts = [
     title: "Metal vs. Asphalt Shingles: Which Roof Is Right for You?",
     description: "Compare metal roofing vs asphalt shingles. Learn about cost, durability, energy efficiency, and maintenance to choose the right roof for your home.",
     image: metalVsAsphalt,
-    slug: "/metal-vs-asphalt",
+    slug: "/metal-vs-asphalt-",
     category: "Materials"
   }
 ];

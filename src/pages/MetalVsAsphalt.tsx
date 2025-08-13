@@ -10,7 +10,7 @@ const MetalVsAsphalt = () => {
         <title>Metal vs. Asphalt Shingles: Which Roof Is Right for You? | Happy Home Roofing</title>
         <meta name="description" content="Compare metal roofing vs asphalt shingles. Learn about cost, durability, energy efficiency, and maintenance to choose the right roof for your home." />
         <meta name="keywords" content="metal roofing vs asphalt shingles, roofing materials comparison, metal roof cost, asphalt shingle durability, roofing guide" />
-        <link rel="canonical" href="/metal-vs-asphalt" />
+        <link rel="canonical" href="/metal-vs-asphalt-" />
       </Helmet>
       
       <Header />
