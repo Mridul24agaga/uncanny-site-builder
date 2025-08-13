@@ -104,20 +104,6 @@ const Blogs = () => {
               </Card>
             ))}
           </div>
-
-          <section className="mt-16 text-center bg-muted/30 rounded-lg p-8">
-            <h2 className="text-3xl font-semibold text-primary mb-4">
-              Need Professional Roofing Help?
-            </h2>
-            <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Our expert team is ready to help with all your roofing needs. From inspections to repairs and installations, we've got you covered.
-            </p>
-            <Link to="/#contact">
-              <Button size="lg" className="text-lg px-8 py-3">
-                Get Free Estimate
-              </Button>
-            </Link>
-          </section>
         </div>
       </main>
       
