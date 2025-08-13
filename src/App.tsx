@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import MidlandOdessa from "./pages/MidlandOdessa";
+import RoofStormDamage from "./pages/RoofStormDamage";
 import NotFound from "./pages/NotFound";
 import ImagePreloader from "./components/ImagePreloader";
 
@@ -26,6 +27,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/midland-odessa" element={<MidlandOdessa />} />
+          <Route path="/5-most-common-causes-of-roof-storm-damage" element={<RoofStormDamage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
