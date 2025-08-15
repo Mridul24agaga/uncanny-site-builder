@@ -95,7 +95,7 @@ const MidlandOdessa = () => {
             <img 
               src="/lovable-uploads/9963ca67-782b-4932-aabd-62132c2849cc.png" 
               alt="Happy Home Roofing - Permian Trusted Roofer"
-              className="w-auto h-16 md:h-20 max-w-full"
+              className="w-auto h-24 md:h-32 max-w-full"
               loading="eager"
             />
           </div>
