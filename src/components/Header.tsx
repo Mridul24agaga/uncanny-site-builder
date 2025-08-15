@@ -96,8 +96,7 @@ const Header = () => {
                 {/* Menu Panel */}
                 <div className="fixed top-0 right-0 bottom-0 z-50 w-[300px] sm:w-[400px] bg-background shadow-xl border-l">
                   <div className="p-6">
-                    <div className="flex items-center justify-between mb-6">
-                      <h2 className="text-lg font-semibold">Navigation Menu</h2>
+                    <div className="flex items-center justify-end mb-6">
                       <Button
                         variant="ghost"
                         size="icon"
