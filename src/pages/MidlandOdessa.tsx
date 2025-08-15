@@ -90,6 +90,16 @@ const MidlandOdessa = () => {
       {/* Main Estimate Form Section */}
       <section id="estimate-form" className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
+          {/* Logo Section */}
+          <div className="flex justify-center mb-12">
+            <img 
+              src="/lovable-uploads/9963ca67-782b-4932-aabd-62132c2849cc.png" 
+              alt="Happy Home Roofing - Permian Trusted Roofer"
+              className="w-auto h-16 md:h-20 max-w-full"
+              loading="eager"
+            />
+          </div>
+          
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start max-w-5xl mx-auto">
             {/* Why Choose Us - Left Side on Desktop */}
             <div className="order-2 lg:order-1">
