@@ -135,9 +135,9 @@ const MidlandOdessa = () => {
             </div>
 
             {/* Form - Right Side on Desktop */}
-            <div className="order-1 lg:order-2">
-              <Card className="border">
-                <CardContent className="p-8 lg:p-12">
+            <div className="order-1 lg:order-2 flex justify-center">
+              <Card className="border w-full max-w-md lg:max-w-none">
+                <CardContent className="p-6 sm:p-8 lg:p-12">
                   <h3 className="text-2xl font-bold text-slate-900 mb-6 text-center font-poppins">
                     FREE INSPECTION IN 24 HOURS OR LESS
                   </h3>
