@@ -3,10 +3,17 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Check, Phone, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import ContactForm from "@/components/ContactForm";
+import ImagePreloader from "@/components/ImagePreloader";
 import { useState, useEffect } from "react";
 
 const MidlandOdessa = () => {
   const [showStickyBar, setShowStickyBar] = useState(false);
+  
+  // Critical images to preload for faster mobile performance
+  const criticalImages = [
+    "/lovable-uploads/b808aa46-b91e-4f5b-8573-6e27bb488e2e.png", // Header logo
+    "/lovable-uploads/9963ca67-782b-4932-aabd-62132c2849cc.png"  // Main logo
+  ];
   
   useEffect(() => {
     const handleScroll = () => {
@@ -36,6 +43,7 @@ const MidlandOdessa = () => {
     description: "Once you're ready, our crew gets to work. We show up on time, treat your home like our own, and follow our proven prep and installation process to ensure beautiful, lasting results."
   }];
   return <div className="min-h-screen bg-white font-inter">
+      <ImagePreloader images={criticalImages} />
       {/* Header with Navigation */}
       <header className="bg-white border-b shadow-sm">
         <div className="container mx-auto px-4 py-4">
@@ -96,7 +104,8 @@ const MidlandOdessa = () => {
               src="/lovable-uploads/9963ca67-782b-4932-aabd-62132c2849cc.png" 
               alt="Happy Home Roofing - Permian Trusted Roofer"
               className="w-auto h-24 md:h-32 max-w-full"
-              loading="eager"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           
