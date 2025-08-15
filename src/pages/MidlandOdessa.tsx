@@ -47,8 +47,8 @@ const MidlandOdessa = () => {
             <div className="flex items-center space-x-4">
               <div className="hidden md:flex items-center text-slate-600">
                 <Phone className="h-4 w-4 mr-2" />
-                <a href="tel:+14329994694" className="font-medium hover:text-[#169AFF] transition-colors">
-                  (432) 999-4694
+                <a href="tel:+14322877329" className="font-medium hover:text-[#169AFF] transition-colors">
+                  (432) 287-7329
                 </a>
               </div>
               <Button className="bg-[#169AFF] hover:bg-[#0080e6] text-white text-sm md:text-base px-3 md:px-4 py-2 md:py-3" onClick={() => document.getElementById('estimate-form')?.scrollIntoView({
@@ -74,10 +74,10 @@ const MidlandOdessa = () => {
             </span>
           </div>
           <a 
-            href="tel:+14329994694" 
+            href="tel:+14322877329" 
             className="bg-white text-[#169AFF] px-2 md:px-4 py-1 md:py-2 rounded-lg font-bold text-xs md:text-sm hover:bg-gray-100 transition-colors flex-shrink-0"
           >
-            <span className="hidden sm:inline">(432) 999-4694</span>
+            <span className="hidden sm:inline">(432) 287-7329</span>
             <span className="sm:hidden">CALL NOW</span>
           </a>
         </div>
@@ -488,8 +488,8 @@ const MidlandOdessa = () => {
               <Phone className="h-6 w-6 mr-3 text-[#169AFF]" />
               <div>
                 <p className="text-sm text-white/60">Call us at</p>
-                <a href="tel:+14329994694" className="text-2xl font-bold hover:text-gray-200 transition-colors">
-                  (432) 999-4694
+                <a href="tel:+14322877329" className="text-2xl font-bold hover:text-gray-200 transition-colors">
+                  (432) 287-7329
                 </a>
               </div>
             </div>
