@@ -9,8 +9,16 @@ import roofRepairWarning from "@/assets/roof-repair-warning-signs.jpg";
 import winterRoofPrep from "@/assets/winter-roof-preparation.jpg";
 import roofInspectionChecklist from "@/assets/roof-inspection-checklist.jpg";
 import metalVsAsphalt from "@/assets/metal-vs-asphalt-comparison.jpg";
+import roofInsuranceClaimsHero from "@/assets/roof-insurance-claims-hero.jpg";
 
 const blogPosts = [
+  {
+    title: "Navigating Roof Insurance Claims: Your Guide to Roof Repair and Replacement",
+    description: "Expert guide to roof insurance claims for hail, wind, and storm damage. Get help with insurance-approved roof repair and replacement from Happy Home Roofers.",
+    image: roofInsuranceClaimsHero,
+    slug: "/navigating-roof-insurance-claims",
+    category: "Insurance Claims"
+  },
   {
     title: "5 Most Common Causes of Roof Storm Damage",
     description: "Discover the top 5 causes of roof storm damage including wind, rain, hail, debris, and ice. Learn prevention tips and how to protect your roof from storm damage.",

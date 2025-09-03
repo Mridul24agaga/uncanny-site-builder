@@ -9,6 +9,7 @@ import RoofStormDamage from "./pages/RoofStormDamage";
 import RoofRepairWarnings from "./pages/RoofRepairWarnings";
 import WinterRoofPreparation from "./pages/WinterRoofPreparation";
 import RoofInspectionChecklist from "./pages/RoofInspectionChecklist";
+import RoofInsuranceClaims from "./pages/RoofInsuranceClaims";
 import MetalVsAsphalt from "./pages/MetalVsAsphalt";
 import Blogs from "./pages/Blogs";
 import NotFound from "./pages/NotFound";
@@ -38,6 +39,7 @@ const App = () => (
           <Route path="/how-to-prepare-your-roof-for-winter" element={<WinterRoofPreparation />} />
           <Route path="/roof-inspection-checklist" element={<RoofInspectionChecklist />} />
           <Route path="/metal-vs-asphalt-" element={<MetalVsAsphalt />} />
+          <Route path="/navigating-roof-insurance-claims" element={<RoofInsuranceClaims />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
