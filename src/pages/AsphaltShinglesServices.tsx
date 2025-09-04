@@ -35,9 +35,9 @@ const AsphaltShinglesServices = () => {
             />
           </div>
 
-          <div className="prose prose-lg max-w-none">
+          <div className="prose prose-lg max-w-none text-foreground">
             <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Why Choose Asphalt Shingles?</h2>
-            <p className="mb-6">
+            <p className="mb-6 text-foreground leading-relaxed">
               Asphalt shingles remain the most popular roofing choice for homeowners due to their affordability, versatility, and proven performance. Happy Home Roofers specializes in premium asphalt shingle installation that provides excellent protection and curb appeal for your home.
             </p>
 
@@ -120,12 +120,12 @@ const AsphaltShinglesServices = () => {
 
             <div className="bg-muted p-6 rounded-lg text-center">
               <h3 className="text-xl font-semibold mb-4">Need Asphalt Shingle Roofing?</h3>
-              <p className="mb-4">Get a free estimate for your asphalt shingle roofing project.</p>
+              <p className="mb-4 text-foreground">Get a free estimate for your asphalt shingle roofing project.</p>
               <Button size="lg" className="mr-4">
                 Free Estimate
               </Button>
               <Button variant="outline" size="lg">
-                Call (432) 214-4764
+                Call (432) 999-4694
               </Button>
             </div>
           </div>

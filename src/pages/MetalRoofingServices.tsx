@@ -35,9 +35,9 @@ const MetalRoofingServices = () => {
             />
           </div>
 
-          <div className="prose prose-lg max-w-none">
+          <div className="prose prose-lg max-w-none text-foreground">
             <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Why Choose Metal Roofing?</h2>
-            <p className="mb-6">
+            <p className="mb-6 text-foreground leading-relaxed">
               Metal roofing offers superior durability, energy efficiency, and longevity compared to traditional roofing materials. With proper installation by Happy Home Roofers, your metal roof can last 50+ years while providing excellent protection and cost savings.
             </p>
 
@@ -113,12 +113,12 @@ const MetalRoofingServices = () => {
 
             <div className="bg-muted p-6 rounded-lg text-center">
               <h3 className="text-xl font-semibold mb-4">Ready for a Metal Roof?</h3>
-              <p className="mb-4">Get a free consultation and estimate for your metal roofing project.</p>
+              <p className="mb-4 text-foreground">Get a free consultation and estimate for your metal roofing project.</p>
               <Button size="lg" className="mr-4">
                 Get Free Estimate
               </Button>
               <Button variant="outline" size="lg">
-                Call (432) 214-4764
+                Call (432) 999-4694
               </Button>
             </div>
           </div>

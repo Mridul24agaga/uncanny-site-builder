@@ -35,9 +35,9 @@ const RoofInspectionServices = () => {
             />
           </div>
 
-          <div className="prose prose-lg max-w-none">
+          <div className="prose prose-lg max-w-none text-foreground">
             <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Why Regular Roof Inspections Matter</h2>
-            <p className="mb-6">
+            <p className="mb-6 text-foreground leading-relaxed">
               Regular roof inspections are essential for maintaining your home's protection and value. Happy Home Roofers provides thorough, professional inspections that identify potential issues before they become costly repairs, helping you make informed decisions about your roof's maintenance and care.
             </p>
 
@@ -171,12 +171,12 @@ const RoofInspectionServices = () => {
 
             <div className="bg-muted p-6 rounded-lg text-center">
               <h3 className="text-xl font-semibold mb-4">Schedule Your Roof Inspection</h3>
-              <p className="mb-4">Get a professional assessment of your roof's condition with our detailed inspection service.</p>
+              <p className="mb-4 text-foreground">Get a professional assessment of your roof's condition with our detailed inspection service.</p>
               <Button size="lg" className="mr-4">
                 Book Inspection
               </Button>
               <Button variant="outline" size="lg">
-                Call (432) 214-4764
+                Call (432) 999-4694
               </Button>
             </div>
           </div>

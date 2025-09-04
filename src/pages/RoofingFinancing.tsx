@@ -31,8 +31,8 @@ const RoofingFinancing = () => {
             />
           </div>
 
-          <div className="prose prose-lg max-w-none">
-            <p className="text-lg text-muted-foreground mb-6">
+          <div className="prose prose-lg max-w-none text-foreground">
+            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Your roof is one of the most critical components of your home, protecting your family and belongings from the elements. However, when it's time for a roof repair or replacement, the costs can feel overwhelming. At Happy Home Roofers, we believe that financial constraints shouldn't prevent you from maintaining a safe and secure roof. That's why we offer a variety of roofing financing options to make repairs and replacements accessible and stress-free.
             </p>
 

@@ -35,9 +35,9 @@ const TileRoofingServices = () => {
             />
           </div>
 
-          <div className="prose prose-lg max-w-none">
+          <div className="prose prose-lg max-w-none text-foreground">
             <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Why Choose Tile Roofing?</h2>
-            <p className="mb-6">
+            <p className="mb-6 text-foreground leading-relaxed">
               Tile roofing offers exceptional durability, timeless beauty, and superior protection for your home. With proper installation by Happy Home Roofers, tile roofs can last 50-100 years while providing excellent insulation and weather resistance.
             </p>
 
@@ -147,12 +147,12 @@ const TileRoofingServices = () => {
 
             <div className="bg-muted p-6 rounded-lg text-center">
               <h3 className="text-xl font-semibold mb-4">Interested in Tile Roofing?</h3>
-              <p className="mb-4">Contact us for a consultation on tile roofing options for your home.</p>
+              <p className="mb-4 text-foreground">Contact us for a consultation on tile roofing options for your home.</p>
               <Button size="lg" className="mr-4">
                 Schedule Consultation
               </Button>
               <Button variant="outline" size="lg">
-                Call (432) 214-4764
+                Call (432) 999-4694
               </Button>
             </div>
           </div>

@@ -22,7 +22,7 @@ const StormDamageRepair = () => {
             <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
               Storm Damage Roof Repair Services
             </h1>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Fast, reliable storm damage repair and emergency roofing services
             </p>
           </header>
@@ -35,9 +35,9 @@ const StormDamageRepair = () => {
             />
           </div>
 
-          <div className="prose prose-lg max-w-none">
+          <div className="prose prose-lg max-w-none text-foreground">
             <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Emergency Storm Damage Response</h2>
-            <p className="mb-6">
+            <p className="mb-6 text-foreground leading-relaxed">
               When storms strike, your roof takes the brunt of nature's fury. At Happy Home Roofers, we provide 24/7 emergency storm damage repair services to protect your home and family. Our experienced team responds quickly to assess damage, provide temporary repairs, and restore your roof to its pre-storm condition.
             </p>
 
@@ -95,9 +95,9 @@ const StormDamageRepair = () => {
 
             <div className="bg-muted p-6 rounded-lg text-center">
               <h3 className="text-xl font-semibold mb-4">Need Emergency Storm Damage Repair?</h3>
-              <p className="mb-4">Don't wait - storm damage can worsen quickly. Contact us now for immediate assistance.</p>
+              <p className="mb-4 text-foreground">Don't wait - storm damage can worsen quickly. Contact us now for immediate assistance.</p>
               <Button size="lg" className="mr-4">
-                Call Now: (432) 214-4764
+                Call Now: (432) 999-4694
               </Button>
               <Button variant="outline" size="lg">
                 Schedule Inspection

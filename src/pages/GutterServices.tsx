@@ -35,9 +35,9 @@ const GutterServices = () => {
             />
           </div>
 
-          <div className="prose prose-lg max-w-none">
+          <div className="prose prose-lg max-w-none text-foreground">
             <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Complete Gutter Solutions</h2>
-            <p className="mb-6">
+            <p className="mb-6 text-foreground leading-relaxed">
               Protect your home's foundation, landscaping, and exterior with professional gutter services from Happy Home Roofers. Our comprehensive gutter solutions include installation, repair, cleaning, and maintenance to keep water flowing properly away from your home.
             </p>
 
@@ -159,12 +159,12 @@ const GutterServices = () => {
 
             <div className="bg-muted p-6 rounded-lg text-center">
               <h3 className="text-xl font-semibold mb-4">Need Gutter Services?</h3>
-              <p className="mb-4">Contact us for professional gutter installation, repair, or maintenance.</p>
+              <p className="mb-4 text-foreground">Contact us for professional gutter installation, repair, or maintenance.</p>
               <Button size="lg" className="mr-4">
                 Get Free Quote
               </Button>
               <Button variant="outline" size="lg">
-                Call (432) 214-4764
+                Call (432) 999-4694
               </Button>
             </div>
           </div>
