@@ -10,8 +10,16 @@ import winterRoofPrep from "@/assets/winter-roof-preparation.jpg";
 import roofInspectionChecklist from "@/assets/roof-inspection-checklist.jpg";
 import metalVsAsphalt from "@/assets/metal-vs-asphalt-comparison.jpg";
 import roofInsuranceClaimsHero from "@/assets/roof-insurance-claims-hero.jpg";
+import roofingFinancingHero from "@/assets/roofing-financing-hero.jpg";
 
 const blogPosts = [
+  {
+    title: "Roofing Financing Options: Making Roof Repair and Replacement Affordable",
+    description: "Explore flexible roofing financing options with Happy Home Roofers. Affordable roof repair financing, roof replacement financing, and no credit roofing financing available.",
+    image: roofingFinancingHero,
+    slug: "/roofing-financing-options",
+    category: "Financing"
+  },
   {
     title: "Navigating Roof Insurance Claims: Your Guide to Roof Repair and Replacement",
     description: "Expert guide to roof insurance claims for hail, wind, and storm damage. Get help with insurance-approved roof repair and replacement from Happy Home Roofers.",

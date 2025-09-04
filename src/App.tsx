@@ -11,6 +11,7 @@ import WinterRoofPreparation from "./pages/WinterRoofPreparation";
 import RoofInspectionChecklist from "./pages/RoofInspectionChecklist";
 import RoofInsuranceClaims from "./pages/RoofInsuranceClaims";
 import MetalVsAsphalt from "./pages/MetalVsAsphalt";
+import RoofingFinancing from "./pages/RoofingFinancing";
 import Blogs from "./pages/Blogs";
 import NotFound from "./pages/NotFound";
 import ImagePreloader from "./components/ImagePreloader";
@@ -40,6 +41,7 @@ const App = () => (
           <Route path="/roof-inspection-checklist" element={<RoofInspectionChecklist />} />
           <Route path="/metal-vs-asphalt-" element={<MetalVsAsphalt />} />
           <Route path="/navigating-roof-insurance-claims" element={<RoofInsuranceClaims />} />
+          <Route path="/roofing-financing-options" element={<RoofingFinancing />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
