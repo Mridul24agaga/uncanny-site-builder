@@ -19,7 +19,7 @@ const StormDamageRepair = () => {
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
           <header className="text-center mb-8">
-            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-heading-black mb-4">
               Storm Damage Roof Repair Services
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -36,12 +36,12 @@ const StormDamageRepair = () => {
           </div>
 
           <div className="prose prose-lg max-w-none text-foreground">
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Emergency Storm Damage Response</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Emergency Storm Damage Response</h2>
             <p className="mb-6 text-foreground leading-relaxed">
               When storms strike, your roof takes the brunt of nature's fury. At Happy Home Roofers, we provide 24/7 emergency storm damage repair services to protect your home and family. Our experienced team responds quickly to assess damage, provide temporary repairs, and restore your roof to its pre-storm condition.
             </p>
 
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Types of Storm Damage We Repair</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Types of Storm Damage We Repair</h2>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div>
                 <h3 className="text-xl font-semibold mb-3">Hail Damage</h3>
@@ -63,7 +63,7 @@ const StormDamageRepair = () => {
               </div>
             </div>
 
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Our Storm Damage Repair Process</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Our Storm Damage Repair Process</h2>
             <div className="space-y-4 mb-8">
               <div className="border-l-4 border-primary pl-4">
                 <h3 className="font-semibold">1. Emergency Assessment</h3>
@@ -83,7 +83,7 @@ const StormDamageRepair = () => {
               </div>
             </div>
 
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Why Choose Happy Home Roofers for Storm Damage?</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Why Choose Happy Home Roofers for Storm Damage?</h2>
             <ul className="list-disc ml-6 mb-8">
               <li>24/7 emergency response team</li>
               <li>Insurance claim specialists</li>

@@ -19,7 +19,7 @@ const GutterServices = () => {
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
           <header className="text-center mb-8">
-            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-heading-black mb-4">
               Gutter Services
             </h1>
             <p className="text-lg text-muted-foreground">
@@ -36,12 +36,12 @@ const GutterServices = () => {
           </div>
 
           <div className="prose prose-lg max-w-none text-foreground">
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Complete Gutter Solutions</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Complete Gutter Solutions</h2>
             <p className="mb-6 text-foreground leading-relaxed">
               Protect your home's foundation, landscaping, and exterior with professional gutter services from Happy Home Roofers. Our comprehensive gutter solutions include installation, repair, cleaning, and maintenance to keep water flowing properly away from your home.
             </p>
 
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Our Gutter Services</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Our Gutter Services</h2>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div>
                 <h3 className="text-xl font-semibold mb-3">Gutter Installation</h3>
@@ -63,7 +63,7 @@ const GutterServices = () => {
               </div>
             </div>
 
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Gutter Materials & Options</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Gutter Materials & Options</h2>
             <div className="space-y-4 mb-8">
               <div className="border-l-4 border-primary pl-4">
                 <h3 className="font-semibold">Aluminum Gutters</h3>
@@ -83,7 +83,7 @@ const GutterServices = () => {
               </div>
             </div>
 
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Gutter Guards & Protection</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Gutter Guards & Protection</h2>
             <div className="space-y-4 mb-8">
               <div className="bg-muted p-4 rounded">
                 <h3 className="font-semibold mb-2">Mesh Gutter Guards</h3>
@@ -103,7 +103,7 @@ const GutterServices = () => {
               </div>
             </div>
 
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Signs You Need Gutter Service</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Signs You Need Gutter Service</h2>
             <ul className="list-disc ml-6 mb-8">
               <li>Water overflowing from gutters</li>
               <li>Sagging or pulling away from the house</li>
@@ -115,7 +115,7 @@ const GutterServices = () => {
               <li>Peeling paint on gutters or home exterior</li>
             </ul>
 
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Our Installation Process</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Our Installation Process</h2>
             <div className="space-y-4 mb-8">
               <div className="flex items-start space-x-4">
                 <div className="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center font-semibold">1</div>
@@ -147,7 +147,7 @@ const GutterServices = () => {
               </div>
             </div>
 
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Maintenance Services</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Maintenance Services</h2>
             <p className="mb-4">Regular maintenance keeps your gutters functioning properly:</p>
             <ul className="list-disc ml-6 mb-8">
               <li>Professional gutter cleaning</li>

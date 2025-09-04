@@ -19,7 +19,7 @@ const RoofInspectionServices = () => {
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
           <header className="text-center mb-8">
-            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-heading-black mb-4">
               Professional Roof Inspection Services
             </h1>
             <p className="text-lg text-muted-foreground">
@@ -36,12 +36,12 @@ const RoofInspectionServices = () => {
           </div>
 
           <div className="prose prose-lg max-w-none text-foreground">
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Why Regular Roof Inspections Matter</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Why Regular Roof Inspections Matter</h2>
             <p className="mb-6 text-foreground leading-relaxed">
               Regular roof inspections are essential for maintaining your home's protection and value. Happy Home Roofers provides thorough, professional inspections that identify potential issues before they become costly repairs, helping you make informed decisions about your roof's maintenance and care.
             </p>
 
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Types of Roof Inspections</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Types of Roof Inspections</h2>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div>
                 <h3 className="text-xl font-semibold mb-3">Routine Maintenance Inspection</h3>
@@ -63,7 +63,7 @@ const RoofInspectionServices = () => {
               </div>
             </div>
 
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">What We Inspect</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">What We Inspect</h2>
             <div className="space-y-4 mb-8">
               <div className="border-l-4 border-primary pl-4">
                 <h3 className="font-semibold">Roofing Materials</h3>
@@ -83,7 +83,7 @@ const RoofInspectionServices = () => {
               </div>
             </div>
 
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Our Inspection Process</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Our Inspection Process</h2>
             <div className="space-y-4 mb-8">
               <div className="bg-muted p-4 rounded">
                 <h3 className="font-semibold mb-2">1. Exterior Inspection</h3>
@@ -103,7 +103,7 @@ const RoofInspectionServices = () => {
               </div>
             </div>
 
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Specialized Inspection Services</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Specialized Inspection Services</h2>
             <div className="space-y-4 mb-8">
               <div className="flex items-start space-x-4">
                 <div className="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center font-semibold">✓</div>
@@ -135,7 +135,7 @@ const RoofInspectionServices = () => {
               </div>
             </div>
 
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Common Issues We Identify</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Common Issues We Identify</h2>
             <ul className="list-disc ml-6 mb-8">
               <li>Missing, damaged, or loose shingles</li>
               <li>Cracked or deteriorated flashing</li>
@@ -147,7 +147,7 @@ const RoofInspectionServices = () => {
               <li>Chimney and penetration issues</li>
             </ul>
 
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">When to Schedule an Inspection</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">When to Schedule an Inspection</h2>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div>
                 <h3 className="text-xl font-semibold mb-3">Recommended Times</h3>

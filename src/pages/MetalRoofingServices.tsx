@@ -19,7 +19,7 @@ const MetalRoofingServices = () => {
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
           <header className="text-center mb-8">
-            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-heading-black mb-4">
               Metal Roofing Services
             </h1>
             <p className="text-lg text-muted-foreground">
@@ -36,12 +36,12 @@ const MetalRoofingServices = () => {
           </div>
 
           <div className="prose prose-lg max-w-none text-foreground">
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Why Choose Metal Roofing?</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Why Choose Metal Roofing?</h2>
             <p className="mb-6 text-foreground leading-relaxed">
               Metal roofing offers superior durability, energy efficiency, and longevity compared to traditional roofing materials. With proper installation by Happy Home Roofers, your metal roof can last 50+ years while providing excellent protection and cost savings.
             </p>
 
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Benefits of Metal Roofing</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Benefits of Metal Roofing</h2>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div>
                 <h3 className="text-xl font-semibold mb-3">Durability & Longevity</h3>
@@ -63,7 +63,7 @@ const MetalRoofingServices = () => {
               </div>
             </div>
 
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Types of Metal Roofing We Install</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Types of Metal Roofing We Install</h2>
             <div className="space-y-4 mb-8">
               <div className="border-l-4 border-primary pl-4">
                 <h3 className="font-semibold">Standing Seam Metal Roofing</h3>
@@ -83,7 +83,7 @@ const MetalRoofingServices = () => {
               </div>
             </div>
 
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Our Metal Roofing Process</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Our Metal Roofing Process</h2>
             <div className="space-y-4 mb-8">
               <div className="bg-muted p-4 rounded">
                 <h3 className="font-semibold mb-2">1. Consultation & Design</h3>
@@ -103,7 +103,7 @@ const MetalRoofingServices = () => {
               </div>
             </div>
 
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Metal Roofing Materials</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Metal Roofing Materials</h2>
             <ul className="list-disc ml-6 mb-8">
               <li><strong>Steel:</strong> Most popular, cost-effective, and durable</li>
               <li><strong>Aluminum:</strong> Lightweight, corrosion-resistant, ideal for coastal areas</li>

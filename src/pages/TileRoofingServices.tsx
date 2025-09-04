@@ -19,7 +19,7 @@ const TileRoofingServices = () => {
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
           <header className="text-center mb-8">
-            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-heading-black mb-4">
               Tile Roofing Services
             </h1>
             <p className="text-lg text-muted-foreground">
@@ -36,12 +36,12 @@ const TileRoofingServices = () => {
           </div>
 
           <div className="prose prose-lg max-w-none text-foreground">
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Why Choose Tile Roofing?</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Why Choose Tile Roofing?</h2>
             <p className="mb-6 text-foreground leading-relaxed">
               Tile roofing offers exceptional durability, timeless beauty, and superior protection for your home. With proper installation by Happy Home Roofers, tile roofs can last 50-100 years while providing excellent insulation and weather resistance.
             </p>
 
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Types of Tile Roofing</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Types of Tile Roofing</h2>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div>
                 <h3 className="text-xl font-semibold mb-3">Clay Tiles</h3>
@@ -63,7 +63,7 @@ const TileRoofingServices = () => {
               </div>
             </div>
 
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Tile Roofing Benefits</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Tile Roofing Benefits</h2>
             <div className="space-y-4 mb-8">
               <div className="border-l-4 border-primary pl-4">
                 <h3 className="font-semibold">Exceptional Durability</h3>
@@ -83,7 +83,7 @@ const TileRoofingServices = () => {
               </div>
             </div>
 
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Tile Styles & Profiles</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Tile Styles & Profiles</h2>
             <div className="space-y-4 mb-8">
               <div className="bg-muted p-4 rounded">
                 <h3 className="font-semibold mb-2">Spanish/Mission Tiles</h3>
@@ -103,7 +103,7 @@ const TileRoofingServices = () => {
               </div>
             </div>
 
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Our Tile Installation Process</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Our Tile Installation Process</h2>
             <div className="space-y-4 mb-8">
               <div className="flex items-start space-x-4">
                 <div className="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center font-semibold">1</div>
@@ -135,7 +135,7 @@ const TileRoofingServices = () => {
               </div>
             </div>
 
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Maintenance & Repair Services</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Maintenance & Repair Services</h2>
             <ul className="list-disc ml-6 mb-8">
               <li>Individual tile replacement</li>
               <li>Underlayment repair</li>

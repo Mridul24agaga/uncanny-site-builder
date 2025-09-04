@@ -40,6 +40,7 @@ export default {
 				},
 				'success-green': 'hsl(var(--success-green))',
 				'hero-overlay': 'hsl(var(--hero-overlay))',
+				'heading-black': 'hsl(var(--heading-black))',
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))'

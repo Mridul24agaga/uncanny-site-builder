@@ -18,7 +18,7 @@ const RoofingFinancing = () => {
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
           <header className="text-center mb-8">
-            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-heading-black mb-4">
               Roofing Financing Options: Making Roof Repair and Replacement Affordable with Happy Home Roofers
             </h1>
           </header>
@@ -36,7 +36,7 @@ const RoofingFinancing = () => {
               Your roof is one of the most critical components of your home, protecting your family and belongings from the elements. However, when it's time for a roof repair or replacement, the costs can feel overwhelming. At Happy Home Roofers, we believe that financial constraints shouldn't prevent you from maintaining a safe and secure roof. That's why we offer a variety of roofing financing options to make repairs and replacements accessible and stress-free.
             </p>
 
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Why Roofing Financing Matters</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Why Roofing Financing Matters</h2>
             <p className="mb-6">
               Roof repairs and replacements are often unexpected expenses, especially after storm damage, hail, or natural wear and tear. A new roof can cost anywhere from a few thousand dollars for minor repairs to tens of thousands for a full replacement, depending on the size, materials, and complexity of the project. Without proper planning, these costs can strain your budget or force you to delay critical work, risking further damage to your home.
             </p>

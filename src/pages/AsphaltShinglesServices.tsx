@@ -19,7 +19,7 @@ const AsphaltShinglesServices = () => {
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
           <header className="text-center mb-8">
-            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-heading-black mb-4">
               Asphalt Shingle Roofing Services
             </h1>
             <p className="text-lg text-muted-foreground">
@@ -36,12 +36,12 @@ const AsphaltShinglesServices = () => {
           </div>
 
           <div className="prose prose-lg max-w-none text-foreground">
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Why Choose Asphalt Shingles?</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Why Choose Asphalt Shingles?</h2>
             <p className="mb-6 text-foreground leading-relaxed">
               Asphalt shingles remain the most popular roofing choice for homeowners due to their affordability, versatility, and proven performance. Happy Home Roofers specializes in premium asphalt shingle installation that provides excellent protection and curb appeal for your home.
             </p>
 
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Types of Asphalt Shingles</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Types of Asphalt Shingles</h2>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div>
                 <h3 className="text-xl font-semibold mb-3">Architectural Shingles</h3>
@@ -63,7 +63,7 @@ const AsphaltShinglesServices = () => {
               </div>
             </div>
 
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Premium Shingle Features</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Premium Shingle Features</h2>
             <div className="space-y-4 mb-8">
               <div className="border-l-4 border-primary pl-4">
                 <h3 className="font-semibold">Wind Resistance</h3>
@@ -83,7 +83,7 @@ const AsphaltShinglesServices = () => {
               </div>
             </div>
 
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Our Installation Process</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Our Installation Process</h2>
             <div className="space-y-4 mb-8">
               <div className="bg-muted p-4 rounded">
                 <h3 className="font-semibold mb-2">1. Roof Inspection</h3>
@@ -103,7 +103,7 @@ const AsphaltShinglesServices = () => {
               </div>
             </div>
 
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Benefits of Our Asphalt Shingle Service</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Benefits of Our Asphalt Shingle Service</h2>
             <ul className="list-disc ml-6 mb-8">
               <li>Competitive pricing and financing options</li>
               <li>Wide variety of colors and styles</li>
@@ -113,7 +113,7 @@ const AsphaltShinglesServices = () => {
               <li>Local weather expertise</li>
             </ul>
 
-            <h2 className="text-2xl font-semibold text-primary mt-8 mb-4">Shingle Maintenance & Repair</h2>
+            <h2 className="text-2xl font-semibold text-heading-black mt-8 mb-4">Shingle Maintenance & Repair</h2>
             <p className="mb-6">
               Regular maintenance extends the life of your asphalt shingle roof. We provide comprehensive repair services including shingle replacement, flashing repair, and preventive maintenance to keep your roof in optimal condition.
             </p>
