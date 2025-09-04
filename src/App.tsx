@@ -12,6 +12,12 @@ import RoofInspectionChecklist from "./pages/RoofInspectionChecklist";
 import RoofInsuranceClaims from "./pages/RoofInsuranceClaims";
 import MetalVsAsphalt from "./pages/MetalVsAsphalt";
 import RoofingFinancing from "./pages/RoofingFinancing";
+import StormDamageRepair from "./pages/StormDamageRepair";
+import MetalRoofingServices from "./pages/MetalRoofingServices";
+import AsphaltShinglesServices from "./pages/AsphaltShinglesServices";
+import TileRoofingServices from "./pages/TileRoofingServices";
+import GutterServices from "./pages/GutterServices";
+import RoofInspectionServices from "./pages/RoofInspectionServices";
 import Blogs from "./pages/Blogs";
 import NotFound from "./pages/NotFound";
 import ImagePreloader from "./components/ImagePreloader";
@@ -42,6 +48,12 @@ const App = () => (
           <Route path="/metal-vs-asphalt-" element={<MetalVsAsphalt />} />
           <Route path="/navigating-roof-insurance-claims" element={<RoofInsuranceClaims />} />
           <Route path="/roofing-financing-options" element={<RoofingFinancing />} />
+          <Route path="/storm-damage-repair" element={<StormDamageRepair />} />
+          <Route path="/metal-roofing-services" element={<MetalRoofingServices />} />
+          <Route path="/asphalt-shingles-services" element={<AsphaltShinglesServices />} />
+          <Route path="/tile-roofing-services" element={<TileRoofingServices />} />
+          <Route path="/gutter-services" element={<GutterServices />} />
+          <Route path="/roof-inspection-services" element={<RoofInspectionServices />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
