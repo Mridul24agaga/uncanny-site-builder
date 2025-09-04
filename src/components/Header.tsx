@@ -1,11 +1,12 @@
 import { Button } from "@/components/ui/button";
 // import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/components/ui/sheet";
-import { Menu } from "lucide-react";
+import { Menu, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
   
   const handleSheetOpenChange = (open: boolean) => {
     console.log('Sheet open change:', open);
@@ -32,11 +33,19 @@ const Header = () => {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "About Us", path: "/#about" }, 
-    { name: "Services", path: "/#services" },
     { name: "Why choose Us", path: "/#why-choose" },
     { name: "Projects", path: "/#projects" },
     { name: "Testimonial", path: "/#testimonials" },
     { name: "Blogs", path: "/blogs" }
+  ];
+
+  const serviceItems = [
+    { name: "Storm Damage Repair", path: "/storm-damage-repair" },
+    { name: "Metal Roofing", path: "/metal-roofing-services" },
+    { name: "Asphalt Shingles", path: "/asphalt-shingles-services" },
+    { name: "Tile Roofing", path: "/tile-roofing-services" },
+    { name: "Gutter Services", path: "/gutter-services" },
+    { name: "Roof Inspection", path: "/roof-inspection-services" }
   ];
 
   return (
@@ -65,6 +74,39 @@ const Header = () => {
                 {item.name}
               </button>
             ))}
+            
+            {/* Services Dropdown */}
+            <div className="relative">
+              <button
+                onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
+                onMouseEnter={() => setServicesDropdownOpen(true)}
+                className="text-foreground hover:text-[#169AFF] transition-colors font-medium text-sm cursor-pointer flex items-center gap-1"
+              >
+                Services
+                <ChevronDown className="h-4 w-4" />
+              </button>
+              
+              {servicesDropdownOpen && (
+                <div 
+                  className="absolute top-full left-0 mt-1 w-48 bg-background border border-border rounded-lg shadow-lg z-50"
+                  onMouseEnter={() => setServicesDropdownOpen(true)}
+                  onMouseLeave={() => setServicesDropdownOpen(false)}
+                >
+                  <div className="py-2">
+                    {serviceItems.map((service, index) => (
+                      <Link
+                        key={index}
+                        to={service.path}
+                        className="block px-4 py-2 text-sm text-foreground hover:text-[#169AFF] hover:bg-muted transition-colors"
+                        onClick={() => setServicesDropdownOpen(false)}
+                      >
+                        {service.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
           </nav>
 
           {/* Mobile Menu */}
@@ -123,6 +165,23 @@ const Header = () => {
                           {item.name}
                         </button>
                       ))}
+                      
+                      {/* Mobile Services Menu */}
+                      <div>
+                        <div className="text-foreground font-medium text-lg mb-3">Services</div>
+                        <div className="flex flex-col space-y-3 ml-4">
+                          {serviceItems.map((service, index) => (
+                            <Link
+                              key={index}
+                              to={service.path}
+                              className="text-foreground hover:text-[#169AFF] transition-colors font-medium text-base"
+                              onClick={() => setIsOpen(false)}
+                            >
+                              {service.name}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
                     </nav>
                   </div>
                 </div>
