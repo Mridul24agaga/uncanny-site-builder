@@ -45,7 +45,9 @@ const Header = () => {
     { name: "Asphalt Shingles", path: "/asphalt-shingles-services" },
     { name: "Tile Roofing", path: "/tile-roofing-services" },
     { name: "Gutter Services", path: "/gutter-services" },
-    { name: "Roof Inspection", path: "/roof-inspection-services" }
+    { name: "Roof Inspection", path: "/roof-inspection-services" },
+    { name: "Midland Texas", path: "/midland-texas" },
+    { name: "Odessa Texas", path: "/odessa-texas" }
   ];
 
   return (
@@ -69,7 +71,7 @@ const Header = () => {
               <button
                 key={index}
                 onClick={() => handleNavClick(item.path)}
-                className="text-foreground hover:text-[#169AFF] transition-colors font-medium text-sm cursor-pointer"
+                className="text-foreground hover:text-primary transition-colors font-medium text-sm cursor-pointer"
               >
                 {item.name}
               </button>
@@ -80,7 +82,7 @@ const Header = () => {
               <button
                 onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
                 onMouseEnter={() => setServicesDropdownOpen(true)}
-                className="text-foreground hover:text-[#169AFF] transition-colors font-medium text-sm cursor-pointer flex items-center gap-1"
+                className="text-foreground hover:text-primary transition-colors font-medium text-sm cursor-pointer flex items-center gap-1"
               >
                 Services
                 <ChevronDown className="h-4 w-4" />
@@ -88,7 +90,7 @@ const Header = () => {
               
               {servicesDropdownOpen && (
                 <div 
-                  className="absolute top-full left-0 mt-1 w-48 bg-background border border-border rounded-lg shadow-lg z-50"
+                  className="absolute top-full left-0 mt-1 w-56 bg-white border border-gray-200 rounded-lg shadow-lg z-50"
                   onMouseEnter={() => setServicesDropdownOpen(true)}
                   onMouseLeave={() => setServicesDropdownOpen(false)}
                 >
@@ -97,7 +99,7 @@ const Header = () => {
                       <Link
                         key={index}
                         to={service.path}
-                        className="block px-4 py-2 text-sm text-foreground hover:text-[#169AFF] hover:bg-muted transition-colors"
+                        className="block px-4 py-2 text-sm text-foreground hover:text-primary hover:bg-gray-50 transition-colors"
                         onClick={() => setServicesDropdownOpen(false)}
                       >
                         {service.name}
@@ -160,7 +162,7 @@ const Header = () => {
                             e.stopPropagation();
                             handleNavClick(item.path);
                           }}
-                          className="text-foreground hover:text-[#169AFF] transition-colors font-medium text-lg cursor-pointer text-left"
+                          className="text-foreground hover:text-primary transition-colors font-medium text-lg cursor-pointer text-left"
                         >
                           {item.name}
                         </button>
@@ -174,7 +176,7 @@ const Header = () => {
                             <Link
                               key={index}
                               to={service.path}
-                              className="text-foreground hover:text-[#169AFF] transition-colors font-medium text-base"
+                              className="text-foreground hover:text-primary transition-colors font-medium text-base"
                               onClick={() => setIsOpen(false)}
                             >
                               {service.name}
@@ -194,9 +196,9 @@ const Header = () => {
             <a href="tel:+14329994694">
               <Button 
                 variant="default" 
-                className="bg-[#169AFF] hover:bg-[#0080e6] text-white font-semibold text-sm md:text-base px-3 md:px-4 py-2 md:py-3"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-sm md:text-base px-3 md:px-4 py-2 md:py-3"
               >
-                +1 (432) 999-4694
+                (432) 999-4694
               </Button>
             </a>
           </div>
